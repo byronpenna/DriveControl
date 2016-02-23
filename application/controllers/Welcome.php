@@ -28,6 +28,7 @@ class Welcome extends PadreController {
 		}
 		
 	// url 
+		
 		public function index()
 		{
 			$this->load->view("Login/index.php");
