@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Welcome extends CI_Controller {
+include_once(APPPATH.'controllers/PadreController.php');
+class Welcome extends PadreController {
 
 	/**
 	 * Index Page for this controller.
@@ -39,6 +39,8 @@ class Welcome extends CI_Controller {
 		public function ajax_registrar(){
 			$usuario = new stdClass();
 			$frm = $this->getFormularioAjax();
-			$this->model->registrarUsuario($frm);
+			$retorno = new stdClass();
+			$retorno->estado = $this->model->registrarUsuario($frm);
+			echo json_encode($retorno);
 		}
 }

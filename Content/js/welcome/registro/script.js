@@ -3,9 +3,9 @@ $(document).ready(function(){
 		// submit
 			$(document).on("submit",".frm",function(e){
 				e.preventDefault();
-				var frm = serializeSection($(this));
-
-				registrar(frm)
 				console.log("frm",frm);
+				var frm = serializeSection($(this));
+				registrar(frm);
+				//console.log("frm",frm);
 			})
 })
