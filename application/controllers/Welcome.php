@@ -22,4 +22,7 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+	public function registro(){
+		$this->load->view("welcome/registro.php");
+	}
 }
