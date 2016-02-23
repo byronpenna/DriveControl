@@ -11,6 +11,8 @@
 		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/welcome/registro/media.css") ?>>
 </head>
 <body>
+	<input class="txtHdUrl" value=<?php echo site_url(); ?>></input>
+	
 	<div class="container">
 		<h2>Registrarse</h2>
 		<form class="frm">
