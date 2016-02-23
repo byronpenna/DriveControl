@@ -30,12 +30,39 @@ class Welcome extends PadreController {
 	// url 
 		public function index()
 		{
-			$this->load->view('welcome_message');
+			$this->load->view("Login/index.php");
+			//$this->load->view('welcome_message');
 		}
 		public function registro(){
 			$this->load->view("welcome/registro.php");
 		}
+		public function principal(){
+			if(isset($_SESSION["usuario"])){
+				//print_r($_SESSION);
+				$this->load->view("welcome/principal.php");	
+			}else{
+				redirect("/welcome/index","refresh");
+			}		
+		}
+		public function cerrarSession(){
+			//session_destroy();
+			$this->session->sess_destroy();
+			$this->session->unset_userdata("usuario");
+			redirect("/welcome/principal","refresh");
+		}
 	// funciones ajax
+		public function ajax_login(){
+			$frm 		= $this->getFormularioAjax();
+			$respuesta 	= $this->model->loguear($frm);
+			//if(!isset($_SESSION)) {
+			    @session_start();
+			//}
+			//$_SESSION["usuario"] = "hola";//$respuesta->usuario;
+			$this->session->set_userdata("usuario",$respuesta->usuario);
+			//echo "asigno el usuario";
+			//echo json_encode($_SESSION);
+			echo json_encode($respuesta);
+		}
 		public function ajax_registrar(){
 			$usuario = new stdClass();
 			$frm = $this->getFormularioAjax();

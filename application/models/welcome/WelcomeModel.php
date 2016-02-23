@@ -5,6 +5,24 @@ class WelcomeModel extends CI_Model
 	{
 		
 	}
+	public function loguear($frm){
+		// vars 
+			$sql = "SELECT * 
+					FROM `usuarios` 
+					WHERE usuario = '".$frm->txtUsuario."' and pass = md5('".$frm->txtPass."')";
+		// do it 
+			$retorno 	= new stdClass();
+			$query 		= $this->db->query($sql);
+			$resultado 	= $query->result();
+			$cn 		= $query->num_rows();
+		if($cn > 0){
+			$retorno->estado 	= true;
+			$retorno->usuario 	= $resultado[0];
+		}else{
+			$retorno->estado = false;
+		}
+		return $retorno;
+	}
 	public function registrarUsuario($frm){
 		$sql 		= "insert into personas values(null,'".$frm->txtNombres."','".$frm->txtApellidos."',".$frm->txtNacimiento.")";
 		$query 		= $this->db->query($sql);
