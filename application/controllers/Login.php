@@ -8,6 +8,6 @@ class Login extends CI_Controller
 	}
 	public function index(){
 		// funciones php 
-		$this->load->view("Login/index.php");
+		
 	}
 }
