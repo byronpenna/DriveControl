@@ -21,8 +21,8 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav nav-pills ddmenu">
       <li class="active"><a href="#">Inicio</a></li>
-      <li class="active"><a href="#">Iniciar sesion</a></li>
-      <li class="active"><a href="#">Registrarse</a></li>
+      <li class="active"><a href=<?php echo base_url("index.php") ?>>Iniciar sesion</a></li>
+      <li class="active"><a href=<?php echo site_url("welcome/registro") ?>>Registrarse</a></li>
       <li class="active"><a href="#">Contactos </a></li>
       <li class="active"><a href="#">Informacion de Productos</a></li>
           <form class="navbar-form navbar-left" role="search">
@@ -36,13 +36,15 @@
 
 </nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+ <!-- SLIDER -->
+ <div class="Container">
+<div id="#mySlider" class="carousel slide">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+    <li data-target="#mySlider" data-slide-to="1"></li>
+    <li data-target="#mySlider" data-slide-to="2"></li>
+    <li data-target="##mySlider" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -79,15 +81,16 @@
       </div>
     </div>
   </div>
+  </div>
 
   <!-- Left and right controls -->
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+<a class="left carousel-control" href="#mySlider" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <a class="right carousel-control" href="#mySlider" data-slide="next">
             <span class="icon-next"></span>
         </a>
-
+  </div>
 
 
 
