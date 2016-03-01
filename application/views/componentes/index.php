@@ -9,8 +9,8 @@
 			$this->load->view("parts/estilos.php");
 	?>
 	<!-- estilos personalizados -->
-		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentesvehiculos/style.css") ?>>
-		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componevehiculos/media.css") ?>>
+		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/style.css") ?>>
+		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/media.css") ?>>
 </head>
 <body>
 <div id="centrado">
