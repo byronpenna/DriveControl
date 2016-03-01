@@ -20,6 +20,8 @@
 			<input class="form-control txtNombres" name="txtNombres"></input>
 			<label>Apellidos:</label>
 			<input class="form-control txtApellidos" name="txtApellidos"></input>
+			<label>Correo electronico:</label>
+			<input type="email" class="form-control txtEmail" name="txtEmail"></input>
 			<label>Fecha de nacimiento</label>
 			<input type="date" class=" form-control txtNacimiento" name="txtNacimiento"></input>
 			<hr>
