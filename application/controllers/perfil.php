@@ -7,7 +7,7 @@ class perfil extends CI_Controller {
 			parent::__construct();
 		}
 		// URL
-		// localhost://drivecontrol/index.php/componentes/index/ 
+		// localhost://drivecontrol/index.php/perfil/index/ 
 		public function index(){
 			$this->load->view("perfil/index.php");
 
