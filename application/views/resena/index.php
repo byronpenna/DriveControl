@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reseña de visitantes</title>
+  <?php
+    // estilos universales
+      $this->load->view("parts/estilos.php");
+  ?>
+  <!-- estilos personalizados -->
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/resena/style.css") ?>>
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/resena/media.css") ?>>
+
 <div class="container">
     <blockquote class="quote-box">
       <p class="quotation-mark">
@@ -14,22 +26,12 @@
           Susana
         </p>
         <p class="blog-post-bottom pull-right">
-          <span class="badge quote-badge">896</span>  ❤
+          <span class="badge quote-badge">542</span>  ❤
         </p>
 
 
 
-        <p class="quote-text">
-        No tuve que buscar tanto mis llantas gracias a Driver Control
-      </p>
-      <hr>
-      <div class="blog-post-actions">
-        <p class="blog-post-bottom pull-left">
-          Pedro
-        </p>
-        <p class="blog-post-bottom pull-right">
-          <span class="badge quote-badge">896</span>  ❤
-        </p>
+        
       </div>
     </blockquote>
 </div>
