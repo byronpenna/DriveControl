@@ -13,3 +13,8 @@ class drivecontrol extends CI_Controller
 		$this->load->view("drivecontrol/drivecontrol.php");
 	}
 }
+
+// ANUNCIANTE -- NOMBRE -- NIT -- TELEFONO  
+	// REGISTRAR ANUNCIOS 
+	// ELIMINARLOS 
+	// EDITARLO
