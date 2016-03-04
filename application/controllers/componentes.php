@@ -7,9 +7,9 @@ class componentes extends CI_Controller {
 			parent::__construct();
 		}
 		// URL
-		// localhost://drivecontrol/index.php/componentesvehiculos/index/ 
+		// localhost://drivecontrol/index.php/componentes/index/ 
 		public function index(){
-			$this->load->view("componentesvehiculos/index.php");
+			$this->load->view("componentes/index.php");
 
 			}
 

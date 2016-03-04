@@ -22,7 +22,7 @@
 	            <span class="visibilitiHidden"> </span>
 	            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
 	            <a href=<?php echo site_url("welcome/registro") ?> class="forgot-password">
-	                Registrarse
+	                REGISTRARSE
 	            </a>
 	        </form>
 	    </div>
