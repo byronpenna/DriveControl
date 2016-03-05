@@ -80,17 +80,15 @@
     			<ul class="nav nav-pills nav-stacked">
 					  <li role="presentation"><a href="#">Registrar Vehiculo</a></li>
 					  <li role="presentation"><a href="#">Control del Vehiculo</a></li>
-					  <li role="presentation"><a href="#">Control de no se que</a></li>
+					  <li role="presentation"><a href="#">Control de no se que</a></li>					  
 					  <li role="presentation"><a href="#">Nueva busqueda</a></li>
+					  <li role="presentation"><a href="#">Deja tu comentario</a></li>
 					  <li role="presentation" class="dropdown">
 	    				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ajuestes del Sistema<span class="caret"></span>
 	    				</a>
 	    					<ul class="dropdown-menu">
-							 	<li role="presentation"><a href="#">Registrar Vehiculo</a></li>
-								<li role="presentation"><a href="#">Control del Vehiculo</a></li>
-								<li role="presentation"><a href="#">Control de no se que</a></li>
-								<li role="presentation"><a href="#">Nueva busqueda</a></li>
-								<li role="presentation"><a href="#">Ajustes</a></li>     
+							 	<li role="presentation"><a href="#">Actualizar perfil</a></li>
+								<li role="presentation"><a href="#">Notificaciones</a></li>     
 							</ul>
 	  				</li>
 				</ul>
@@ -107,13 +105,15 @@
 						      <img src=<?php echo base_url("content/img/usr.jpg")?> alt="FOTO USUARIO">
 						    </a>
 						  </div>
+						  <span class="label label-primary">USUARIO: </span>
+						  <br>
 						  <span class="label label-primary">NOMBRE: </span>
 						  <br>
 						  <span class="label label-primary">APELLIDO: </span>
 						  <br>
 						  <span class="label label-primary">CORREO: </span>
 						  <br>
-						  <span class="label label-primary">FECHA DE NACIMIENTO: </span>
+						  <span class="label label-primary">FECHA DE NACIMIENTO: </span>						  
 						</div>
 						<center>
 						<button class="btn btn-primary" type="button">
