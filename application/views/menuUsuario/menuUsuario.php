@@ -8,6 +8,10 @@
       $this->load->view("parts/estilos.php");
   	?>
   	<style ="type:text/css">
+  	@import url(https://fonts.googleapis.com/css?family=Gochi+Hand);
+  	@import url(https://fonts.googleapis.com/css?family=Pacifico);
+  	@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+  	@import url(https://fonts.googleapis.com/css?family=Faster+One);
 		#header{			
 			background-image: url(<?php echo base_url("content/img/f19.png") ?>);
   			background-repeat: no-repeat center top;
@@ -15,7 +19,7 @@
 				}
 		#espe{
 			font-weight: normal;
-  			font-style: "mater";
+  			font-family: 'Faster One', cursive;
   			color:#FF3300;  			
   			padding: 10px;
 		}
@@ -24,32 +28,53 @@
   			background-repeat: no-repeat center top;
   			background-size: cover;
 				}
+		#pie {
+				width: 100%;
+				height: 50px;
+				background: #000033; 
+				position: fixed;
+				text-align: center;
+			  	vertical-align: middle;
+				padding:2px;
+				color: #E4EAED;
+				text-shadow:0 3px 8px #323232;
+				font-family:Oswald,sans-serif;	
+				border-top: 2px solid #0101DF;
+				border-style: solid;
+				bottom:0px;
+				display:block;
+    			margin:0 auto auto auto;
+		}
+		footer{
+			background: #FFFFFF; 
+			height: 100px;
+		}
 		@font-face {
 		 font-family: "mater";
 		 font-style: normal;
     	 font-weight: normal;
-		 src: url ( <?php echo base_url("Content/css/fonts/master_of_break.eot")?>);}
+		 src: url ( <?php echo base_url("Content/css/fonts/CandyShop.woff")?>);}
 		@font-face {
 		 font-family: "mater";
 		 font-style: normal;
     	 font-weight: normal;
-		 src: url (<?php echo base_url("Content/css/fonts/master_of_break.ttf")?> );
+		 src: url (<?php echo base_url("Content/css/fonts/CandyShop.ttf")?> );
 		}	
 	</style>
 </head>
 <body  id="prin">
 	<div class="row" id="header">
 		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<h1 id="espe">...DriveControl</h1>
+		<div class="col-md-9">
+			<h1 id="espe">DriveControl</h1>
 		</div>
-		<div class="col-md-1">nombre de usuario aqui<br><button type="button" class="btn btn-default btn-xs">SALIR</button></div>		
+		<div class="col-md-2">nombre de usuario aqui<br><button type="button" class="btn btn-danger btn-xs">CERRAR SESION</button></div>		
 	</div>
 	<div class="row">
 		<div class="col-md-1"></div>
 		<div class="col-md-9">
 			<div class="col-md-4">
-				<div class="panel panel-danger">
+				<div class="panel panel-primary">
   				<div class="panel-heading"><center><strong>..:: MENU PRINCIPAL ::..</strong></center></div>
   				<div class="panel-body">
     			<ul class="nav nav-pills nav-stacked">
@@ -73,7 +98,7 @@
 				</div>				
 			</div>
 			<div class="col-md-8">
-				<div class="panel panel-danger">
+				<div class="panel panel-primary">
 					<div class="panel-heading"><center><strong>...Perfil de Usuario...</strong></center></div>
 					  <div class="panel-body">
 					  	<div class="row">
@@ -82,21 +107,31 @@
 						      <img src=<?php echo base_url("content/img/usr.jpg")?> alt="FOTO USUARIO">
 						    </a>
 						  </div>
-						  <span class="label label-danger">NOMBRE: </span>
+						  <span class="label label-primary">NOMBRE: </span>
 						  <br>
-						  <span class="label label-danger">APELLIDO: </span>
+						  <span class="label label-primary">APELLIDO: </span>
 						  <br>
-						  <span class="label label-danger">CORREO: </span>
+						  <span class="label label-primary">CORREO: </span>
 						  <br>
-						  <span class="label label-danger">FECHA DE NACIMIENTO: </span>
-						</div>					    
+						  <span class="label label-primary">FECHA DE NACIMIENTO: </span>
+						</div>
+						<center>
+						<button class="btn btn-primary" type="button">
+  							ALERTAS <span class="badge">#</span>
+						</button>
+						</center>					    
 					  </div>
 				</div>
 			</div>
 		</div>		
 		<div class="col-md-1"></div>
 	</div>
-	<div class="row"></div>
+	<footer id="pie">
+		
+		<span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
+        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
+
+	</footer>
 	<?php
     	$this->load->view("parts/scripts.php");
   	?>
