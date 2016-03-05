@@ -19,7 +19,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<img src=<?php echo base_url("Content/img/drive.png") ?>></a>
+<img src=<?php echo base_url("Content/img/DRIVE1.png") ?>>
 </div>
  
   <!-- Agrupar los enlaces de navegación, los formularios y cualquier
