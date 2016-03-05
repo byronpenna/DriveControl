@@ -15,7 +15,7 @@
 				}
 		#espe{
 			font-weight: normal;
-  			font-style: mater;
+  			font-style: "mater";
   			color:#FF3300;  			
   			padding: 10px;
 		}
@@ -24,15 +24,15 @@
   			background-repeat: no-repeat center top;
   			background-size: cover;
 				}
-		@Font-face {
+		@font-face {
 		 font-family: "mater";
 		 font-style: normal;
-    	font-weight: normal;
-		 src: url ( <?php echo base_url("Content/css/fonts/master_of_break.eot")?>);
-		@Font-face {
+    	 font-weight: normal;
+		 src: url ( <?php echo base_url("Content/css/fonts/master_of_break.eot")?>);}
+		@font-face {
 		 font-family: "mater";
 		 font-style: normal;
-    	font-weight: normal;
+    	 font-weight: normal;
 		 src: url (<?php echo base_url("Content/css/fonts/master_of_break.ttf")?> );
 		}	
 	</style>
