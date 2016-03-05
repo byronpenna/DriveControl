@@ -15,7 +15,7 @@
 				}
 		#espe{
 			font-weight: normal;
-  			font-style: italic;
+  			font-style: mater;
   			color:#FF3300;  			
   			padding: 10px;
 		}
@@ -24,13 +24,24 @@
   			background-repeat: no-repeat center top;
   			background-size: cover;
 				}
+		@Font-face {
+		 font-family: "mater";
+		 font-style: normal;
+    	font-weight: normal;
+		 src: url ( <?php echo base_url("Content/css/fonts/master_of_break.eot")?>);
+		@Font-face {
+		 font-family: "mater";
+		 font-style: normal;
+    	font-weight: normal;
+		 src: url (<?php echo base_url("Content/css/fonts/master_of_break.ttf")?> );
+		}	
 	</style>
 </head>
 <body  id="prin">
 	<div class="row" id="header">
 		<div class="col-md-1"></div>
 		<div class="col-md-10">
-			<h1 id="espe">...NADA JENN DIJO QUE NADA IRIA AQUI</h1>
+			<h1 id="espe">...DriveControl</h1>
 		</div>
 		<div class="col-md-1">nombre de usuario aqui<br><button type="button" class="btn btn-default btn-xs">SALIR</button></div>		
 	</div>
