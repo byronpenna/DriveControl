@@ -8,7 +8,8 @@ function frmInvitado(frm){
 			window.location = $(".txtHdUrl").val()+"/Welcome/principal";
 		}
 		else{
-			alert("error");
+			//alert("error");
+			printMessage($(".mensajesLogin"),data.error.mensaje);
 		}
 	})
 }

@@ -54,13 +54,15 @@ class Welcome extends PadreController {
 		public function ajax_login(){
 			$frm 		= $this->getFormularioAjax();
 			$respuesta 	= $this->model->loguear($frm);
-			//if(!isset($_SESSION)) {
-			    @session_start();
-			//}
-			//$_SESSION["usuario"] = "hola";//$respuesta->usuario;
-			$this->session->set_userdata("usuario",$respuesta->usuario);
-			//echo "asigno el usuario";
-			//echo json_encode($_SESSION);
+			if($respuesta->estado){
+				//if(!isset($_SESSION)) {
+				    @session_start();
+				//}
+				//$_SESSION["usuario"] = "hola";//$respuesta->usuario;
+				$this->session->set_userdata("usuario",$respuesta->usuario);
+				//echo "asigno el usuario";
+				//echo json_encode($_SESSION);	
+			}
 			echo json_encode($respuesta);
 		}
 		public function ajax_registrar(){

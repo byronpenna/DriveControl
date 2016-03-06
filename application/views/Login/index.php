@@ -24,6 +24,7 @@
 	            <a href=<?php echo site_url("welcome/registro") ?> class="forgot-password">
 	                REGISTRARSE
 	            </a>
+	            <div class="row mensajesLogin"></div>
 	        </form>
 	    </div>
 	    
