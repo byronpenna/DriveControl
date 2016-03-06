@@ -66,9 +66,9 @@
 	<div class="row" id="header">
 		<div class="col-md-1"></div>
 		<div class="col-md-9">
-			<h1 id="espe">DriveControl</h1>
+			<h1 id="espe"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> DriveControl</h1>
 		</div>
-		<div class="col-md-2">nombre de usuario aqui<br><button type="button" class="btn btn-danger btn-xs">CERRAR SESION</button></div>		
+		<div class="col-md-2">nombre de usuario aqui<br><button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> CERRAR SESION</button></div>		
 	</div>
 	<div class="row">
 		<div class="col-md-1"></div>
@@ -78,17 +78,17 @@
   				<div class="panel-heading"><center><strong>..:: MENU PRINCIPAL ::..</strong></center></div>
   				<div class="panel-body">
     			<ul class="nav nav-pills nav-stacked">
-					  <li role="presentation"><a href="#">Registrar Vehiculo</a></li>
-					  <li role="presentation"><a href="#">Control del Vehiculo</a></li>
-					  <li role="presentation"><a href="#">Control de no se que</a></li>					  
-					  <li role="presentation"><a href="#">Nueva busqueda</a></li>
-					  <li role="presentation"><a href="#">Deja tu comentario</a></li>
+					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar Vehiculo</a></li>
+					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Control del Vehiculo</a></li>
+					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Control de no se que</a></li>					  
+					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Nueva busqueda</a></li>
+					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Deja tu comentario</a></li>
 					  <li role="presentation" class="dropdown">
-	    				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ajuestes del Sistema<span class="caret"></span>
+	    				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Ajuestes del Sistema<span class="caret"></span>
 	    				</a>
 	    					<ul class="dropdown-menu">
-							 	<li role="presentation"><a href="#">Actualizar perfil</a></li>
-								<li role="presentation"><a href="#">Notificaciones</a></li>     
+							 	<li role="presentation"><a href="#"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Actualizar perfil</a></li>
+								<li role="presentation"><a href="#">c Notificaciones</a></li>     
 							</ul>
 	  				</li>
 				</ul>
@@ -97,7 +97,7 @@
 			</div>
 			<div class="col-md-8">
 				<div class="panel panel-primary">
-					<div class="panel-heading"><center><strong>...Perfil de Usuario...</strong></center></div>
+					<div class="panel-heading"><center><strong><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ...Perfil de Usuario... <span class="glyphicon glyphicon-user" aria-hidden="true"></span></strong></center></div>
 					  <div class="panel-body">
 					  	<div class="row">
 						  <div class="col-xs-6 col-md-3">
@@ -117,7 +117,7 @@
 						</div>
 						<center>
 						<button class="btn btn-primary" type="button">
-  							ALERTAS <span class="badge">#</span>
+  							<span class="glyphicon glyphicon-bell" aria-hidden="true"></span> ALERTAS <span class="badge">#</span>
 						</button>
 						</center>					    
 					  </div>
