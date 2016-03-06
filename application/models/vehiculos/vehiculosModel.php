@@ -43,4 +43,20 @@ class vehiculosModel extends CI_Model
 	$resultado= $query ->result();
 	return $resultado;
 	}
+
+		public function IngresarAceiteC()
+	{
+	$sql= "SELECT * FROM aceite_caja";
+	$query = $this ->db->query($sql);
+	$resultado= $query ->result();
+	return $resultado;
+	}
+
+		public function IngresarAceiteM()
+	{
+	$sql= "SELECT * FROM aceite_motor";
+	$query = $this ->db->query($sql);
+	$resultado= $query ->result();
+	return $resultado;
+	}
 }

@@ -93,13 +93,27 @@ foreach ($rines as $key => $num_rin) {
   </select> </center></div>
 
 <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1"> Aceite</label></center>
+ <center> <label for="ejemplo_password_1"> Aceite de Caja</label></center>
   <center><select class="combobox">
-  <option value="PA">2000</option>
-  <option value="CT">2012</option>
-  <option value="NY">2013</option>
-  <option value="MD">2014</option>
-  <option value="VA">2015</option>
+    <?php 
+foreach ($AceiteC as $key => $nombre) {
+ ?>
+    <option value="">
+<?php echo $nombre ->nombre ?> 
+<?php } ?>
+</option>
+  </select> </center></div>
+
+  <center><div class="form-group"></center>
+ <center> <label for="ejemplo_password_1"> Aceite de Motor</label></center>
+  <center><select class="combobox">
+    <?php 
+foreach ($AceiteM as $key => $nombre) {
+ ?>
+    <option value="">
+<?php echo $nombre ->nombre ?> 
+<?php } ?>
+</option>
   </select> </center></div>
   <br>
  

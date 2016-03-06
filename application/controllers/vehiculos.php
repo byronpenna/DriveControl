@@ -20,7 +20,9 @@ class vehiculos extends PadreController {
 		$ll = $this ->model->IngresarLlantas();
 		$CVehiculo = $this ->model->IngresarClaseVehiculos();
 		$TVehiculo = $this ->model->IngresarTipoVehiculo();
-		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo);
+		$AceiteC = $this ->model->IngresarAceiteC();
+		$AceiteM = $this ->model->IngresarAceiteM();
+		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM);
 		$this ->load ->view('vehiculos/vehiculos.php',$data);
 	}
 }
