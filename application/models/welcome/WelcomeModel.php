@@ -23,6 +23,8 @@ class WelcomeModel extends CI_Model
 			$retorno->usuario 	= $resultado[0];
 		}else{
 			$retorno->estado = false;
+			$retorno->error = new stdClass();
+			$retorno->error->mensaje = "Error en usuario o contraseña";
 		}
 		return $retorno;
 	}
