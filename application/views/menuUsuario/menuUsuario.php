@@ -88,7 +88,7 @@
 	    				</a>
 	    					<ul class="dropdown-menu">
 							 	<li role="presentation"><a href="#"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Actualizar perfil</a></li>
-								<li role="presentation"><a href="#">c Notificaciones</a></li>     
+								<li role="presentation"><a href="#"> Notificaciones</a></li>     
 							</ul>
 	  				</li>
 				</ul>
