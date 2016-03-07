@@ -95,9 +95,6 @@
   				<div class="panel-heading"><center><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  CONTACTO </strong></center></div>
   				<div class="panel-body">
     			<ul class="nav nav-pills nav-stacked">
-					  <li role="presentation"><a href="#">Call Center</a></li>
-					  <li role="presentation"><a href="#">DriveCotrol On-line</a></li>
-					  <li role="presentation"><a href="#">¿Donde estamos?</a></li>
 					  <li role="presentation"><a href="#">Quejas o sugerencias</a></li>	
 				</ul>
   				</div>
