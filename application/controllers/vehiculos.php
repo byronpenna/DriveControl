@@ -22,7 +22,27 @@ class vehiculos extends PadreController {
 		$TVehiculo = $this ->model->IngresarTipoVehiculo();
 		$AceiteC = $this ->model->IngresarAceiteC();
 		$AceiteM = $this ->model->IngresarAceiteM();
-		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM);
+		$Trans = $this ->model->IngresarTransmision();
+		$combustible = $this ->model->IngresarCombustible();
+		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM, "Trans" => $Trans, "combustible" => $combustible);
 		$this ->load ->view('vehiculos/vehiculos.php',$data);
 	}
+	public function registrar_Vehiculo()
+	{
+		$CVehiculo = $_POST["comboClaseV"];
+		$TVehi = $_POST["comboTipoV"];
+		$Marca = $_POST["comboMarca"];
+		$Anio = $_POST["comboAnio"];
+		$Transmision = $_POST["comboTrans"];
+		$Llanta = $_POST["comboLlanta"];
+		$NRing = $_POST["comboRing"];
+		$NMotor = $_POST["txtMotor"];
+		$NChasis = $_POST["txtChasis"];
+		$Combus = $_POST["comboCombustible"];
+		$AceiteCa = $_POST["comboAceiteC"];
+		$AceiteMo = $_POST["comboAceiteM"];
+		$Respuesta = $this->model ->registrar_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo);
+		echo $Respuesta;
+	}
+
 }

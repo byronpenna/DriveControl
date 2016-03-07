@@ -21,8 +21,8 @@
 
 
 <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1">Clase de Vehiculo</label></center>
-  <center><select class="combobox">
+ <center> <label >Clase de Vehiculo</label></center>
+  <center><select class="combobox" name="comboClaseV">
 <?php 
 foreach ($CVehiculo as $key => $clase) {
  ?>
@@ -34,8 +34,8 @@ foreach ($CVehiculo as $key => $clase) {
 
 
 <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1">Tipo de Vehiculos </label></center>
-  <center><select class="combobox">
+ <center> <label >Tipo de Vehiculos </label></center>
+  <center><select class="combobox" name="comboTipoV">
 <?php 
 foreach ($TVehiculo as $key => $tipo) {
  ?>
@@ -46,8 +46,8 @@ foreach ($TVehiculo as $key => $tipo) {
   </select> </center></div>
 
   <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1">Marca</label></center>
-  <center><select class="combobox">
+ <center> <label >Marca</label></center>
+  <center><select class="combobox" name="comboMarca">
         <?php 
 foreach ($marcas as $key => $marca) {
  ?>
@@ -58,19 +58,35 @@ foreach ($marcas as $key => $marca) {
   </select> </center></div>
 
 <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1">Año</label></center>
-  <center><select class="combobox">
-  <option value="PA">2000</option>
-  <option value="CT">2012</option>
-  <option value="NY">2013</option>
-  <option value="MD">2014</option>
-  <option value="VA">2015</option>
+ <center> <label >Año</label></center>
+  <center><select class="combobox" name="comboAnio">
+    <?php 
+    for ($i=1970; $i < 2017; $i++) { 
+    ?>
+  <option value="">
+<?php echo $i ?>
+<?php }?>
+  </option>
   </select> </center></div>
 <br>
  
+<center><div class="form-group"></center>
+ <center> <label >Transmision</label></center>
+  <center><select class="combobox" name="comboTrans">
+    <?php 
+foreach ($Trans as $key => $nombre) {
+ ?>
+    <option value="">
+<?php echo $nombre ->nombre ?> 
+<?php } ?>
+</option>
+  </select> </center></div>
+
+
+
  <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1">Llanta</label></center>
-  <center><select class="combobox">
+ <center> <label >Llanta</label></center>
+  <center><select class="combobox" name="comboLlanta">
     <?php 
 foreach ($ll as $key => $LLANTA) {
  ?>
@@ -81,8 +97,8 @@ foreach ($ll as $key => $LLANTA) {
   </select> </center></div>
 
 <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1">Numero de Ring</label></center>
-  <center><select class="combobox">
+ <center> <label>Numero de Ring</label></center>
+  <center><select class="combobox" name="comboRing">
 <?php 
 foreach ($rines as $key => $num_rin) {
  ?>
@@ -92,9 +108,37 @@ foreach ($rines as $key => $num_rin) {
 </option>
   </select> </center></div>
 
+<div class="form-group">
+    <center><label for="ejemplo_password_1">Nº de motor</label></center>
+   <center> <input type="password" class="form-control txtMotor" name="txtMotor" 
+           placeholder="motor"></center>
+  </div>
+
+
+<div class="form-group">
+    <center><label for="ejemplo_password_1">Nº de chasis</label></center>
+    <center><input type="password" class="form-control" name="txtChasis" 
+           placeholder="Chasis"></center>
+  </div>
+
+
+
+  <center><div class="form-group"></center>
+ <center> <label >Combustible</label></center>
+  <center><select class="combobox" name="comboCombustible">
+<?php 
+foreach ($combustible as $key => $nombre) {
+ ?>
+    <option value="">
+<?php echo $nombre ->nombre ?> 
+<?php } ?>
+</option>
+  </select> </center></div>
+
+
 <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1"> Aceite de Caja</label></center>
-  <center><select class="combobox">
+ <center> <label > Aceite de Caja</label></center>
+  <center><select class="combobox" name="comboAceiteC">
     <?php 
 foreach ($AceiteC as $key => $nombre) {
  ?>
@@ -105,8 +149,8 @@ foreach ($AceiteC as $key => $nombre) {
   </select> </center></div>
 
   <center><div class="form-group"></center>
- <center> <label for="ejemplo_password_1"> Aceite de Motor</label></center>
-  <center><select class="combobox">
+ <center> <label> Aceite de Motor</label></center>
+  <center><select class="combobox" name="comboAceiteM">
     <?php 
 foreach ($AceiteM as $key => $nombre) {
  ?>

@@ -59,5 +59,47 @@ class vehiculosModel extends CI_Model
 	$resultado= $query ->result();
 	return $resultado;
 	}
-	
+	public function IngresarTransmision()
+	{
+	$sql= "SELECT * FROM transmision";
+	$query = $this ->db->query($sql);
+	$resultado= $query ->result();
+	return $resultado;
+	}
+
+		public function IngresarMotor()
+	{
+	$sql= "SELECT motor from vehiculo";
+	$query = $this ->db->query($sql);
+	$resultado= $query ->result();
+	return $resultado;
+	}
+		public function IngresarChasis()
+	{
+	$sql= "SELECT chasis FROM vehiculo";
+	$query = $this ->db->query($sql);
+	$resultado= $query ->result();
+	return $resultado;
+	}
+		public function IngresarCombustible()
+	{
+	$sql= "SELECT * FROM combustible";
+	$query = $this ->db->query($sql);
+	$resultado= $query ->result();
+	return $resultado;
+	}
+
+	public function registrar_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo)
+	{
+		$sql= "INSERT INTO vehiculo VALUES (null,'".$Transmision. "','".$TVehi. "','".$Marca. "','".$NRing. "','" .$Llanta."','".$AceiteCa. "','".$AceiteMo. "',1,'".$Anio. "','".$NMotor. "','".$Combus. "','".$NChasis. "')";
+		$query = $this ->db->query($sql);
+		if(query)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 }
