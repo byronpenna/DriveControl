@@ -120,26 +120,26 @@
 				<div class="panel panel-primary">
 					<div class="panel-heading"><center><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contacto</strong></center></div>
 					  <div class="panel-body">
-					  <form action="mail.do.php" role="form" method="post">
+					  <form action=<?php echo site_url("Conctactos/enviarCorreo") ?> role="form" method="post">
 							<div class="input-group">
 							  	<span class="input-group-addon" id="nombre">Nombre: *</span>
-							  	<input type="text" class="form-control" placeholder="Juan Carlos Perez" aria-describedby="basic-addon1" required>
+							  	<input type="text" name="nombre" class="form-control" placeholder="Juan Carlos Perez" aria-describedby="basic-addon1" required>
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="correo">Correo: *</span>
-							  	<input type="email" class="form-control" placeholder="Juan_Carlos_perez@example.com" aria-describedby="basic-addon1" required>
+							  	<input type="email" name="correo" class="form-control" placeholder="Juan_Carlos_perez@example.com" aria-describedby="basic-addon1" required>
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="telefono">Telefono: </span>
-							  	<input type="tel" class="form-control" placeholder="12345678" aria-describedby="basic-addon1">
+							  	<input type="tel" name="telefono" class="form-control" placeholder="12345678" aria-describedby="basic-addon1">
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="asunto">Asunto: *</span>
-							  	<input type="text" class="form-control" placeholder="Ejemplo" aria-describedby="basic-addon1" required>
+							  	<input type="text" name="asunto" class="form-control" placeholder="Ejemplo" aria-describedby="basic-addon1" required>
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="mensaje">Mensaje: *</span>
-							  	<textarea class="form-control" rows="5" required></textarea>
+							  	<textarea class="form-control" name="mensaje" rows="5" required></textarea>
 							</div><br>
 							<center><button type="submit" class="btn btn-primary">ENVIAR</button></center>
 						</form>				    

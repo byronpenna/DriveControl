@@ -6,15 +6,16 @@ class contactosModel extends CI_Model
 
 	}
 
-public function EnviarCorreo($nombre,$correo,$telefono,$asunto,$mensaje)
+public function EnviarCorreo($correo)
 {
+	/*
 	if(mail('edekurt90@gmail.com','prueba',$mensaje))
 	{
 		echo "envio conexito";
 	}
 	else{
 		echo "no se envio";
-	}
+	}*/
 	
 }
 }

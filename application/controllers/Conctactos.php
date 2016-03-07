@@ -10,16 +10,31 @@ function __construct(){
 			$this->load->model("Contactos/contactosModel");
 			$this->model = new contactosModel();	
 		}
-	public function contacto()
-	{
-		$this->load->view("Contactox/Contacto.php");
-		if(isset($_POST["nombre"])){	
-		$nombre=$_POST["nombre"];
-		$correo=$_POST["correo"];
-		$telfono=$_POST["telefono"];
-		$asunto=$_POST["asunto"];
-		$mensaje=$_POST["mensaje"];
-		$this->model->EnviarCorreo($nombre,$correo,$telefono,$asunto,$mensaje);
-	}
-	}
+	// funciones vistas 
+		public function contacto()
+		{
+			$this->load->view("Contactox/Contacto.php");
+			
+		}
+	// funciones de acciones 
+		public function enviarCorreo(){
+			$correo = new stdClass();
+			$correo->nombre		=$_POST["nombre"];
+			$correo->correo 	= $_POST["correo"];
+			$correo->telefono 	=$_POST["telefono"];
+			$correo->asunto 	= $_POST["asunto"];
+			$correo->mensaje 	= $_POST["mensaje"];
+			$correo->imagen 	= "";
+			$this->model->EnviarCorreo($correo);
+			//mail($corre->correo,$correo->asunto)
+			/*if(isset($_POST["nombre"])){	
+				//$nombre=
+				$correo=
+				$telfono=
+				$asunto=
+				$mensaje=
+				$this->model->EnviarCorreo($nombre,$correo,$telefono,$asunto,$mensaje);
+			}*/
+			print_r($correo);
+		}
 }
