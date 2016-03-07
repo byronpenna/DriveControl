@@ -107,18 +107,20 @@ foreach ($rines as $key => $num_rin) {
 <?php } ?>
 </option>
   </select> </center></div>
+<br>
+
 
 <div class="form-group">
-    <center><label for="ejemplo_password_1">Nº de motor</label></center>
-   <center> <input type="password" class="form-control txtMotor" name="txtMotor" 
-           placeholder="motor"></center>
+
+   <center> <input type="text" class="form-control txtMotor" name="txtMotor" 
+           placeholder="motor" required></center>
   </div>
 
-
+<br>
 <div class="form-group">
-    <center><label for="ejemplo_password_1">Nº de chasis</label></center>
-    <center><input type="password" class="form-control" name="txtChasis" 
-           placeholder="Chasis"></center>
+
+    <center><input type="text" class="form-control" name="txtChasis" 
+           placeholder="Chasis" required></center>
   </div>
 
 
