@@ -14,12 +14,6 @@
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
 <div class="navbar-header navbar-right">
-  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
 <img src=<?php echo base_url("Content/img/DRIVE1.PNG") ?>></a>
 </div>
  
@@ -52,36 +46,18 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" >
     <div class="item active">
-      <img src=<?php echo base_url("Content/img/s1.jpg") ?> alt="Chania">
-      <div class="carousel-caption">
-        <h3>Chania</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
+      <img src=<?php echo base_url("Content/img/slider1.jpg") ?> alt="Chania">
     </div>
 
     <div class="item">
-      <img src=<?php echo base_url("Content/img/sl2.jpg") ?> alt="Chania">
-      <div class="carousel-caption">
-        <h3>Chania</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
+      <img src=<?php echo base_url("Content/img/slider2.jpg") ?> alt="Chania">
     </div>
 
     <div class="item">
-      <img src=<?php echo base_url("Content/img/1d.jpg") ?> alt="Flower">
-      <div class="carousel-caption">
-        <h3>Flowers</h3>
-        <p>Beatiful flowers in Kolymbari, Crete.</p>
-      </div>
+      <img src=<?php echo base_url("Content/img/slider3.jpg") ?> alt="Flower">
+
     </div>
 
-    <div class="item">
-      <img src=<?php echo base_url("Content/img/1c.jpg") ?> alt="Flower">
-      <div class="carousel-caption">
-        <h3>Flowers</h3>
-        <p>Beatiful flowers in Kolymbari, Crete.</p>
-      </div>
-    </div>
   </div>
   </div>
 
@@ -90,7 +66,7 @@
     ?>
     <script>
     $('.carousel').carousel({
-        interval: 3000 //changes the speed
+        interval: 1000 //changes the speed
     })
     </script>
 </body>

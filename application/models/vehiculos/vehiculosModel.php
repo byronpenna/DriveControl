@@ -59,4 +59,5 @@ class vehiculosModel extends CI_Model
 	$resultado= $query ->result();
 	return $resultado;
 	}
+	
 }
