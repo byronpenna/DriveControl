@@ -63,7 +63,12 @@
 	</style>
 </head>
 <body>
-	<div class="row" id="header">
+	<header>
+		<?php 
+	      $this->load->view("parts/menu.php");
+	    ?>
+	</header>
+	<!-- <div class="row" id="header">
 		<nav class="navbar navbar-default navbar-backgrnd navbar-fixed-top" role="navigation">
 			<div class="navbar-header navbar-right">
   				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -84,7 +89,7 @@
 			 		</ul>
   			</div>
 		</nav>			
-	</div>
+	</div> -->
 	<div class="row"><br><br><br><br><br><br><br><br>
 		<div class="col-md-1"></div>
 		<div class="col-md-9">

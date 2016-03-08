@@ -82,7 +82,11 @@
   				<div class="panel-heading"><center><strong>..:: MENU PRINCIPAL ::..</strong></center></div>
   				<div class="panel-body">
     			<ul class="nav nav-pills nav-stacked">
-					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar Vehiculo</a></li>
+					  <li role="presentation">
+					  <a href=<?php echo site_url("vehiculos/vehiculos") ?> >
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar Vehiculo
+					  </a>
+					  </li>
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Control del Vehiculo</a></li>
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Control de no se que</a></li>					  
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Nueva busqueda</a></li>
