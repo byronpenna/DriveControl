@@ -13,7 +13,7 @@
   	@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
   	@import url(https://fonts.googleapis.com/css?family=Faster+One);
 		#header{			
-			background-image: url(<?php echo base_url("content/img/f19.png") ?>);
+			background-image: url(<?php echo base_url("Content/img/f19.png") ?>);
   			background-repeat: no-repeat center top;
   			background-size: 100% 100%;
 				}
@@ -24,7 +24,7 @@
   			padding: 10px;
 		}
 		#prin{			
-			background-image: url(<?php echo base_url("content/img/f10.jpg") ?>);
+			background-image: url(<?php echo base_url("Content/img/f10.jpg") ?>);
   			background-repeat: no-repeat center top;
   			background-size: cover;
 				}

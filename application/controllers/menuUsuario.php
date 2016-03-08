@@ -1,7 +1,7 @@
 <?php /**
 * 
 */
-class menuUsuario extends CI_Controller
+class MenuUsuario extends CI_Controller
 {
 	
 	function __construct()
