@@ -28,7 +28,7 @@
         <!-- http://localhost:82/drivecontrol/index.php/Conctactos/contacto -->
         <span class="glyphicon glyphicon-envelope" aria-hidden="true">  Contactos   </a>
         </li>
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Productos   </a></li>
+        <li class="active"><a href=<?php echo site_url("Componentes/index") ?>><span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Productos   </a></li>
       </ul>
     </div>
   </nav>
