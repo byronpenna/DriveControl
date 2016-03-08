@@ -43,6 +43,11 @@ class vehiculos extends PadreController {
 		$AceiteMo = $_POST["comboAceiteM"];
 		$Respuesta = $this->model ->Regis_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo);
 		echo $Respuesta;
+
+		echo "<script language=javascript>
+		 alert('INGRESADO EXITOSAMENTE');
+    	</script>";
+    	redirect("/menuUsuario/menuUsuario","refresh");
 	}
 
 }

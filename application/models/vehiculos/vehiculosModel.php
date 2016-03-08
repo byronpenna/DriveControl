@@ -95,13 +95,5 @@ class vehiculosModel extends CI_Model
 	{
 		$sql= "INSERT INTO vehiculo VALUES (null,'".$Transmision. "','".$TVehi. "','".$Marca. "','".$NRing. "','" .$Llanta."','".$AceiteCa. "','".$AceiteMo. "',1,'".$Anio. "','".$NMotor. "','".$Combus. "','".$NChasis. "')";
 		$query = $this ->db->query($sql);
-		if($query)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
 	}
 }

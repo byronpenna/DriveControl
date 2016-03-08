@@ -173,6 +173,7 @@ foreach ($combustible as $key => $nombre /*este
 <br>
 
 <center><button type="submit" class="btn btn-primary">Agregar Vehiculo</button></center>
+      </div>
 <br>
 <br>
 </form>
