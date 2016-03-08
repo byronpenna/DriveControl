@@ -21,7 +21,6 @@
                     <span class="icon-bar"></span>
                 </button>
 <img src=<?php echo base_url("Content/img/drive.PNG") ?>></a>
-
 </div>
  
   <!-- Agrupar los enlaces de navegación, los formularios y cualquier
@@ -94,14 +93,15 @@
             <span class="icon-next"></span>
         </a>
   </div>  
+    <?php
+      $this->load->view("parts/scripts.php");
+    ?>
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     </script>
-    <?php
-      $this->load->view("parts/scripts.php");
-    ?>
+    
 </body>
 </html>
 
