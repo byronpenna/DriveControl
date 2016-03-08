@@ -26,7 +26,7 @@
 <?php 
 foreach ($CVehiculo as $key => $clase) {
  ?>
-    <option value="$clase_vehiculo ->id">
+    <option value=<?php echo $clase_vehiculo->id ?>>
 <?php echo $clase ->clase ?> 
 <?php } ?>
 </option>
@@ -129,9 +129,11 @@ foreach ($rines as $key => $num_rin) {
  <center> <label >Combustible</label></center>
   <center><select class="combobox" name="comboCombustible">
 <?php 
-foreach ($combustible as $key => $nombre) {
+
+foreach ($combustible as $key => $nombre /*este 
+  es el elemento combustible individual por eso es el que ocupo abajo*/ ) {
  ?>
-    <option value="$combustible ->id">
+    <option value=<?php echo $nombre->id ?>><!-- Tenias que usar echo -->
 <?php echo $nombre ->nombre ?> 
 <?php } ?>
 </option>
