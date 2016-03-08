@@ -10,6 +10,10 @@ class menuUsuario extends CI_Controller
 	}
 	public function menuUsuario()
 	{
-		$this->load->view("menuUsuario/menuUsuario.php");
+		if(isset($_SESSION["usuario"])){
+			$this->load->view("menuUsuario/menuUsuario.php");
+		}else{
+			redirect("/welcome/index","refresh");
+		}		
 	}
 }

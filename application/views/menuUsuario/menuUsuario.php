@@ -68,7 +68,11 @@
 		<div class="col-md-9">
 			<h1 id="espe"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> DriveControl</h1>
 		</div>
-		<div class="col-md-2">nombre de usuario aqui<br><button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> CERRAR SESION</button></div>		
+		<div class="col-md-2">nombre de usuario aqui<br>
+			<a href=<?php echo site_url("welcome/cerrarSession") ?> class="btn btn-danger btn-xs">
+				<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> CERRAR SESION
+			</a>
+		</div>		
 	</div>
 	<div class="row">
 		<div class="col-md-1"></div>
