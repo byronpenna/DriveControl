@@ -13,7 +13,7 @@
   	@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
   	@import url(https://fonts.googleapis.com/css?family=Faster+One);
 		#header{			
-			background-image: url(<?php echo base_url("content/img/f19.png") ?>);
+			background-image: url(<?php echo base_url("Content/img/f19.png") ?>);
   			background-repeat: no-repeat center top;
   			background-size: 100% 100%;
 				}
@@ -24,7 +24,7 @@
   			padding: 10px;
 		}
 		#prin{			
-			background-image: url(<?php echo base_url("content/img/f10.jpg") ?>);
+			background-image: url(<?php echo base_url("Content/img/f10.jpg") ?>);
   			background-repeat: no-repeat center top;
   			background-size: cover;
 				}
@@ -110,12 +110,12 @@
 						<div class="col-md-2"></div>
   						<div class="col-xs-8 col-md-4">  							
     						<a href="https://www.facebook.com/profile.php?id=100011595570342" class="thumbnail" target="_blank">
-      						<img src=<?php echo base_url("content/img/fb.png") ?> alt="...">
+      						<img src=<?php echo base_url("Content/img/fb.png") ?> alt="...">
     						</a>
   						</div>
   						<div class="col-xs-8 col-md-4">
     						<a href="https://twitter.com/DriveControlads" class="thumbnail"  target="_blank">
-      						<img src=<?php echo base_url("content/img/tw.png") ?> alt="Twitter DriveControl">
+      						<img src=<?php echo base_url("Content/img/tw.png") ?> alt="Twitter DriveControl">
     						</a>
   						</div>
   					</div>
