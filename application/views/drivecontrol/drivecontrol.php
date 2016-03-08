@@ -14,7 +14,6 @@
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
 <div class="navbar-header navbar-right">
-<img src=<?php echo base_url("Content/img/DRIVE1.PNG") ?>></a>
   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -53,36 +52,25 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" >
     <div class="item active">
-      <img src=<?php echo base_url("Content/img/slider1.jpg") ?> alt="Chania">
+      <img src=<?php echo base_url("Content/img/s1.jpg") ?> >
     </div>
 
     <div class="item">
-      <img src=<?php echo base_url("Content/img/slider2.jpg") ?> alt="Chania">
+      <img src=<?php echo base_url("Content/img/s2.jpg") ?> >
     </div>
 
     <div class="item">
-      <img src=<?php echo base_url("Content/img/slider3.jpg") ?> alt="Flower">
-
+      <img src=<?php echo base_url("Content/img/s3.jpg") ?>>
     </div>
 
-  </div>
-  </div>
-
-
-<a class="left carousel-control" href="#mySlider" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#mySlider" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
   </div>  
     <?php
       $this->load->view("parts/scripts.php");
     ?>
     <script>
-      $('.carousel').carousel({
-          interval: 1000 //changes the speed
-      })
+    $('.carousel').carousel({
+        interval: 1000 //changes the speed
+    })
     </script>
     
 </body>

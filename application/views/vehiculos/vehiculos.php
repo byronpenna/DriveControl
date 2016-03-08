@@ -17,7 +17,7 @@
    <center> <h1> Ingreso de Vehiculo </h1></center>
  </div>
    <div class ="panel-body">
-    <form role="form" action<?php echo site_url('vehiculos.php/registrar_Vehiculo.php')?> method="POST">
+    <form action=<?php echo site_url('vehiculos/registrar_Vehiculo')?> method="POST">
 
 
 <center><div class="form-group"></center>

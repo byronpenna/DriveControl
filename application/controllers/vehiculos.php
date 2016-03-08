@@ -41,7 +41,8 @@ class vehiculos extends PadreController {
 		$Combus = $_POST["comboCombustible"];
 		$AceiteCa = $_POST["comboAceiteC"];
 		$AceiteMo = $_POST["comboAceiteM"];
-		$Respuesta = $this->model ->registrar_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo);
+		$CVehiculo->$id
+		$Respuesta = $this->model ->Regis_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo);
 		echo $Respuesta;
 	}
 
