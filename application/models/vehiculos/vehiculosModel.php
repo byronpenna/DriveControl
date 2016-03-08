@@ -23,7 +23,9 @@ class vehiculosModel extends CI_Model
 	}
 	public function IngresarLlantas()
 	{
-	$sql= "SELECT CONCAT(Diametro,'/',grosor) As LLANTA FROM llantas";
+
+		//AQUI LE PUSE EL ID
+	$sql= "SELECT id,CONCAT(Diametro,'/',grosor) As LLANTA FROM llantas";
 	$query = $this ->db->query($sql);
 	$resultado= $query ->result();
 	return $resultado;
