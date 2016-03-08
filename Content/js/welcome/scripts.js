@@ -4,6 +4,6 @@ $(document).ready(function(){
 			$(document).on("submit","#frmInvitado",function(e){
 				e.preventDefault();
 				var frm = serializeSection($(this));
-				frmInvitado(frm);
+				frmInvitado(frm);	
 			})
 })

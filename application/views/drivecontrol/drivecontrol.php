@@ -5,36 +5,39 @@
     // estilos universales
       $this->load->view("parts/estilos.php");
   ?>
-
+<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>>
 
 </head>
 <body>
- <nav class="navbar navbar-default" role="navigation">
+  <header>
+ <nav class="navbar navbar-default navbar-backgrnd navbar-fixed-top" role="navigation">
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
-  <div class="navbar-header">
-    <img src=<?php echo base_url("Content/img/drive.png") ?>></a>
-  </div>
+<div class="navbar-header navbar-right">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+<img src=<?php echo base_url("Content/img/drive.PNG") ?>></a>
+
+</div>
  
   <!-- Agrupar los enlaces de navegación, los formularios y cualquier
        otro elemento que se pueda ocultar al minimizar la barra -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav nav-pills ddmenu">
-      <li class="active"><a href="#">Inicio</a></li>
-      <li class="active"><a href=<?php echo base_url("index.php") ?>>Iniciar sesion</a></li>
-      <li class="active"><a href=<?php echo site_url("welcome/registro") ?>>Registrarse</a></li>
-      <li class="active"><a href="#">Contactos </a></li>
-      <li class="active"><a href="#">Informacion de Productos</a></li>
-          <form class="navbar-form navbar-left" role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Buscar">
-      </div>
-      <button type="submit" class="btn btn-default">Enviar</button>
-    </form>
-    </ul>
-  </div>
 
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <br> <br> <br><br><ul class="nav navbar-nav navbar-left">
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>   Inicio    </a></li>
+      <li class="active"><a href=<?php echo base_url("index.php") ?>><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>   Iniciar sesion   </a> </li>
+      <li class="active"><a href=<?php echo site_url("welcome/registro") ?>> <span class="glyphicon glyphicon-user" aria-hidden="true">   Registrarse   </a></li>
+      <li class="active"><a href="#"> <span class="glyphicon glyphicon-envelope" aria-hidden="true">  Contactos   </a></li>
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Productos   </a></li>
+ </ul>
+  </div>
 </nav>
+</header>
 
  <!-- SLIDER -->
  <div class="Container">
@@ -50,7 +53,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" >
     <div class="item active">
-      <img src=<?php echo base_url("Content/img/1e.jpg") ?> alt="Chania">
+      <img src=<?php echo base_url("Content/img/s1.jpg") ?> alt="Chania">
       <div class="carousel-caption">
         <h3>Chania</h3>
         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -58,7 +61,7 @@
     </div>
 
     <div class="item">
-      <img src=<?php echo base_url("Content/img/1b.jpg") ?> alt="Chania">
+      <img src=<?php echo base_url("Content/img/sl2.jpg") ?> alt="Chania">
       <div class="carousel-caption">
         <h3>Chania</h3>
         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -83,43 +86,23 @@
   </div>
   </div>
 
-  <!-- Left and right controls -->
+
 <a class="left carousel-control" href="#mySlider" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
         <a class="right carousel-control" href="#mySlider" data-slide="next">
             <span class="icon-next"></span>
         </a>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<?php
-    $this->load->view("parts/scripts.php");
-  	?>
+  </div>  
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    <?php
+      $this->load->view("parts/scripts.php");
+    ?>
 </body>
 </html>
+
+
