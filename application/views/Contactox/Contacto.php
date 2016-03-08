@@ -110,7 +110,7 @@
 						<div class="col-md-2"></div>
   						<div class="col-xs-8 col-md-4">  							
     						<a href="https://www.facebook.com/profile.php?id=100011595570342" class="thumbnail" target="_blank">
-      						<img src=<?php echo base_url("Content/img/fb.png") ?> alt="...">
+      						<img src=<?php echo base_url("Content/img/Fb.png") ?> alt="...">
     						</a>
   						</div>
   						<div class="col-xs-8 col-md-4">
