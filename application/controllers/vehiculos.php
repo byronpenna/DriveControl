@@ -9,8 +9,8 @@ class Vehiculos extends PadreController {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load ->model('vehiculos/vehiculosModel');
-		$this ->model = new vehiculosModel();
+		$this->load ->model('vehiculos/VehiculosModel');
+		$this ->model = new VehiculosModel();
 	}
 
 	public function vehiculos()

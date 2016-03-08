@@ -110,7 +110,7 @@
 					  	<div class="row">
 						  <div class="col-xs-6 col-md-3">
 						    <a href="#" class="thumbnail">
-						      <img src=<?php echo base_url("content/img/usr.jpg")?> alt="FOTO USUARIO">
+						      <img src=<?php echo base_url("Content/img/usr.jpg")?> alt="FOTO USUARIO">
 						    </a>
 						  </div>
 						  <span class="label label-primary">USUARIO: </span>

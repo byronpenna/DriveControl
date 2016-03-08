@@ -8,7 +8,7 @@ private $model;
 function __construct(){
 			parent::__construct();
 			$this->load->model("Contactos/contactosModel");
-			$this->model = new contactosModel();	
+			$this->model = new ContactosModel();	
 		}
 	// funciones vistas 
 		public function contacto()
