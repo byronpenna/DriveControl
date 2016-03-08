@@ -1,6 +1,8 @@
 <?php /**
 * 
 */
+ob_start();
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 include_once(APPPATH.'controllers/PadreController.php');
 class Vehiculos extends PadreController {
@@ -41,13 +43,14 @@ class Vehiculos extends PadreController {
 		$Combus = $_POST["comboCombustible"];
 		$AceiteCa = $_POST["comboAceiteC"];
 		$AceiteMo = $_POST["comboAceiteM"];
-		$Respuesta = $this->model ->Regis_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo);
+		$usuario 	= $_SESSION["usuario"];
+		$Respuesta = $this->model ->Regis_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
 		echo $Respuesta;
 
 		echo "<script language=javascript>
 		 alert('INGRESADO EXITOSAMENTE');
     	</script>";
-    	redirect("/menuUsuario/menuUsuario","refresh");
+    	redirect("/MenuUsuario/menuUsuario","refresh");
 	}
 
 }

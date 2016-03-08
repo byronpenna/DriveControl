@@ -145,7 +145,7 @@
 
 <div class="form-group">
   <label > Aceite de Caja</label>
-  <select class="form-control combobox" name="form-control comboAceiteC">
+  <select class="form-control combobox" name="comboAceiteC">
     <?php 
     foreach ($AceiteC as $key => $nombre) {
      ?>
