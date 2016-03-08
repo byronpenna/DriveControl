@@ -76,14 +76,15 @@
             <span class="icon-next"></span>
         </a>
   </div>  
+    <?php
+      $this->load->view("parts/scripts.php");
+    ?>
     <script>
       $('.carousel').carousel({
           interval: 1000 //changes the speed
       })
     </script>
-    <?php
-      $this->load->view("parts/scripts.php");
-    ?>
+    
 </body>
 </html>
 
