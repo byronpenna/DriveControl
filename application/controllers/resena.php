@@ -8,8 +8,8 @@ class resena extends CI_Controller {
 		}
 		// URL
 		// localhost://drivecontrol/index.php/resena/index/ 
-		public function index(){
-			$this->load->view("resena/index.php");
+		public function resenas(){
+			$this->load->view("resena/resenas.php");
 
 			}
 
