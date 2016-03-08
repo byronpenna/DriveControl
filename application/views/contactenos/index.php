@@ -1,43 +1,69 @@
-<!doctype html>
+<<!DOCTYPE html>
 <html>
-<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Formulario de Contacto - Script Personal</title>
- 
-<!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/estilos.css" rel="stylesheet">
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
- 
+  <title>Formulario de Contacto</title>
+  <?php
+    // estilos universales
+      $this->load->view("parts/estilos.php");
+  ?>
+  <!-- estilos personalizados -->
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/contactenos/style.css") ?>>
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/contactenos/media.css") ?>>
+
 </head>
- 
-<body>
+
+ <div class="container">
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+                    <h3 style="margin-bottom: 25px; text-align: center;">
+                      Formulario de Contacto
+                    </h3>
+  
   <div id="formulario">
-   <form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
-   <label for="nombre">Nombre</label>
-   <input name="nombre" type="text" required="required" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
+   <form role="form" action="contactanos.php" method="POST" id="contacto" title="Nombre">
+  <div class="form-group">
+  <label for="Nombre">Nombre: </label>
+  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required tabindex="1" >
    <br>
-   <label for="email">Email</label>
-   <input name="email" type="email" required="required" id="email" placeholder="email" tabindex="2" title="Email">
+  </div>
+  <div class="form-group">
+   <label for="Correo">Correo:  </label>
+   <input type="text" class="form-control" id="Correo" name="email" placeholder="Correo" required tabindex="2">
+
    <br>
-   <label for="telefono">Teléfono</label>
-   <input name="telefono" type="text" id="telefono" placeholder="telefono" tabindex="3" title="Telefono">
+   </div>
+    <div class="form-group">
+   <label for="telefono">Teléfono: </label>
+   <input type="text" class="form-control" id="Telefono" name="Telefono" placeholder="Telefono" required tabindex="3">
    <br>
-   <label for="ciudad">Ciudad</label>
-   <input name="ciudad" type="text" id="ciudad" placeholder="ciudad" tabindex="4" title="ciudad">
+   </div>
+
+          <div class="form-group">
+   <label for="ciudad">Ciudad: </label>
+   <input type="text" class="form-control" id="Cuidad" name="Cuidad" placeholder="Cuidad" required tabindex="4">
    <br>
-   <label for="pais">País</label>
-   <input name="pais" type="pais" id="pais" placeholder="pais" tabindex="5" title="pais">
+   </div>
+
+           <div class="form-group">
+   <label for="Pais">Pais: </label>
+   <input type="text" class="form-control" id="Cuidad" name="Pais" placeholder="Pais" required tabindex="5">
    <br>
+   </div>
+          <div class="form-group">
    <label for="Mensaje">Mensaje</label>
-   <textarea name="mensaje" rows="4" id="mensaje" placeholder="mensaje" tabindex="6"></textarea>
-   <br>
-   <input type="submit" name="enviar" tabindex="7" value="Enviar"><input type="reset" tabindex="8" value="Borrar">
+   <input type="text" class="form-control" id="Mensaje" name="Mensaje" placeholder="Mensaje" required tabindex="6">
+  
+ </div>
+          <div class="form-group">
+   <input type="submit" name="enviar" tabindex="7" maxlength="140" rows="7" value="Enviar"><input type="reset" tabindex="8" value="Borrar">
    <input type="hidden" name="estado" value="1">
    </form>
   </div>
+
+
+
+
 </body>
 </html>
