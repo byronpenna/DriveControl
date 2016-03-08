@@ -26,7 +26,7 @@ function __construct(){
 			$correo->mensaje 	= $_POST["mensaje"];
 			$correo->imagen 	= "";
 			$this->model->EnviarCorreo($correo);
-			//mail($corre->correo,$correo->asunto)
+			mail($corre->correo,$correo->asunto)
 			/*if(isset($_POST["nombre"])){	
 				//$nombre=
 				$correo=
