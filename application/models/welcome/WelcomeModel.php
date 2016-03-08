@@ -8,8 +8,11 @@ class WelcomeModel extends CI_Model
 	public function loguear($frm){
 		// vars 
 			$sql = "SELECT * 
-					FROM `usuarios` 
-					WHERE usuario = '".$frm->txtUsuario."' and pass = md5('".$frm->txtPass."')";
+					FROM `usuarios` u
+					inner join personas p
+					on p.idPersona = u.id_persona_fk
+					WHERE usuario = '".$frm->txtUsuario."' and pass = md5('".$frm->txtPass."') || (p.correo_electronico = '".$frm->txtUsuario."' and u.pass = md5('".$frm->txtPass."'))
+					";
 		// do it 
 			$retorno 	= new stdClass();
 			$query 		= $this->db->query($sql);
@@ -20,11 +23,13 @@ class WelcomeModel extends CI_Model
 			$retorno->usuario 	= $resultado[0];
 		}else{
 			$retorno->estado = false;
+			$retorno->error = new stdClass();
+			$retorno->error->mensaje = "Error en usuario o contraseña";
 		}
 		return $retorno;
 	}
 	public function registrarUsuario($frm){
-		$sql 		= "insert into personas values(null,'".$frm->txtNombres."','".$frm->txtApellidos."',".$frm->txtNacimiento.")";
+		$sql 		= "insert into personas values(null,'".$frm->txtNombres."','".$frm->txtApellidos."','".$frm->txtNacimiento."','".$frm->txtEmail."')";
 		$query 		= $this->db->query($sql);
 		$idPersona 	= $this->db->insert_id();
 		$sql 		= "insert into usuarios values(null,'".$frm->txtUsuario."', md5('".$frm->txtPass."'),".$idPersona.",2)";

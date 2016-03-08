@@ -17,7 +17,10 @@ class vehiculos extends PadreController {
 	{
 		$marcas = $this ->model->IngresarMarca();
 		$rines = $this ->model->IngresarRin();
-		$data = array("marcas" => $marcas , "rines" => $rines);
+		$ll = $this ->model->IngresarLlantas();
+		$CVehiculo = $this ->model->IngresarClaseVehiculos();
+		$TVehiculo = $this ->model->IngresarTipoVehiculo();
+		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo);
 		$this ->load ->view('vehiculos/vehiculos.php',$data);
 	}
 }
