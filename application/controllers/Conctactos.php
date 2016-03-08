@@ -25,8 +25,11 @@ function __construct(){
 			$correo->asunto 	= $_POST["asunto"];
 			$correo->mensaje 	= $_POST["mensaje"];
 			$correo->imagen 	= "";
+			$correo->headers = 'From: '.$email_from."\r\n".
+			'Reply-To: '.$email_from."\r\n" .
+			'X-Mailer: PHP/' . phpversion();
 			$this->model->EnviarCorreo($correo);
-			//mail($corre->correo,$correo->asunto)
+			mail($corre->correo,$correo->asunto,$corre->headers)
 			/*if(isset($_POST["nombre"])){	
 				//$nombre=
 				$correo=
