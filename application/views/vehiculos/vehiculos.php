@@ -26,7 +26,7 @@
 <?php 
 foreach ($CVehiculo as $key => $clase) {
  ?>
-    <option value=<?php echo $clase_vehiculo->id ?>>
+    <option value=<?php echo $clase->id ?>>
 <?php echo $clase ->clase ?> 
 <?php } ?>
 </option>
@@ -39,7 +39,7 @@ foreach ($CVehiculo as $key => $clase) {
 <?php 
 foreach ($TVehiculo as $key => $tipo) {
  ?>
-    <option value="$tipos_vehiculos ->id">
+    <option value=<?php echo $tipo->id ?>>
 <?php echo $tipo ->tipo?> 
 <?php } ?>
 </option>
@@ -51,7 +51,7 @@ foreach ($TVehiculo as $key => $tipo) {
         <?php 
 foreach ($marcas as $key => $marca) {
  ?>
-    <option value="$marcas ->id">
+    <option value=<?php echo $marca->idMarca ?>>
 <?php echo $marca ->marca ?> 
 <?php } ?>
 </option>
@@ -63,7 +63,7 @@ foreach ($marcas as $key => $marca) {
     <?php 
     for ($i=1970; $i < 2017; $i++) { 
     ?>
-  <option value="$vehiculo ->id">
+  <option value="">
 <?php echo $i ?>
 <?php }?>
   </option>
@@ -76,7 +76,7 @@ foreach ($marcas as $key => $marca) {
     <?php 
 foreach ($Trans as $key => $nombre) {
  ?>
-    <option value="$transmision ->id">
+    <option value=<?php echo $nombre->id ?>>
 <?php echo $nombre ->nombre ?> 
 <?php } ?>
 </option>
@@ -90,7 +90,7 @@ foreach ($Trans as $key => $nombre) {
     <?php 
 foreach ($ll as $key => $LLANTA) {
  ?>
-    <option value="$llantas ->id">
+    <option value=<?php echo $LLANTA->id ?>>
 <?php echo $LLANTA ->LLANTA ?> 
 <?php } ?>
 </option>
@@ -102,7 +102,7 @@ foreach ($ll as $key => $LLANTA) {
 <?php 
 foreach ($rines as $key => $num_rin) {
  ?>
-    <option value="$rines ->id">
+    <option value=<?php echo $num_rin->id ?>>
 <?php echo $num_rin ->num_rin ?> 
 <?php } ?>
 </option>
@@ -146,7 +146,7 @@ foreach ($combustible as $key => $nombre /*este
     <?php 
 foreach ($AceiteC as $key => $nombre) {
  ?>
-    <option value="$aceite_caja ->id">
+    <option value=<?php echo $nombre->id ?>>
 <?php echo $nombre ->nombre ?> 
 <?php } ?>
 </option>
@@ -158,7 +158,7 @@ foreach ($AceiteC as $key => $nombre) {
     <?php 
 foreach ($AceiteM as $key => $nombre) {
  ?>
-    <option value="$aceite_motor ->id">
+    <option value=<?php echo $nombre->id ?>>
 <?php echo $nombre ->nombre ?> 
 <?php } ?>
 </option>
