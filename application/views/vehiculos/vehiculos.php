@@ -87,11 +87,7 @@
           <center><div class="form-group"></center>
           <center> <label >Llanta</label></center>
           <center>
-          <!-- ESTO TE VA SERVIR PARA VER COMO VIENE EL OBJETO -->
-          <pre>
-          <?php print_r($ll)?>
-          </pre> 
-          <!-- ############################## -->
+
           <select class="combobox" name="comboLlanta">
             <?php 
             foreach ($ll as $key => $LLANTA) {
