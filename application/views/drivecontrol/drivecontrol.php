@@ -20,7 +20,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<img src=<?php echo base_url("Content/img/DRIVE1.PNG") ?>></a>
+<img src=<?php echo base_url("Content/img/drive.PNG") ?>></a>
+
 </div>
  
   <!-- Agrupar los enlaces de navegación, los formularios y cualquier
@@ -85,14 +86,22 @@
   </div>
   </div>
 
-  <?php
-    $this->load->view("parts/scripts.php");
-    ?>
+
+<a class="left carousel-control" href="#mySlider" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#mySlider" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+  </div>  
     <script>
     $('.carousel').carousel({
-        interval: 3000 //changes the speed
+        interval: 5000 //changes the speed
     })
     </script>
+    <?php
+      $this->load->view("parts/scripts.php");
+    ?>
 </body>
 </html>
 
