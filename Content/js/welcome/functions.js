@@ -5,7 +5,7 @@ function frmInvitado(frm){
 		console.log("la data es",data);
 		var data = jQuery.parseJSON(data);
 		if(data.estado){
-			window.location = $(".txtHdUrl").val()+"/Welcome/principal";
+			window.location = $(".txtHdUrl").val()+"/menuUsuario/menuUsuario";
 		}
 		else{
 			//alert("error");
