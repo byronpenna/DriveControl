@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
- <nav class="navbar navbar-default navbar-backgrnd navbar-fixed-top" role="navigation">
+ <center><nav class="navbar navbar-default navbar-backgrnd navbar-fixed-top" role="navigation">
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
 <div class="navbar-header navbar-right">
@@ -33,9 +33,11 @@
       <li class="active"><a href=<?php echo site_url("welcome/registro") ?>> <span class="glyphicon glyphicon-user" aria-hidden="true">   Registrarse   </a></li>
       <li class="active"><a href="#"> <span class="glyphicon glyphicon-envelope" aria-hidden="true">  Contactos   </a></li>
       <li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Productos   </a></li>
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true">   Empresas Asociadas  </a></li>
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true">   Acerca de nosotros   </a></li>
  </ul>
   </div>
-</nav>
+</nav></center>
 </header>
 
  <!-- SLIDER -->
