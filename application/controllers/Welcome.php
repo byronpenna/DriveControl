@@ -30,8 +30,12 @@ class Welcome extends PadreController {
 	// url 
 		public function index()
 		{
-			$this->load->view("Login/index.php");
+			$this->load->view("drivecontrol/drivecontrol.php");
+
 			//$this->load->view('welcome_message');
+		}
+		public function login(){
+			$this->load->view("Login/index.php");
 		}
 		public function registro(){
 			$this->load->view("welcome/registro.php");

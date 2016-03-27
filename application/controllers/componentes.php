@@ -1,6 +1,6 @@
 <?php 
 
-class componentes extends CI_Controller {
+class Componentes extends CI_Controller {
 	// metodos 
 		function __construct()
 		{

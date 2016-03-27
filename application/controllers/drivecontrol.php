@@ -1,7 +1,7 @@
 <?php /**
 * 
 */
-class drivecontrol extends CI_Controller
+class Drivecontrol extends CI_Controller
 {
 	
 	function __construct()

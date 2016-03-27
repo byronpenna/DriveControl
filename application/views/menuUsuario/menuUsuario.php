@@ -13,7 +13,7 @@
   	@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
   	@import url(https://fonts.googleapis.com/css?family=Faster+One);
 		#header{			
-			background-image: url(<?php echo base_url("content/img/f19.png") ?>);
+			background-image: url(<?php echo base_url("Content/img/f19.png") ?>);
   			background-repeat: no-repeat center top;
   			background-size: 100% 100%;
 				}
@@ -24,7 +24,7 @@
   			padding: 10px;
 		}
 		#prin{			
-			background-image: url(<?php echo base_url("content/img/f10.jpg") ?>);
+			background-image: url(<?php echo base_url("Content/img/f10.jpg") ?>);
   			background-repeat: no-repeat center top;
   			background-size: cover;
 				}
@@ -68,7 +68,11 @@
 		<div class="col-md-9">
 			<h1 id="espe"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> DriveControl</h1>
 		</div>
-		<div class="col-md-2">nombre de usuario aqui<br><button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> CERRAR SESION</button></div>		
+		<div class="col-md-2">nombre de usuario aqui<br>
+			<a href=<?php echo site_url("welcome/cerrarSession") ?> class="btn btn-danger btn-xs">
+				<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> CERRAR SESION
+			</a>
+		</div>		
 	</div>
 	<div class="row">
 		<div class="col-md-1"></div>
@@ -78,7 +82,11 @@
   				<div class="panel-heading"><center><strong>..:: MENU PRINCIPAL ::..</strong></center></div>
   				<div class="panel-body">
     			<ul class="nav nav-pills nav-stacked">
-					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar Vehiculo</a></li>
+					  <li role="presentation">
+					  <a href=<?php echo site_url("vehiculos/vehiculos") ?> >
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar Vehiculo
+					  </a>
+					  </li>
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Control del Vehiculo</a></li>
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Control de no se que</a></li>					  
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Nueva busqueda</a></li>
@@ -102,7 +110,7 @@
 					  	<div class="row">
 						  <div class="col-xs-6 col-md-3">
 						    <a href="#" class="thumbnail">
-						      <img src=<?php echo base_url("content/img/usr.jpg")?> alt="FOTO USUARIO">
+						      <img src=<?php echo base_url("Content/img/usr.jpg")?> alt="FOTO USUARIO">
 						    </a>
 						  </div>
 						  <span class="label label-primary">USUARIO: </span>

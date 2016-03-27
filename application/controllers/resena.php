@@ -1,6 +1,6 @@
 <?php 
 
-class resena extends CI_Controller {
+class Resena extends CI_Controller {
 	// metodos 
 		function __construct()
 		{

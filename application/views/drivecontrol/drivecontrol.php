@@ -3,9 +3,9 @@
 <head>
   <?php
     // estilos universales
-      $this->load->view("parts/estilos.php");
+  $this->load->view("parts/estilos.php");
   ?>
-<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>>
+  <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>>
 
   <!-- Start WOWSlider.com HEAD section -->
   <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/styleSlider.css")?> media="screen" />
@@ -16,6 +16,15 @@
 
 <body>
   <header>
+
+    <?php 
+      $this->load->view("parts/menu.php");
+    ?>
+  </header>
+
+<!-- SLIDER -->
+<div class="Container">
+  
 <nav class="navbar navbar-default navbar-backgrnd navbar-fixed-top" role="navigation">
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
@@ -112,10 +121,16 @@
   </section>
 
     <?php
-      $this->load->view("parts/scripts.php");
+    $this->load->view("parts/scripts.php");
     ?>
+    <script>
+      $('.carousel').carousel({
+        interval: 1000 //changes the speed
+      })
+    </script>
+
     
-</body>
-</html>
+  </body>
+  </html>
 
 
