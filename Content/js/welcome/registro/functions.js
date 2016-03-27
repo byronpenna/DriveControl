@@ -6,6 +6,7 @@ function registrar(frm){
 		var data = jQuery.parseJSON(data);
 		if(data.estado){
 			alert("Regitrado exitosamente");
+			window.location = $(".txtHdRetorno").val();
 		}else{
 			alert("error");
 		}
