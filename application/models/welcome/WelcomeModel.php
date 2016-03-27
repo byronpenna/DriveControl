@@ -11,7 +11,8 @@ class WelcomeModel extends CI_Model
 					FROM `usuarios` u
 					inner join personas p
 					on p.idPersona = u.id_persona_fk
-					WHERE usuario = '".$frm->txtUsuario."' and pass = md5('".$frm->txtPass."') || (p.correo = '".$frm->txtUsuario."' and u.pass = md5('".$frm->txtPass."'))
+					WHERE usuario = '".$frm->txtUsuario."' and 
+							pass = md5('".$frm->txtPass."') || (p.correo_electronico = '".$frm->txtUsuario."' and u.pass = md5('".$frm->txtPass."'))
 					";
 		// do it 
 			$retorno 	= new stdClass();
