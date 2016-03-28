@@ -12,21 +12,23 @@
 </head>
 <body>
 	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>
-	
+	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
 	<div class="container">
 		<h2>Registrarse</h2>
 		<form class="frm">
 			<label>Nombres</label>
-			<input class="form-control txtNombres" name="txtNombres"></input>
+			<input class="form-control txtNombres" name="txtNombres" required></input>
 			<label>Apellidos:</label>
-			<input class="form-control txtApellidos" name="txtApellidos"></input>
+			<input class="form-control txtApellidos" name="txtApellidos" required></input>
+			<label>Correo electronico:</label>
+			<input type="email" class="form-control txtEmail" name="txtEmail" required></input>
 			<label>Fecha de nacimiento</label>
-			<input type="date" class=" form-control txtNacimiento" name="txtNacimiento"></input>
+			<input type="date" class=" form-control txtNacimiento" name="txtNacimiento" required></input>
 			<hr>
 			<label>Usuario:</label>
-			<input type="text" class="form-control txtUsuario" name="txtUsuario"></input>
+			<input type="text" class="form-control txtUsuario" name="txtUsuario" required></input>
 			<label>Pass:</label>
-			<input type="password" class="form-control txtPass" name="txtPass"></input>
+			<input type="password" class="form-control txtPass" name="txtPass" required></input>
 			<button class="btn btn-default">Registrarse</button>
 			<div class="divMessage">
 				
