@@ -70,17 +70,6 @@
           </select> </center></div>
           <br>
 
-          <center><div class="form-group"></center>
-          <center> <label >Transmision</label></center>
-          <center><select class="combobox" name="comboTrans">
-            <?php 
-            foreach ($Trans as $key => $nombre) {
-             ?>
-             <option value=<?php echo $nombre->id ?>>
-              <?php echo $nombre ->nombre ?> 
-              <?php } ?>
-            </option>
-          </select> </center></div>
 
 
 
