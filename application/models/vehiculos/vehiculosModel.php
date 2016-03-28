@@ -91,9 +91,9 @@ class VehiculosModel extends CI_Model
 	return $resultado;
 	}
 
-		public function VerVehiculo()
+		public function VerVehiculo($idUsuario)
 	{
-	$sql= "SELECT * FROM vehiculo WHERE 1";
+	$sql= "SELECT * FROM vehiculo WHERE id = '".$idUsuario. "' ";
 	$query = $this ->db->query($sql);
 	$resultado= $query ->result();
 	return $resultado;

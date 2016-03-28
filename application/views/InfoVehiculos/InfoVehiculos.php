@@ -9,8 +9,10 @@
 
 </head>
 <body>
+<input type="text" value="HOLAAA">  
+<input type="text" value=<?php echo $VerV ->anio ?>>
 
-    <?php echo $VerVehiculos ?> 
+
 
 <div align='center'>  
   <table border='1' cellpadding='0' cellspacing='0' width='600' bgcolor='#F6F6F6' bordercolor='#FFFFFF'>  
