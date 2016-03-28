@@ -29,12 +29,25 @@ class WelcomeModel extends CI_Model
 		}
 		return $retorno;
 	}
+	
 	public function registrarUsuario($frm){
-		$sql 		= "insert into personas values(null,'".$frm->txtNombres."','".$frm->txtApellidos."','".$frm->txtNacimiento."','".$frm->txtEmail."')";
-		$query 		= $this->db->query($sql);
-		$idPersona 	= $this->db->insert_id();
-		$sql 		= "insert into usuarios values(null,'".$frm->txtUsuario."', md5('".$frm->txtPass."'),".$idPersona.",2)";
-		$flag = $this->db->query($sql);
-		return $flag;
+		$obj = new stdClass();
+		$obj->estado = false;
+		$this->db->trans_start();
+			$sql 		= "insert into personas values(null,'".$frm->txtNombres."','".$frm->txtApellidos."','".$frm->txtNacimiento."','".$frm->txtEmail."')";
+			$query 		= $this->db->query($sql);
+			$idPersona 	= $this->db->insert_id();
+			$sql 		= "insert into usuarios values(null,'".$frm->txtUsuario."', md5('".$frm->txtPass."'),".$idPersona.",2,ROUND(RAND() * (9999 - 1)),0)";
+			$flag = $this->db->query($sql);
+			$idUsuario  = $this->db->insert_id();
+			$sql = "SELECT num_val FROM `usuarios` WHERE idUsuario = '".$idUsuario."'";
+			$query = $this->db->query($sql);
+			$query = $query->result();
+			$num 	= $query[0]->num_val;
+			$obj->estado = true;
+		$this->db->trans_complete();
+		$obj->email = $frm->txtEmail;
+		$obj->num 	= $num;
+		return $obj;
 	}
 }
