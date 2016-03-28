@@ -26,9 +26,6 @@
 		<thead>
 			<tr>
 				<td><center><b>Vehículos</b></center></td>
-				<td width="90"><center><font color="0000FF">Más detalles</font></center></td>
-				<td width="80"><center><font color="0000FF">Modificar</font></center></td>
-				<td width="80"><center><font color="FF0000">Eliminar</font></center></td>
 			</tr>
 
 			<tbody>
@@ -40,9 +37,6 @@
 			<tr>
 				
 				<td><?php echo "Vehículo #".$identificador->id.", año: ".$identificador->anio.", motor: ".$identificador->motor ?></td>
-				<td width="90"><center><font color="0000FF">Más detalles</font></center></td>
-				<td width="80"><center><font color="0000FF">Modificar</font></center></td>
-				<td width="80"><center><font color="FF0000">Eliminar</font></center></td>
 
 			</tr>
 
@@ -55,6 +49,38 @@
 		</thead>
 
 	</table>
+
+	<br>
+	<br>
+
+	<div align="center"> 
+    <table border="0" width="600" id="table1"> 
+        <tr> 
+            <td colspan="2"><h3 align="center">Eliminar vehículo</h3></td> 
+        </tr> 
+        <form method="POST" action="borrar.php"> 
+        <tr> 
+            <td width="50%">&nbsp;</td> 
+            <td width="50%">&nbsp;</td> 
+        </tr> 
+        <tr> 
+            <td width="50%"> 
+            <p align="center"><b>ID del vehículo a eliminar: </b></td> 
+            <td width="50%"> 
+            <p align="center"><input type="text" name="id" size="20"></td> 
+        </tr> 
+        <tr> 
+            <td width="50%">&nbsp;</td> 
+            <td width="50%">&nbsp;</td> 
+        </tr> 
+        <tr> 
+            <td width="100%" colspan="2"> 
+            <p align="center"> 
+            <input type="submit" value="Eliminar" name="B1"></td> 
+        </tr> 
+        </form> 
+    </table> 
+</div> 
 
 
 </body>

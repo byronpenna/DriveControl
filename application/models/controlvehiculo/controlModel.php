@@ -53,5 +53,10 @@ class controlModel extends CI_Model
 	$resultado= $query ->result();
 	return $resultado;
 	}
+
+	public function EliminarVehiculo()
+	{
+		
+	}
 }
 ?>
