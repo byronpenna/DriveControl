@@ -95,9 +95,12 @@ class Vehiculos extends PadreController {
 	}
 	public function Mostrar_Vehiculo()
 	{
-		$usuario 	= $_SESSION["usuario"];
+		//$usuario 	= $_SESSION["usuario"];
+		$usuario = $this->session->userdata('usuario');
+
 		$VerV = $this ->model->VerVehiculo($usuario->idUsuario);
 		$data = array("VerV" => $VerV);
+		//$data = array('usuario' => $usuario );
 		$this ->load ->view('InfoVehiculos/InfoVehiculos.php',$data);
 	}
 
