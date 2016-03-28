@@ -20,9 +20,13 @@
 	            <span class="visibilitiHidden"> </span>
 	            <input type="password" id="txtPass" name="txtPass" class="form-control" placeholder="Password" required>
 	            <span class="visibilitiHidden"> </span>
-	            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+	            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
 	            <a href=<?php echo site_url("welcome/registro") ?> class="forgot-password">
-	                REGISTRARSE
+	                Registrarse
+
+<hr>
+	            <a href=<?php echo site_url("recuperarcontra/index") ?> class="forgot-password">
+	                ¿Recuperar contraseña?
 	            </a>
 	            <div class="row mensajesLogin"></div>
 	        </form>
