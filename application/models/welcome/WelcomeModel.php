@@ -29,7 +29,18 @@ class WelcomeModel extends CI_Model
 		}
 		return $retorno;
 	}
-	
+	public function verificar($idUsuario,$num){
+		$this->db->trans_start();
+			$sql = "UPDATE usuarios set validado = 1 where idUsuario =".$idUsuario." and num_val = ".$num." ";
+			$this->db->query($sql);
+			$afected = $this->db->affected_rows();	
+		$this->db->trans_complete();
+		if($afected > 0){
+			return true;
+		}else{
+			return false;
+		}
+	}
 	public function registrarUsuario($frm){
 		$obj = new stdClass();
 		$obj->estado = false;
@@ -46,8 +57,9 @@ class WelcomeModel extends CI_Model
 			$num 	= $query[0]->num_val;
 			$obj->estado = true;
 		$this->db->trans_complete();
-		$obj->email = $frm->txtEmail;
-		$obj->num 	= $num;
+		$obj->email 	= $frm->txtEmail;
+		$obj->num 		= $num;
+		$obj->idUsuario = $idUsuario;
 		return $obj;
 	}
 }
