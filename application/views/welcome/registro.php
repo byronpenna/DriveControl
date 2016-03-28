@@ -12,7 +12,7 @@
 </head>
 <body>
 	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>
-	
+	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
 	<div class="container">
 		<h2>Registrarse</h2>
 		<form class="frm">

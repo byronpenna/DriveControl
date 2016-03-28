@@ -1,6 +1,6 @@
 <?php 
 
-class empresas extends CI_Controller {
+class Empresas extends CI_Controller {
 	// metodos 
 		function __construct()
 		{

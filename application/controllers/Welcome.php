@@ -30,8 +30,12 @@ class Welcome extends PadreController {
 	// url 
 		public function index()
 		{
-			$this->load->view("Login/index.php");
+			$this->load->view("drivecontrol/drivecontrol.php");
+
 			//$this->load->view('welcome_message');
+		}
+		public function login(){
+			$this->load->view("Login/index.php");
 		}
 		public function registro(){
 			$this->load->view("welcome/registro.php");
@@ -65,11 +69,29 @@ class Welcome extends PadreController {
 			}
 			echo json_encode($respuesta);
 		}
+		public function email($obj){
+			// the message
+			$headers = "MIME-Version: 1.0\r\n";
+			$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+			$headers .= "From: Drivecontrol <info@ritsasv.com>\r\n";
+			$headers .= "Reply-To: info@ritsasv.com\r\n";
+			$headers .= "Return-path: info@ritsasv.com\r\n";
+
+			$msg = "Se acaba de regitrar en drivecontrol por favor verifique".
+					"que usted realizo la accion en: ".site_url("welcome/verificar")."/".$obj->num."";
+
+			// use wordwrap() if lines are longer than 70 characters
+			$msg = wordwrap($msg,70);
+
+			// send email
+			mail($obj->email,"Confirme registro",$msg,$headers);
+			
+		}
 		public function ajax_registrar(){
 			$usuario = new stdClass();
 			$frm = $this->getFormularioAjax();
-			$retorno = new stdClass();
-			$retorno->estado = $this->model->registrarUsuario($frm);
+			$retorno = $this->model->registrarUsuario($frm);
+			$this->email($retorno);
 			echo json_encode($retorno);
 		}
 }
