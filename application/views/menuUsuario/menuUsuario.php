@@ -87,8 +87,8 @@
 					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar Vehiculo
 					  </a>
 					  </li>
-					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Control del Vehiculo</a></li>
-					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Control de no se que</a></li>					  
+					  <li role="presentation"><a href=<?php echo site_url("vehiculos/Modificar_vehiculos") ?>><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Control del Vehiculo</a></li>
+					  <li role="presentation"><a href=<?php echo site_url("vehiculos/Mostrar_Vehiculo") ?>><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Control de no se que</a></li>					  
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Nueva busqueda</a></li>
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Deja tu comentario</a></li>
 					  <li role="presentation" class="dropdown">

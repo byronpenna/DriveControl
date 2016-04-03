@@ -14,10 +14,17 @@
   <div class="container">
     <div class="panel-primary">
       <div class="panel-heading"> 
-       <center> <h1> Ingreso de Vehiculo </h1></center>
+       <center> <h1> Modificar datos del Vehiculo </h1></center>
      </div>
      <div class ="panel-body">
-      <form action=<?php echo site_url('vehiculos/registrar_Vehiculo')?> method="POST">
+      <form action=<?php echo site_url("vehiculos/Modificar_Vehiculo/{$idVehiculo}"); ?> method="POST">
+
+
+        <center><div class="form-group"></center>
+        <center> <label >ID VEHICULO</label></center>
+       <?php echo $idVehiculo ?>
+		 </center></div>
+
 
 
         <center><div class="form-group"></center>
@@ -70,6 +77,17 @@
           </select> </center></div>
           <br>
 
+          <center><div class="form-group"></center>
+          <center> <label >Transmision</label></center>
+          <center><select class="combobox" name="comboTrans">
+            <?php 
+            foreach ($Trans as $key => $nombre) {
+             ?>
+             <option value=<?php echo $nombre->id ?>>
+              <?php echo $nombre ->nombre ?> 
+              <?php } ?>
+            </option>
+          </select> </center></div>
 
 
 
@@ -161,7 +179,7 @@ foreach ($combustible as $key => $nombre /*este
 
 <br>
 
-<center><button type="submit" class="btn btn-primary">Agregar Vehiculo</button></center>
+<center><button type="submit" class="btn btn-primary">Modificar Vehiculo</button></center>
       </div>
 <br>
 <br>
