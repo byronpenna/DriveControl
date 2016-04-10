@@ -79,7 +79,7 @@ class Welcome extends PadreController {
 			$headers .= "Return-path: info@ritsasv.com\r\n";
 
 			$msg = "Se acaba de regitrar en drivecontrol por favor verifique".
-					"que usted realizo la accion en: ".site_url("welcome/verificar")."/".$obj->num."";
+					"que usted realizo la accion en: ".site_url("welcome/verificar")."/".$obj->idUsuario."/".$obj->num."";
 
 			// use wordwrap() if lines are longer than 70 characters
 			$msg = wordwrap($msg,70);
@@ -87,6 +87,14 @@ class Welcome extends PadreController {
 			// send email
 			mail($obj->email,"Confirme registro",$msg,$headers);
 			
+		}
+		public function verificar($idUsuario,$num){
+			$estado = $this->model->verificar($idUsuario,$num);
+			if($estado){
+				echo "Verificado";
+			}else{
+				echo " No ¬¬ ";
+			}
 		}
 		public function ajax_registrar(){
 			$usuario = new stdClass();
