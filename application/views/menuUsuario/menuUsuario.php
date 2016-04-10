@@ -97,7 +97,7 @@
 			</div>
 			<div class="col-md-8">
 				<div class="panel panel-primary">
-					<div class="panel-heading"><center><strong><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ...Perfil de Usuario... <span class="glyphicon glyphicon-user" aria-hidden="true"></span></strong></center></div>
+					<div class="panel-heading"><center><strong><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ...Perfil de Usuario... </strong></center></div>
 					  <div class="panel-body">
 					  	<div class="row">
 						  <div class="col-xs-6 col-md-3">

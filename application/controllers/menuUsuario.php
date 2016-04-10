@@ -11,5 +11,6 @@ class menuUsuario extends CI_Controller
 	public function menuUsuario()
 	{
 		$this->load->view("menuUsuario/menuUsuario.php");
+		
 	}
 }
