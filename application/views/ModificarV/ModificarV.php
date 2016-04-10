@@ -8,7 +8,9 @@
 
 
 </head>
-<body> 
+<body>
+
+
   <br>
   <br>
   <div class="container">
@@ -17,12 +19,12 @@
        <center> <h1> Modificar datos del Vehiculo </h1></center>
      </div>
      <div class ="panel-body">
-      <form action=<?php echo site_url("vehiculos/Modificar_Vehiculo/{$idVehiculo}"); ?> method="POST">
-
+      <form action=<?php echo site_url("vehiculos/Modificar_Vehiculo"); ?> method="POST">
+<?php echo "El id es : ".$id ?>
 
         <center><div class="form-group"></center>
         <center> <label >ID VEHICULO</label></center>
-       <?php echo $idVehiculo ?>
+       <?php echo $id ?>
 		 </center></div>
 
 
