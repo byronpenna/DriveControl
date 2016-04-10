@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <h3>Componentes</h3>
+        <h3 class="text-center">Componentes</h3>
         <div class="form-group">
           <label >Transmision</label>
           <select class="form-control combobox" name="comboTrans">
@@ -137,6 +137,20 @@
              ?>   
           </select> 
         </div>
+        <div class="form-group">
+            <label >Combustible</label>         
+            <select class="combobox form-control" name="comboCombustible">
+              <?php 
+                foreach ($combustible as $key => $nombre) {
+              ?>
+                <option value=<?php echo $nombre->id ?>><!-- Tenias que usar echo -->
+                <?php echo $nombre ->nombre ?> 
+                </option>
+              <?php 
+                } 
+              ?>
+            </select> 
+        </div>
       </div>
 
         
@@ -161,20 +175,7 @@
 
 
 
-<div class="form-group">
-    <label >Combustible</label>         
-    <select class="combobox form-control" name="comboCombustible">
-      <?php 
-        foreach ($combustible as $key => $nombre) {
-      ?>
-        <option value=<?php echo $nombre->id ?>><!-- Tenias que usar echo -->
-        <?php echo $nombre ->nombre ?> 
-        </option>
-      <?php 
-        } 
-      ?>
-    </select> 
-</div>
+
 
 
 
