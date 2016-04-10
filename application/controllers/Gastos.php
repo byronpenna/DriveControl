@@ -7,7 +7,6 @@ class Gastos extends PadreController
 		parent::__construct();	
 	}
 	function index(){
-		
 		$this->load->view("Gastos/index.php");
 	}
 }

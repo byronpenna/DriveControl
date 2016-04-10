@@ -12,7 +12,7 @@ class Vehiculos extends PadreController {
 	{
 		parent::__construct();
 		$this->load ->model('vehiculos/VehiculosModel');
-		$this ->model = new VehiculosModel();
+		$this->model = new VehiculosModel();
 	}
 
 	public function vehiculos()
@@ -51,6 +51,16 @@ class Vehiculos extends PadreController {
 		 alert('INGRESADO EXITOSAMENTE');
     	</script>";
     	redirect("/MenuUsuario/menuUsuario","refresh");
+	}
+
+	// ajax
+	public function ajax_getModelosFromMarca(){
+		$frm 	= $this->getFormularioAjax();
+		$modelos = $this->model->getModelosFromMarca($frm->idMarca);
+		$retorno = new stdClass();
+		$retorno->estado = true;
+		$retorno->modelos = $modelos;
+		echo json_encode($retorno);
 	}
 
 }

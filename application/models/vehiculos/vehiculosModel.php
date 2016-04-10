@@ -5,7 +5,14 @@ class VehiculosModel extends CI_Model
 	{
 
 	}
-
+	// 
+	public function getModelosFromMarca($idMarca){
+		$sql = "SELECT * from modelos where id_marca_fk = ".$idMarca."";
+		$query = $this ->db->query($sql);
+		$resultado = $query->result();
+		return $resultado;
+	}
+	//######################################3
 	public function IngresarMarca()
 	{
 	$sql= "SELECT * from marcas";
