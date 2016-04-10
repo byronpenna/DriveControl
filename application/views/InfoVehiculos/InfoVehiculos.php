@@ -51,7 +51,7 @@
       <td><?php echo $valor ->Combustible ?></td>
       <td><?php echo $valor ->Aceite_Caja ?></td>
       <td><?php echo $valor ->Aceite_Motor ?></td>
-      <td><button type="submit" class="btn btn-primary" onclick=<?php echo site_url('vehiculos/Modificar_vehiculos/$valor ->id ') ?>>Modificar</button></td>
+      <td><button type="submit" class="btn btn-primary" onclick=<?php echo site_url('vehiculos/Modificar_vehiculos/$valor ->id') ?>>Modificar</button></td>
   <?php } ?>
   </tbody>
 </form>
@@ -60,8 +60,7 @@
 
 </div> 
 </div> 
-</div> 
-
+</div> /
 
 	<?php
 $this->load->view("parts/scripts.php");
