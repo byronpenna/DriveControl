@@ -61,6 +61,8 @@
 		 src: url (<?php echo base_url("Content/css/fonts/CandyShop.ttf")?> );
 		}	
 	</style>
+	<!-- estilo del menu -->
+	<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>>
 </head>
 <body>
 	<header>
@@ -90,6 +92,11 @@
   			</div>
 		</nav>			
 	</div> -->
+
+	<br>
+	<br>
+	<br>
+	<br>
 	<div class="row"><br><br><br><br><br><br><br><br>
 		<div class="col-md-1"></div>
 		<div class="col-md-9">

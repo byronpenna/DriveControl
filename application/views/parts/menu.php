@@ -3,6 +3,7 @@
 <nav class="navbar navbar-default navbar-backgrnd navbar-fixed-top" role="navigation">
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
+
 <div class="navbar-header navbar-right">
   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>

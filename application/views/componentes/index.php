@@ -6,10 +6,18 @@
     // estilos universales
       $this->load->view("parts/estilos.php");
   ?>
+    <!-- estilo menu -->
+  <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>>
   <!-- estilos personalizados -->
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/media.css") ?>>
 
+ <header>
+
+    <?php 
+      $this->load->view("parts/menu.php");
+    ?>
+  </header>
 
 <center> 
  <img src=<?php echo base_url("Content/img/carro.gif") ?>>

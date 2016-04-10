@@ -6,11 +6,29 @@
 		// estilos universales
 			$this->load->view("parts/estilos.php");
 	?>
+	<!-- estilo del menu -->
+	<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>>
 	<!-- estilos personalizados -->
 		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/welcome/registro/style.css") ?>>
 		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/welcome/registro/media.css") ?>>
 </head>
 <body>
+	<header>
+    <?php 
+      $this->load->view("parts/menu.php");
+    ?>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   <br>
+  <br>
+  <br>
 	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>
 	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
 	<div class="container">
