@@ -9,7 +9,9 @@
 
 </head>
 <body>
-
+<pre>
+  <?php print_r($vehiculo); ?>
+</pre>
 
   <body>
   <div class="container">
@@ -132,9 +134,15 @@
           <label > Aceite de Caja</label>
           <select class="form-control combobox" name="comboAceiteC">
             <?php 
+            
             foreach ($AceiteC as $key => $nombre) {
+              if($nombre->id == $vehiculo->id_aceitecaja_fk){
+                $selected = "selected";
+              }else{
+                $selected = "";
+              }
              ?>
-              <option value=<?php echo $nombre->id ?>>
+              <option <?php echo $selected ?> value=<?php echo $nombre->id ?>>
                 <?php echo $nombre ->nombre ?> 
               </option>
             <?php 
@@ -148,8 +156,13 @@
           <select class="combobox form-control" name="comboAceiteM">
             <?php 
             foreach ($AceiteM as $key => $nombre) {
+              if($nombre->id == $vehiculo->id_aceitemotor_fk){
+                $selected = "selected";
+              }else{
+                $selected = "";
+              }
             ?>
-              <option value=<?php echo $nombre->id ?>>
+              <option <?php echo $selected ?> value=<?php echo $nombre->id ?>>
                 <?php echo $nombre ->nombre ?> 
               </option>
              <?php 
@@ -194,7 +207,7 @@
 
 
 </div>
-<button type="submit">Modificar Vehiculo</button>  </a>
+<button class="btn btn-default" type="submit">Modificar Vehiculo</button>  </a>
 </form>
 </div>
 </div>

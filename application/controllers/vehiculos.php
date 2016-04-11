@@ -38,6 +38,7 @@ class Vehiculos extends PadreController {
 	{
 		if(isset($_SESSION["usuario"])){
 		 echo "El id es : ".$id ; 
+		 $vehiculo = $this->model->getDataVehiculoById($id);
 		$marcas = $this ->model->IngresarMarca();
 		$rines = $this ->model->IngresarRin();
 		$ll = $this ->model->IngresarLlantas();
@@ -47,7 +48,7 @@ class Vehiculos extends PadreController {
 		$AceiteM = $this ->model->IngresarAceiteM();
 		$Trans = $this ->model->IngresarTransmision();
 		$combustible = $this ->model->IngresarCombustible();
-		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM, "Trans" => $Trans, "combustible" => $combustible, "id" => $id);
+		$data = array("vehiculo" => $vehiculo[0],"marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM, "Trans" => $Trans, "combustible" => $combustible, "id" => $id);
 		$this ->load ->view('ModificarV/ModificarV.php',$data);
 			}else{
 			redirect("/welcome/index","refresh");
