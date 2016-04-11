@@ -12,22 +12,26 @@ class Vehiculos extends PadreController {
 	{
 		parent::__construct();
 		$this->load ->model('vehiculos/VehiculosModel');
-		$this ->model = new VehiculosModel();
+		$this->model = new VehiculosModel();
 	}
 
 	public function vehiculos()
 	{
-		$marcas = $this ->model->IngresarMarca();
-		$rines = $this ->model->IngresarRin();
-		$ll = $this ->model->IngresarLlantas();
-		$CVehiculo = $this ->model->IngresarClaseVehiculos();
-		$TVehiculo = $this ->model->IngresarTipoVehiculo();
-		$AceiteC = $this ->model->IngresarAceiteC();
-		$AceiteM = $this ->model->IngresarAceiteM();
-		$Trans = $this ->model->IngresarTransmision();
-		$combustible = $this ->model->IngresarCombustible();
-		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM, "Trans" => $Trans, "combustible" => $combustible);
-		$this ->load ->view('vehiculos/vehiculos.php',$data);
+		if(isset($_SESSION["usuario"])){
+			$marcas = $this ->model->IngresarMarca();
+			$rines = $this ->model->IngresarRin();
+			$ll = $this ->model->IngresarLlantas();
+			$CVehiculo = $this ->model->IngresarClaseVehiculos();
+			$TVehiculo = $this ->model->IngresarTipoVehiculo();
+			$AceiteC = $this ->model->IngresarAceiteC();
+			$AceiteM = $this ->model->IngresarAceiteM();
+			$Trans = $this ->model->IngresarTransmision();
+			$combustible = $this ->model->IngresarCombustible();
+			$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM, "Trans" => $Trans, "combustible" => $combustible);
+			$this ->load ->view('vehiculos/vehiculos.php',$data);
+		}else{
+			redirect("/welcome/index","refresh");
+		}		
 	}
 
 	public function Modificar_vehiculos($id)
@@ -60,7 +64,8 @@ class Vehiculos extends PadreController {
 		$AceiteCa = $_POST["comboAceiteC"];
 		$AceiteMo = $_POST["comboAceiteM"];
 		$usuario 	= $_SESSION["usuario"];
-		$Respuesta = $this->model ->Regis_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
+		$modelo = $_POST["cbModelo"];
+		$Respuesta = $this->model ->Regis_Vehiculo($CVehiculo, $TVehi, $modelo, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
 		echo $Respuesta;
 
 		echo "<script language=javascript>
@@ -68,6 +73,7 @@ class Vehiculos extends PadreController {
     	</script>";
     	redirect("/MenuUsuario/menuUsuario","refresh");
 	}
+
 
 	public function Modificar_Vehiculo()
 	{
@@ -101,6 +107,17 @@ class Vehiculos extends PadreController {
 		$data = array("VerV" => $VerV);
 		//$data = array('usuario' => $usuario );
 		$this ->load ->view('InfoVehiculos/InfoVehiculos.php',$data);
+
+	}
+	// ajax
+	public function ajax_getModelosFromMarca(){
+		$frm 	= $this->getFormularioAjax();
+		$modelos = $this->model->getModelosFromMarca($frm->idMarca);
+		$retorno = new stdClass();
+		$retorno->estado = true;
+		$retorno->modelos = $modelos;
+		echo json_encode($retorno);
+
 	}
 
 }
