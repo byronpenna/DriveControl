@@ -13,7 +13,7 @@ class Gastos extends PadreController
 			$usuario = $_SESSION["usuario"];
 			$vehiculos = $this->_model->getVehiculosGastos($usuario->idUsuario);
 			$data = array('vehiculos' => $vehiculos );
-			$this->load->view("Gastos/index.php",$vehiculos);
+			$this->load->view("Gastos/index.php",$data);
 		}else{
 			redirect("/welcome/index","refresh");
 		}	

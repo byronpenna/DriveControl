@@ -8,7 +8,7 @@ class GastosModel extends CI_Model
 	}
 	public function getVehiculosGastos($idUsuario)
 	{
-		$sql = "SELECT id as idVehiculo,concat(ma.marca,' ',mo.modelo) as imprimir
+		$sql = "SELECT id as idVehiculo,concat(ma.marca,' ',mo.modelo,' ',v.anio) as imprimir
 		FROM vehiculo v
 		inner join modelos mo
 		on mo.idModelo = v.id_modelo_fk
