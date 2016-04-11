@@ -36,6 +36,7 @@ class Vehiculos extends PadreController {
 
 	public function Modificar_vehiculos($id)
 	{
+		if(isset($_SESSION["usuario"])){
 		 echo "El id es : ".$id ; 
 		$marcas = $this ->model->IngresarMarca();
 		$rines = $this ->model->IngresarRin();
@@ -48,9 +49,13 @@ class Vehiculos extends PadreController {
 		$combustible = $this ->model->IngresarCombustible();
 		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM, "Trans" => $Trans, "combustible" => $combustible, "id" => $id);
 		$this ->load ->view('ModificarV/ModificarV.php',$data);
+			}else{
+			redirect("/welcome/index","refresh");
+		}	
 	}
 	public function registrar_Vehiculo()
 	{
+
 		$CVehiculo = $_POST["comboClaseV"];
 		$TVehi = $_POST["comboTipoV"];
 		$Marca = $_POST["comboMarca"];
@@ -75,9 +80,9 @@ class Vehiculos extends PadreController {
 	}
 
 
-	public function Modificar_Vehiculo()
+	public function Modificar_Vehiculo($id)
 	{
-		
+		echo "El id pasado es: ".$id;
 		$CVehiculo = $_POST["comboClaseV"];
 		$TVehi = $_POST["comboTipoV"];
 		$Marca = $_POST["comboMarca"];
@@ -91,7 +96,8 @@ class Vehiculos extends PadreController {
 		$AceiteCa = $_POST["comboAceiteC"];
 		$AceiteMo = $_POST["comboAceiteM"];
 		$usuario 	= $_SESSION["usuario"];
-		$Respuesta = $this->model ->Modifi_Vehiculo($id,$CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
+		$modelo = $_POST["cbModelo"];
+		$Respuesta = $this->model ->Modifi_Vehiculo($id, $CVehiculo, $TVehi, $modelo, $marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
 		echo $Respuesta;
 
 		echo "<script language=javascript>
@@ -110,6 +116,19 @@ class Vehiculos extends PadreController {
 
 	}
 	// ajax
+
+	public function Eliminar_Vehiculo($id)
+	{
+
+		$usuario 	= $_SESSION["usuario"];
+		$Respuesta = $this->model ->EliminarVehiculo($id,$usuario->idUsuario);
+		echo $Respuesta;
+
+		echo "<script language=javascript>
+		 alert('ELIMINADO EXITOSAMENTE');
+    	</script>";
+    	redirect("/MenuUsuario/menuUsuario","refresh");
+	}
 	public function ajax_getModelosFromMarca(){
 		$frm 	= $this->getFormularioAjax();
 		$modelos = $this->model->getModelosFromMarca($frm->idMarca);

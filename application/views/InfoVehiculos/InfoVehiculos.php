@@ -16,13 +16,14 @@
 <div align='center'>  
   <div class="table-responsive">
 <table class = "table">  
-  <form action=<?php echo site_url("vehiculos/Modificar_vehiculos");?> method="POST">
+  <form action=<?php echo site_url("vehiculos/Modificar_vehiculos/");?> method="POST">
     <thead>
     <tr>  
       <td width='150' style='font-weight: bold'>Nº</td>  
       <td width='150' style='font-weight: bold'>Clase</td>  
       <td width='150' style='font-weight: bold'>Tipo de vehiculo</td>  
       <td width='150' style='font-weight: bold'>Marca</td>  
+      <td width='150' style='font-weight: bold'>Modelo</td>
       <td width='150' style='font-weight: bold'>Año</td>
       <td width='150' style='font-weight: bold'>Transmision</td>  
       <td width='150' style='font-weight: bold'>Llanta</td>  
@@ -36,22 +37,26 @@
   </thead>
   <tbody>
            <?php 
-          foreach ($VerV as $valor) {
+          foreach ($VerV as $key => $valor) {
            ?>
     <tr>
       <td><?php echo $valor ->id ?></td>
       <td><?php echo $valor ->clase ?></td>
       <td><?php echo $valor ->tipo ?></td>
       <td><?php echo $valor ->marca ?></td>
+      <td ><?php echo $valor ->modelo ?></td>
       <td><?php echo $valor ->anio ?></td>
       <td><?php echo $valor ->Transmision ?></td>
       <td><?php echo $valor ->Llanta ?></td>
+      <td><?php echo $valor ->num_rin ?></td>
       <td><?php echo $valor ->motor ?></td>
       <td><?php echo $valor ->chasis ?></td>
       <td><?php echo $valor ->Combustible ?></td>
       <td><?php echo $valor ->Aceite_Caja ?></td>
       <td><?php echo $valor ->Aceite_Motor ?></td>
-      <td><button type="submit" class="btn btn-primary" onclick=<?php echo site_url('vehiculos/Modificar_vehiculos/$valor ->id') ?>>Modificar</button></td>
+      <td><a href="<?php echo site_url('vehiculos/Modificar_vehiculos/'.$valor->id) ?>" class="btn btn-primary" > Modificar </a></td>
+      <td><a href="<?php echo site_url('vehiculos/Eliminar_Vehiculo/'.$valor->id) ?>" class="btn btn-primary" > Eliminar </a></td>
+  </tr>
   <?php } ?>
   </tbody>
 </form>
