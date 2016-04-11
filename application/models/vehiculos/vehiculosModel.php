@@ -98,9 +98,9 @@ class VehiculosModel extends CI_Model
 	return $resultado;
 	}
 
-	public function Regis_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$idUsuario)
+	public function Regis_Vehiculo($CVehiculo, $TVehi, $modelo, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$idUsuario)
 	{
-		$sql= "INSERT INTO vehiculo VALUES (null,'".$Transmision. "','".$TVehi. "','".$Marca. "','".$NRing. "','" .$Llanta."','".$AceiteCa. "','".$AceiteMo. "',".$idUsuario.",'".$Anio. "','".$NMotor. "','".$Combus. "','".$NChasis. "')";
+		$sql= "INSERT INTO vehiculo VALUES (null,'".$Transmision. "','".$TVehi. "','".$NRing. "','" .$Llanta."','".$AceiteCa. "','".$AceiteMo. "',".$idUsuario.",'".$Anio. "','".$NMotor. "','".$Combus. "','".$NChasis. "','".$modelo. "')";
 		$query = $this ->db->query($sql);
 	}
 }

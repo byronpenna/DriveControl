@@ -17,17 +17,21 @@ class Vehiculos extends PadreController {
 
 	public function vehiculos()
 	{
-		$marcas = $this ->model->IngresarMarca();
-		$rines = $this ->model->IngresarRin();
-		$ll = $this ->model->IngresarLlantas();
-		$CVehiculo = $this ->model->IngresarClaseVehiculos();
-		$TVehiculo = $this ->model->IngresarTipoVehiculo();
-		$AceiteC = $this ->model->IngresarAceiteC();
-		$AceiteM = $this ->model->IngresarAceiteM();
-		$Trans = $this ->model->IngresarTransmision();
-		$combustible = $this ->model->IngresarCombustible();
-		$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM, "Trans" => $Trans, "combustible" => $combustible);
-		$this ->load ->view('vehiculos/vehiculos.php',$data);
+		if(isset($_SESSION["usuario"])){
+			$marcas = $this ->model->IngresarMarca();
+			$rines = $this ->model->IngresarRin();
+			$ll = $this ->model->IngresarLlantas();
+			$CVehiculo = $this ->model->IngresarClaseVehiculos();
+			$TVehiculo = $this ->model->IngresarTipoVehiculo();
+			$AceiteC = $this ->model->IngresarAceiteC();
+			$AceiteM = $this ->model->IngresarAceiteM();
+			$Trans = $this ->model->IngresarTransmision();
+			$combustible = $this ->model->IngresarCombustible();
+			$data = array("marcas" => $marcas , "rines" => $rines, "ll" => $ll , "CVehiculo" => $CVehiculo ,"TVehiculo" => $TVehiculo, "AceiteC" => $AceiteC, "AceiteM" => $AceiteM, "Trans" => $Trans, "combustible" => $combustible);
+			$this ->load ->view('vehiculos/vehiculos.php',$data);
+		}else{
+			redirect("/welcome/index","refresh");
+		}		
 	}
 	public function registrar_Vehiculo()
 	{
@@ -44,7 +48,8 @@ class Vehiculos extends PadreController {
 		$AceiteCa = $_POST["comboAceiteC"];
 		$AceiteMo = $_POST["comboAceiteM"];
 		$usuario 	= $_SESSION["usuario"];
-		$Respuesta = $this->model ->Regis_Vehiculo($CVehiculo, $TVehi, $Marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
+		$modelo = $_SESSION["cbModelo"];
+		$Respuesta = $this->model ->Regis_Vehiculo($CVehiculo, $TVehi, $modelo, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
 		echo $Respuesta;
 
 		echo "<script language=javascript>
