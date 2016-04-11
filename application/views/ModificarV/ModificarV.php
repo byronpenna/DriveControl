@@ -64,8 +64,13 @@
           <select class="form-control combobox" name="comboTipoV">
             <?php 
             foreach ($TVehiculo as $key => $tipo) {
+              if($tipo->tipo == $vehiculo->id_tipovehiculo_fk){
+                $selected = "selected";
+              }else{
+                $selected = "";
+              }
              ?>
-             <option value=<?php echo $tipo->id ?>>
+             <option <?php echo $selected ?> value=<?php echo $tipo->id ?>>
               <?php echo $tipo ->tipo?> 
               <?php } ?>
             </option>
@@ -77,17 +82,17 @@
           <?php 
           for ($i=1970; $i < 2017; $i++) { 
           ?>
-            <option value="i">
+            <option value=<?php echo $i ?> >
               <?php echo $i ?>
               <?php }?>
             </option>
           </select> 
         </div>
           <div class="form-group">
-            <input type="text" class="form-control txtMotor" name="txtMotor" placeholder="Nº motor" required>
+            <input type="text" class="form-control txtMotor" name="txtMotor" placeholder="Nº motor" required value=<?php echo $vehiculo->motor ?> >
           </div>
          <div class="form-group">
-          <input type="text" class="form-control" name="txtChasis" placeholder=" Nº Chasis" required>
+          <input type="text" class="form-control" name="txtChasis" placeholder=" Nº Chasis" required value=<?php echo $vehiculo->chasis ?> >
          </div>
       </div>
       <div class="col-lg-6">
