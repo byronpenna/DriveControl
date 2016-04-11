@@ -22,16 +22,16 @@ class menuUsuarioModel extends CI_Model
 		return $resultado;
 		
 	}
-	public function getnombres($usuario)
+	public function getnombres($idUsuario)
 	{
-		$sql="SELECT nombres FROM personas per INNER JOIN usuarios us on per.idPersona=us.id_persona_fk where usuario='.$usuario.'";
+		$sql="SELECT nombres FROM personas per INNER JOIN usuarios us on per.idPersona=us.id_persona_fk where us.idUsuario='".$idUsuario."'";
 		$query = $this ->db->query($sql);
 		$resultado = $query->result();
 		return $resultado;
 	}
-	public function getapellidos($usuario)
+	public function getapellidos($idUsuario)
 	{
-		$sql="SELECT apellidos FROM personas per INNER JOIN usuarios us on per.idPersona=us.id_persona_fk where usuario='.$usuario.'";
+		$sql="SELECT apellidos FROM personas per INNER JOIN usuarios us on per.idPersona=us.id_persona_fk where us.idUsuario='".$idUsuario."'";
 		$query = $this ->db->query($sql);
 		$resultado = $query->result();
 		return $resultado;

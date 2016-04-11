@@ -14,8 +14,8 @@ class MenuUsuario extends CI_Controller
 	{
 		if(isset($_SESSION["usuario"])){
 			$usuario = $_SESSION["usuario"];
-			$nombres = $this ->model->getnombres($usuario->usuario);
-			$apellidos = $this ->model->getapellidos($usuario->usuario);
+			$nombres = $this ->model->getnombres($usuario->idUsuario);
+			$apellidos = $this ->model->getapellidos($usuario->idUsuario);
 			$data = array("mnombres" => $nombres,"mapellidos"=>$apellidos);
 			$this->load->view("menuUsuario/menuUsuario.php",$data);
 		}else{

@@ -116,7 +116,7 @@
 						  </div>						  
 						  <span class="label label-primary" name="musuario">USUARIO:  </span>
 						  <br>
-						  <span class="label label-primary" name="mnombre">NOMBRE: </span>
+						  <span class="label label-primary" name="mnombre">NOMBRE: <?php echo$mnombres[0]->nombres ?></span>
 						  <br>
 						  <span class="label label-primary">APELLIDO: </span>
 						  <br>
