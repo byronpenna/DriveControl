@@ -12,6 +12,13 @@
 		<h1>Control de gastos</h1>
 		<select class="form-control">
 			<option value="-1"> Seleccione su vehiculo</option>
+			<?php 
+				foreach ($vehiculos as $key => $vehiculo) {
+			?>
+				<option value=<?php echo $vehiculo->idVehiculo ?>><?php echo $vehiculo->imprimir ?> </option>
+			<?php
+				}
+			?>
 		</select>
 	</div>
 	<?php
