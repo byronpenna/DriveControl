@@ -1,15 +1,15 @@
 <?php 
 
-class recuperarcontra extends CI_Controller {
+class Recuperarcontra extends CI_Controller {
 	// metodos 
 		function __construct()
 		{
 			parent::__construct();
 		}
 		// URL
-		// localhost://drivecontrol/index.php/recuperarcontra/index/ 
+		// localhost://drivecontrol/index.php/Recuperarcontra/index/ 
 		public function index(){
-			$this->load->view("recuperarcontra/index.php");
+			$this->load->view("Recuperarcontra/index.php");
 
 			}
 

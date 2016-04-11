@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<center> 
+ <img src=<?php echo base_url("Content/img/banner.jpg") ?>>
+ </center> 
 <head>
 	<title>Principal</title>
 	<?php

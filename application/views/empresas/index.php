@@ -1,8 +1,9 @@
  <!DOCTYPE html>
-<html>
-  <center> 
- <img src=<?php echo base_url("Content/img/bann.jpg") ?>>
+ <center> 
+ <img src=<?php echo base_url("Content/img/banner.jpg") ?>>
  </center> 
+<html>
+  
 <head>
 
   <title>Empresas Asociadas</title>

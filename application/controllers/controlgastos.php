@@ -1,6 +1,6 @@
 <?php 
 
-class controlgastos extends CI_Controller {
+class Controlgastos extends CI_Controller {
 	// metodos 
 		function __construct()
 		{
@@ -10,7 +10,6 @@ class controlgastos extends CI_Controller {
 		// localhost://drivecontrol/index.php/controlgastos/index/ 
 		public function index(){
 			$this->load->view("controlgastos/index.php");
-
 			}
 
 		}
