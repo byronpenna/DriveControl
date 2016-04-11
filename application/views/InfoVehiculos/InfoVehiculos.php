@@ -13,7 +13,6 @@
 <br>
 <br>
 <div class="container">
-<div align='center'>  
   <div class="table-responsive">
 <table class = "table">  
   <form action=<?php echo site_url("vehiculos/Modificar_vehiculos/");?> method="POST">
@@ -39,8 +38,12 @@
            <?php 
           foreach ($VerV as $key => $valor) {
            ?>
+           <?php 
+          for ($i=1; $i <=count($valor); $i++) { 
+          ?>
     <tr>
-      <td><?php echo $valor ->id ?></td>
+      <td> <?php echo $i ?>
+              <?php }?> </td>  
       <td><?php echo $valor ->clase ?></td>
       <td><?php echo $valor ->tipo ?></td>
       <td><?php echo $valor ->marca ?></td>
@@ -64,7 +67,7 @@
 
 
 </div> 
-</div> 
+ 
 </div> /
 
 	<?php
