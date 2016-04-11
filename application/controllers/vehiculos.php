@@ -85,7 +85,7 @@ class Vehiculos extends PadreController {
 		echo "El id pasado es: ".$id;
 		$CVehiculo = $_POST["comboClaseV"];
 		$TVehi = $_POST["comboTipoV"];
-		$Marca = $_POST["comboMarca"];
+		//$Marca = $_POST["comboMarca"];
 		$Anio = $_POST["comboAnio"];
 		$Transmision = $_POST["comboTrans"];
 		$Llanta = $_POST["comboLlanta"];
@@ -97,7 +97,7 @@ class Vehiculos extends PadreController {
 		$AceiteMo = $_POST["comboAceiteM"];
 		$usuario 	= $_SESSION["usuario"];
 		$modelo = $_POST["cbModelo"];
-		$Respuesta = $this->model ->Modifi_Vehiculo($id, $CVehiculo, $TVehi, $modelo, $marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
+		$Respuesta = $this->model ->Modifi_Vehiculo($id, $CVehiculo, $TVehi, $modelo, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$usuario->idUsuario);
 		echo $Respuesta;
 
 		echo "<script language=javascript>

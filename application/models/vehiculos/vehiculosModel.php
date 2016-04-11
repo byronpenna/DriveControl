@@ -113,7 +113,7 @@ class VehiculosModel extends CI_Model
 		$query = $this ->db->query($sql);
 	}
 
-	public function Modifi_Vehiculo($id, $CVehiculo, $TVehi, $modelo, $marca, $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$idUsuario)
+	public function Modifi_Vehiculo($id, $CVehiculo, $TVehi, $modelo,  $Anio, $Transmision, $Llanta, $NRing, $NMotor, $NChasis, $Combus, $AceiteCa, $AceiteMo,$idUsuario)
 	{
 		$sql= "UPDATE `vehiculo` SET `transmision`='".$Transmision. "',`id_tipovehiculo_fk`='".$TVehi. "',`id_rin_fk`='".$NRing. "',`id_llanta_fk`='" .$Llanta."',`id_aceitecaja_fk`='".$AceiteCa. "',`id_aceitemotor_fk`='".$AceiteMo. "',`id_usuario_fk`='".$idUsuario."',`anio`='".$Anio. "',`motor`='".$NMotor. "',`id_combustible`='".$Combus. "',`chasis`='".$NChasis. "',`id_modelo_fk`='".$modelo. "' WHERE `id`='".$id. "'";
 		$query = $this ->db->query($sql);

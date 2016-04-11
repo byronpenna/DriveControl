@@ -21,7 +21,7 @@
        <h1>Modificar Vehiculo </h1>
       </div>
      <div class ="panel-body">
-      <form action=<?php echo site_url('vehiculos/Modificar_Vehiculo')?> method="POST">
+      <form action=<?php echo site_url('vehiculos/Modificar_Vehiculo/'.$id)?> method="POST">
       <div class="col-lg-6">
         <h3 class="text-center">Generales</h3>
         <div class="form-group">
@@ -70,7 +70,7 @@
           </select> 
         </div>
         <div class="form-group">
-         <label >Año</label>
+         <label>Año</label>
           <select class="form-control combobox" name="comboAnio">
           <?php 
           for ($i=1970; $i < 2017; $i++) { 
@@ -194,7 +194,7 @@
 
 
 </div>
-<a href="<?php echo site_url('vehiculos/Modificar_Vehiculo/'.$id) ?>" class="btn btn-primary" > Modificar Vehiculo </a>
+<button type="submit">Modificar Vehiculo</button>  </a>
 </form>
 </div>
 </div>
