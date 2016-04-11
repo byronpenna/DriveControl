@@ -9,6 +9,10 @@
 	<!-- estilos personalizados -->
 		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/login/style.css") ?>>
 		<link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/login/media.css") ?>>
+
+		<center> 
+                     <img  WIDTH=1500, HEIGTH=1000 src=<?php echo base_url("Content\img\banner.jpg" ) ?>>
+ </center>
 </head>
 <body>
 	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>

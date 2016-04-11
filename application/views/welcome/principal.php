@@ -10,6 +10,9 @@
 			$this->load->view("parts/estilos.php");
 	?>
 </head>
+<center> 
+                     <img  WIDTH=1500, HEIGTH=1000 src=<?php echo base_url("Content\img\banner.jpg" ) ?>>
+ </center>
 <body>
 	<h1 class="text-center">Bienvenido</h1>
 	<!-- <h4 class="text-center">Gracias por usar drive car</h4> -->

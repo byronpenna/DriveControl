@@ -1,4 +1,8 @@
 html,
+
+<style type="text/css">
+body{background-image:url("Content\img\2.jpg")}
+</style>
 body {
   background: #efefef;
   padding: 10px;
