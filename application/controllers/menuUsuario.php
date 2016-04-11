@@ -1,19 +1,26 @@
-<?php /**
-* 
-*/
+<?php 
+include_once(APPPATH.'controllers/PadreController.php');
 class MenuUsuario extends CI_Controller
 {
+
 	
 	function __construct()
 	{
 		parent::__construct();
+		$this->load ->model('menuUsuario/menuUsuarioModel');
+		$this->model = new menuUsuarioModel();
 	}
 	public function menuUsuario()
 	{
 		if(isset($_SESSION["usuario"])){
-			$this->load->view("menuUsuario/menuUsuario.php");
+			$usuario = $_SESSION["usuario"];
+			$nombres = $this ->model->getnombres($usuario->usuario);
+			$apellidos = $this ->model->getapellidos($usuario->usuario);
+			$data = array("mnombres" => $nombres,"mapellidos"=>$apellidos);
+			$this->load->view("menuUsuario/menuUsuario.php",$data);
 		}else{
 			redirect("/welcome/index","refresh");
-		}		
+		}
+
 	}
 }

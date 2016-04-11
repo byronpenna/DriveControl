@@ -68,7 +68,8 @@
 		<div class="col-md-9">
 			<h1 id="espe"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> DriveControl</h1>
 		</div>
-		<div class="col-md-2">nombre de usuario aqui<br>
+
+		<div class="col-md-2"><pre><?php print_r($mnombres)?></pre>><br>
 			<a href=<?php echo site_url("welcome/cerrarSession") ?> class="btn btn-danger btn-xs">
 				<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> CERRAR SESION
 			</a>
@@ -112,10 +113,10 @@
 						    <a href="#" class="thumbnail">
 						      <img src=<?php echo base_url("Content/img/usr.jpg")?> alt="FOTO USUARIO">
 						    </a>
-						  </div>
-						  <span class="label label-primary">USUARIO: </span>
+						  </div>						  
+						  <span class="label label-primary" name="musuario">USUARIO:  </span>
 						  <br>
-						  <span class="label label-primary">NOMBRE: </span>
+						  <span class="label label-primary" name="mnombre">NOMBRE: </span>
 						  <br>
 						  <span class="label label-primary">APELLIDO: </span>
 						  <br>
