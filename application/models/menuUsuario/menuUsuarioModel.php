@@ -36,4 +36,18 @@ class menuUsuarioModel extends CI_Model
 		$resultado = $query->result();
 		return $resultado;
 	}
+	public function getcorreoelectronico($idUsuario)
+	{
+		$sql="SELECT correo_electronico FROM personas per INNER JOIN usuarios us on per.idPersona=us.id_persona_fk where us.idUsuario='".$idUsuario."'";
+		$query = $this ->db->query($sql);
+		$resultado = $query->result();
+		return $resultado;
+	}
+	public function getfechanac($idUsuario)
+	{
+		$sql="SELECT fecha_nacimiento FROM personas per INNER JOIN usuarios us on per.idPersona=us.id_persona_fk where us.idUsuario='".$idUsuario."'";
+		$query = $this ->db->query($sql);
+		$resultado = $query->result();
+		return $resultado;
+	}
 }

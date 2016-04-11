@@ -65,11 +65,11 @@
 <body  id="prin">
 	<div class="row" id="header">
 		<div class="col-md-1"></div>
-		<div class="col-md-9">
+		<div class="col-md-8">
 			<h1 id="espe"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> DriveControl</h1>
 		</div>
 
-		<div class="col-md-2"><pre><?php print_r($mnombres)?></pre>><br>
+		<div class="col-md-3"><pre><strong><?php echo "Usuario activo: " .$mnombres[0]->nombres ?></strong></pre>
 			<a href=<?php echo site_url("welcome/cerrarSession") ?> class="btn btn-danger btn-xs">
 				<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> CERRAR SESION
 			</a>
@@ -116,13 +116,13 @@
 						  </div>						  
 						  <span class="label label-primary" name="musuario">USUARIO:  </span>
 						  <br>
-						  <span class="label label-primary" name="mnombre">NOMBRE: <?php echo$mnombres[0]->nombres ?></span>
+						  <span class="label label-primary" name="mnombre">NOMBRE: <?php echo $mnombres[0]->nombres ?></span>
 						  <br>
-						  <span class="label label-primary">APELLIDO: </span>
+						  <span class="label label-primary">APELLIDO: <?php echo $mapellidos[0]->apellidos ?></span>
 						  <br>
-						  <span class="label label-primary">CORREO: </span>
+						  <span class="label label-primary">CORREO: <?php echo $mcorreo[0]->correo ?></span>
 						  <br>
-						  <span class="label label-primary">FECHA DE NACIMIENTO: </span>						  
+						  <span class="label label-primary">FECHA DE NACIMIENTO: <?php echo $mfechanac[0]->fechanac ?></span>						  
 						</div>
 						<center>
 						<button class="btn btn-primary" type="button">
