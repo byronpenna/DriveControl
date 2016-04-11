@@ -40,7 +40,6 @@
           
           <select class="form-control cbModelo" name="cbModelo">
             <option value="-1">Seleccione marca para ver modelos</option>
-
           </select>
         </div>
         <div class="form-group">
@@ -79,6 +78,12 @@
             </option>
           </select> 
         </div>
+          <div class="form-group">
+            <input type="text" class="form-control txtMotor" name="txtMotor" placeholder="Nº motor" required>
+          </div>
+         <div class="form-group">
+          <input type="text" class="form-control" name="txtChasis" placeholder=" Nº Chasis" required>
+         </div>
       </div>
       <div class="col-lg-6">
         <h3 class="text-center">Componentes</h3>
@@ -106,6 +111,18 @@
               <?php 
             } 
             ?>
+          </select> 
+        </div>
+        <div class="form-group">
+          <label>Numero de Ring</label>
+          <select class="combobox form-control" name="comboRing">
+            <?php 
+            foreach ($rines as $key => $num_rin) {
+             ?>
+             <option value=<?php echo $num_rin->id ?>>
+              <?php echo $num_rin ->num_rin ?> 
+              <?php } ?>
+            </option>
           </select> 
         </div>
         <div class="form-group">
@@ -164,14 +181,7 @@
           
 
 
-          <div class="form-group">
-
-            <input type="text" class="form-control txtMotor" name="txtMotor" placeholder="Nº motor" required>
-          </div>
-         <div class="form-group">
-          <input type="text" class="form-control" name="txtChasis" 
-           placeholder=" Nº Chasis" required>
-         </div>
+          
 
 
 
@@ -179,9 +189,9 @@
 
 
 
-<button type="submit" class="btn btn-primary">Agregar Vehiculo</button>
+
 </div>
-
+<button type="submit" class="btn btn-primary">Agregar Vehiculo</button>
 </form>
 </div>
 </div>

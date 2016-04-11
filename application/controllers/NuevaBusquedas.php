@@ -15,6 +15,5 @@ class NuevaBusquedas extends CI_Controller
 		}else{
 			redirect("/welcome/index","refresh");
 		}
-		$usuario=$_SESSION["usuario"];		
 	}
 }
