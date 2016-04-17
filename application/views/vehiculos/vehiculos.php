@@ -72,7 +72,7 @@
           <?php 
           for ($i=1970; $i < 2017; $i++) { 
           ?>
-            <option value="">
+            <option value=<?php echo $i ?>>
               <?php echo $i ?>
               <?php }?>
             </option>
