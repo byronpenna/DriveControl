@@ -6,8 +6,8 @@
       $this->load->view("parts/estilos.php");
   ?>
   <!-- estilos personalizados -->
-    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/recuperarcontra/style.css") ?>>
-    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/recuperarcontra/media.css") ?>>
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/Suscripcion/style.css") ?>>
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/Suscripcion/media.css") ?>>
 
 
     <div id="login-overlay" class="modal-dialog">
@@ -59,9 +59,19 @@
                           
                           <li><span class="fa fa-check text-success"></span> En tu primera compra</li>
                           
+
+
                            
                       </ul>
                       
                   </div>
               </div>
           </div>
+
+          <div class="container">
+  <div class="row"><br />
+    <div class="col-md-6">
+      <div class="progress">
+        <div class="one primary-color"></div><div class="two primary-color"></div><div class="three no-color"></div>
+        <div class="progress-bar" style="width: 70%;"></div>
+    </div>
