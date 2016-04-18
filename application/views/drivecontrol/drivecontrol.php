@@ -14,6 +14,8 @@
 
 </head>
 
+
+
 <body>
   <header>
 
@@ -66,7 +68,7 @@
         <div class="col-lg-8 col-lg-offset-2">
           
             <div class="section-heading text-center">
-              <h1>DriveControl</h1>
+              <h1> ¿Quienes somos?</h1>
             </div>
       
             </div>
@@ -82,16 +84,40 @@
           <img src=<?php echo base_url("Content/img/Acerca.jpg")?> class="img-responsive img-rounded" alt="" />
         </div>    
         <div class="col-md-6">
-          <blockquote>
-          Somos un servicio que nacio de la idea de poder llevar el control de tus autos,
-          de una forma facil y efectiva, de manera que puedas acceder a nuestra pagina desde
-          cualquier dispositivo y a cualquier hora, de modo que puedas encontrar lo que necesites
-          para tu auto a cualquier hora.
-          </blockquote>
+          <blockquote><b>Driver Control</b> es un servicio, que nace para ofrecerte un control de tus automoviles es una forma efectiva y facil la cual te ayuda a manejar los gastos que realizas, asi como tambien te brinda, un buscador de respuesto los cuale se comparan con los datos que tu llenas al registrarte con nosotros, puedes encontrar los repuestos de manera rapida, sin necesidad de hacer tantas llamadas, y encontrar con exactitud los lugares en los cuales tienen un mejor precio.
+
+
+Contamos con una plaforma en la que puedas acceder desde cualquier parte, a cualquier hora y siempre con la conviccion de que te brindaremos un excelente servicio.
+
+Solo debes registrarte para obtener estos maravillosos beneficios, y muchas promociones que solo nuestras empresas asociadas te brinda a ti , que eres parte de <b>Driver Control</b></blockquote>
+
         </div>
       </div>    
     </div>
   </section>
+
+<center>
+<img src=<?php echo base_url("Content/img/visionmision1.jpg")?> class="img-responsive img-rounded" alt="" />
+</center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+  <div class="col-md-12">
+                    <ul class="social-network social-circle">
+                        
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        
+                    </ul>       
+        </div>
+
+    
 
     <?php
     $this->load->view("parts/scripts.php");
@@ -102,8 +128,8 @@
       })
     </script>
 
+
     
   </body>
   </html>
-
 
