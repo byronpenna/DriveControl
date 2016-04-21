@@ -13,6 +13,7 @@
 <br>
 <br>
 <div class="container">
+<div align='center'>  
   <div class="table-responsive">
 <table class = "table">  
   <form action=<?php echo site_url("vehiculos/Modificar_vehiculos/");?> method="POST">
@@ -67,7 +68,7 @@
 
 
 </div> 
- 
+</div> 
 </div> /
 
 	<?php
