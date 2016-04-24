@@ -72,7 +72,7 @@
           <?php 
           for ($i=1970; $i < 2017; $i++) { 
           ?>
-            <option value="">
+            <option value=<?php echo $i ?>>
               <?php echo $i ?>
               <?php }?>
             </option>
@@ -100,7 +100,7 @@
           </select> 
         </div>
         <div class="form-group">
-          <label >Llanta</label>
+          <label >Numero de Llanta</label>
           <select class="form-control combobox" name="comboLlanta">
               <?php 
               foreach ($ll as $key => $LLANTA) {
@@ -114,7 +114,7 @@
           </select> 
         </div>
         <div class="form-group">
-          <label>Numero de Ring</label>
+          <label>Numero de Rin</label>
           <select class="combobox form-control" name="comboRing">
             <?php 
             foreach ($rines as $key => $num_rin) {
