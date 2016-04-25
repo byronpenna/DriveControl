@@ -97,7 +97,7 @@
 	<br>
 	<br>
 	<br>
-	<div class="row"><br><br><br><br><br><br><br><br>
+	<div class="row"><br><br><br><br><br><br>
 		<div class="col-md-1"></div>
 		<div class="col-md-9">
 			<div class="col-md-4">
@@ -117,12 +117,12 @@
 						<div class="col-md-2"></div>
   						<div class="col-xs-8 col-md-4">  							
     						<a href="https://www.facebook.com/profile.php?id=100011595570342" class="thumbnail" target="_blank">
-      						<img src=<?php echo base_url("Content/img/fb.png") ?> alt="...">
+      						<img src=<?php echo base_url("Content/img/fb.png") ?> width="100" weight="100" alt="...">
     						</a>
   						</div>
   						<div class="col-xs-8 col-md-4">
     						<a href="https://twitter.com/DriveControlads" class="thumbnail"  target="_blank">
-      						<img src=<?php echo base_url("Content/img/tw.png") ?> alt="Twitter DriveControl">
+      						<img src=<?php echo base_url("Content/img/tw.png") ?> width="100" weight="100" alt="Twitter DriveControl">
     						</a>
   						</div>
   					</div>
@@ -135,15 +135,15 @@
 					  <form action=<?php echo site_url("Conctactos/enviarCorreo") ?> role="form" method="post">
 							<div class="input-group">
 							  	<span class="input-group-addon" id="nombre">Nombre: *</span>
-							  	<input type="text" name="nombre" class="form-control" placeholder="Juan Carlos Perez" aria-describedby="basic-addon1" required>
+							  	<input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre." aria-describedby="basic-addon1" required>
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="correo">Correo: *</span>
-							  	<input type="email" name="correo" class="form-control" placeholder="Juan_Carlos_perez@example.com" aria-describedby="basic-addon1" required>
+							  	<input type="email" name="correo" class="form-control" placeholder="correo@example.com" aria-describedby="basic-addon1" required>
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="telefono">Telefono: </span>
-							  	<input type="tel" name="telefono" class="form-control" placeholder="12345678" aria-describedby="basic-addon1">
+							  	<input type="tel" name="telefono" class="form-control" placeholder="+503 #### - ####" aria-describedby="basic-addon1">
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="asunto">Asunto: *</span>
@@ -151,7 +151,7 @@
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="mensaje">Mensaje: *</span>
-							  	<textarea class="form-control" name="mensaje" rows="5" required></textarea>
+							  	<textarea class="form-control" name="mensaje" required></textarea>
 							</div><br>
 							<center><button type="submit" class="btn btn-primary">ENVIAR</button></center>
 						</form>				    
