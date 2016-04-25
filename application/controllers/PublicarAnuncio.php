@@ -34,7 +34,7 @@ private $model;
 		$rut=$ruta.'/'.$nombre_imagen;
 		$imageFileType = pathinfo($rut,PATHINFO_EXTENSION); 
 		$imagen_temp=getimagesize($_FILES['SubirImagen']['tmp_name']);
-		$uploadfile = $_SERVER['DOCUMENT_ROOT'].$ruta;
+		$uploadfile = $_SERVER['DOCUMENT_ROOT'].$ruta."/nombre.jpg";
 		move_uploaded_file($imagen_temp,$uploadfile );
 		
 		
