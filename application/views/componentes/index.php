@@ -19,14 +19,22 @@
     ?>
   </header>
 
-<center> 
+<br><br><br><br><br><br><br><br><br>
+
+  <div class="container">
+    <div class="page-header">
+    <center>
+        <h1>Componentes del Vehiculo</h1>
+    </center>
+    </div>
+
+
+
+<center>
  <img src=<?php echo base_url("Content/img/carro.gif") ?>>
  </center> 
 
-<div class="container">
-    <div class="page-header">
-        <h1>Componentes del Vehiculo</h1>
-    </div>
+<br><br><br>
     <div class="row">
         <div class="col-md-6">
    
@@ -57,7 +65,7 @@
       <h3 class="panel-lefttitle">Alternador del motor </h3>
   </div>
   <div class="panel-rightbody">
-      <p>Es una máquina eléctrica, capaz de generar energía eléctrica a partir de energía mecánica, generalmente obtenida por un mecanismo de arrastre desde un motor de combustión interna, tanto alternativo, como turbina de gas o Wankel. La corriente eléctrica producida es corriente alterna, no necesita sistema de regulación de la intensidad o disyuntor como la dinamo. Sin embargo sí necesita un dispositivo de regulación del voltaje y de rectificación, ya que la corriente usada por los sistemas es normalmente continua y obtenida desde una batería o acumulador
+      <p>Es una máquina eléctrica, capaz de generar energía eléctrica a partir de energía mecánica, generalmente obtenida por un mecanismo de arrastre desde un motor de combustión interna, tanto alternativo, como turbina de gas o Wankel.
 </p>
 
  <center> 
@@ -74,8 +82,7 @@
       <h3 class="panel-lefttitle">Amortiguador</h3>
   </div>
   <div class="panel-rightbody">
-      <p>Es un dispositivo construido con un eje cromado y dos tubos de acero (uno dentro del otro). El tubo exterior se denomina tubo de reserva (lleno de aceite). El interno, tubo de compresión. En un extremo, el eje de acero tiene el apoyo que se ancla al vehículo. En el otro extremo se monta un pistón, que siempre se desplaza a lo largo del tubo de compresión, el cual presiona o succiona aceite que fluye a través de válvulas instaladas en el tubo de compresión.
-La función del amortiguador es controlar los movimientos de la suspensión, los muelles y/o resortes. El movimiento de la suspensión genera energía cinética, que se convierte en energía térmica o calorífica. Esta energía se disipa a través del aceite.
+      <p>Es un dispositivo construido con un eje cromado y dos tubos de acero (uno dentro del otro). La función del amortiguador es controlar los movimientos de la suspensión, los muelles y/o resortes. El movimiento de la suspensión genera energía cinética, que se convierte en energía térmica o calorífica. Esta energía se disipa a través del aceite.
 
  <center> 
  <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/amor.jpg" ) ?>>
@@ -108,7 +115,7 @@ La función del amortiguador es controlar los movimientos de la suspensión, los
       <h3 class="panel-lefttitle"> Barra estabilizadora</h3>
   </div>
   <div class="panel-rightbody">
-      <p>Elemento de la suspensión constituido por una barra metálica que une las dos ruedas de un mismo eje. No actúa cuando ambas ruedas se desplazan hacia arriba o hacia abajo simultáneamente. Permite tener una suspensión flexible y confortable, aumentando artificialmente la rigidez en curvas. De este modo, las barras estabilizadoras reducen el balanceo, por lo que también se las conoce como barras antibalanceo.
+      <p>Elemento de la suspensión constituido por una barra metálica que une las dos ruedas de un mismo eje. No actúa cuando ambas ruedas se desplazan hacia arriba o hacia abajo simultáneamente. Permite tener una suspensión flexible y confortable, aumentando artificialmente la rigidez en curvas.
  <center> 
  <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/barra.jpg" ) ?>>
  </center> 
@@ -136,7 +143,7 @@ Disipar el calor generado en la cámara de combustión hacia el sistema de refri
     <div class="clearfix">
     </div>     
 </div>
-// segunda parte
+
 
     </div>
     <div class="row">
@@ -185,8 +192,7 @@ Disipar el calor generado en la cámara de combustión hacia el sistema de refri
       <h3 class="panel-lefttitle">Depósito de combustible</h3>
   </div>
   <div class="panel-rightbody">
-      <p> Conocido tambien como Tanque de combustible es un contenedor seguro para líquidos flamables, que forma parte del sistema del motor, y en el cual se almacena el combustible, que es propulsado para que el avion avance. (mediante la bomba de combustible) o liberado (como gas a presión) en un motor. Los depósitos de combustible varían considerablemente de tamaño y complejidad, desde un diminuto depósito de butano para un mechero hasta el depósito externo de combustible criogénico multicámara de un transbordador espacial.
-
+      <p> Conocido tambien como Tanque de combustible es un contenedor seguro para líquidos flamables, que forma parte del sistema del motor, y en el cual se almacena el combustible, que es propulsado para que el avion avance. (mediante la bomba de combustible) o liberado (como gas a presión) en un motor.
 <center> 
  <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/tanque.jpg" ) ?>>
  </center> 
@@ -204,8 +210,6 @@ Disipar el calor generado en la cámara de combustión hacia el sistema de refri
   </div>
   <div class="panel-rightbody">
       <p>Elemento del sistema de encendido en los motores de ciclo Otto (motores de gasolina, etanol y gas) que envía la corriente eléctrica de alto voltaje, procedente de la bobina de encendido, mediante un dedo o rotor giratorio en el orden requerido por el ciclo de encendido de cada uno de los cilindros hasta las bujías de cada uno de ellos.
-
-Esta corriente convertida en chispa al llegar al electrodo de la bujía produce la combustión de la mezcla que se encuentra comprimida dentro del cilindro al final de la carrera de compresión, haciendo subir la presión en la cámara, empujando al pistón, hacia fuera, produciendo un trabajo útil transmitido a la biela y luego al cigueñal. Esta es la carrera de expansión o de explosión.
 <center> 
  <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/distribuidor.jpg" ) ?>>
  </center> 
@@ -257,3 +261,4 @@ Esta corriente convertida en chispa al llegar al electrodo de la bujía produce 
 
     </div>
 </div>
+
