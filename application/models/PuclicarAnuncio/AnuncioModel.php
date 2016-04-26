@@ -16,6 +16,14 @@ class AnuncioModel extends CI_Model
 	{
 		$sql="INSERT INTO anuncios VALUES (null,1,'".$TituloAnuncio."','".$DescripAnuncio."','".$TipoAnuncio."','".$rut."','".$URLAnuncio."','".$FInicio."','".$Ffin."')";
 		$query=$this->db->query($sql);
+		$retorno = new stdClass();
+		if($query){
+			$retorno->estado =	true;
+		}else{
+			$retorno->estado =  false;
+		}
+		$retorno->idInsert = $this->db->insert_id();
+		return $retorno;
 
 	}
 }

@@ -22,24 +22,27 @@ private $model;
 
 	public function GuardarAnuncio()
 	{
-		$TituloAnuncio = $_POST["TituloAnuncio"];
-		$DescripAnuncio=$_POST["DescripAnuncio"];
-		$TipoAnuncio=$_POST["TipoAnuncio"];
-		$FInicio=$_POST["txtInicio"];
-		$Ffin=$_POST["txtFin"];
-		$URLAnuncio=$_POST["URLAnuncio"];
-		$ruta=base_url("Content/ImgBDD");
+		$TituloAnuncio 	= $_POST["TituloAnuncio"];
+		$DescripAnuncio = $_POST["DescripAnuncio"];
+		$TipoAnuncio 	= $_POST["TipoAnuncio"];
+		$FInicio 		= $_POST["txtInicio"];
+		$Ffin			= $_POST["txtFin"];
+		$URLAnuncio		= $_POST["URLAnuncio"];
+		$ruta 			= base_url("Content/ImgBDD");
 
 		$nombre_imagen=basename($_FILES['SubirImagen']['name']);
 		$rut=$ruta.'/'.$nombre_imagen;
 		$imageFileType = pathinfo($rut,PATHINFO_EXTENSION); 
-		$imagen_temp=getimagesize($_FILES['SubirImagen']['tmp_name']);
-		$uploadfile = $_SERVER['DOCUMENT_ROOT'].$ruta."/nombre.jpg";
-		move_uploaded_file($imagen_temp,$uploadfile );
-		
-		
+		//$imagen_temp=	/*getimagesize(*/$_FILES['SubirImagen']['tmp_name'];//);
+		$uploadfile = $_SERVER['DOCUMENT_ROOT']."/drivecontrol/Content/ImgBDD/";//.$nombre_imagen;
 		$Respuesta = $this->model ->IngresarAnuncio($TituloAnuncio,$DescripAnuncio,$TipoAnuncio,$FInicio,$Ffin,$URLAnuncio,$rut);
-		echo "<img src='$rut'>";
+		if($Respuesta->estado){
+			$uploadfile .= $Respuesta->idInsert.".".$imageFileType;
+			move_uploaded_file($_FILES['SubirImagen']['tmp_name'],$uploadfile );	
+		}else{
+			echo "ocurrio un error";
+		}
+		//echo "<img src='$rut'>";
 		echo "<script language=javascript>
 		 alert('Anuncio Publicado Exitosamente');
     	</script>";
