@@ -90,11 +90,11 @@
 	</style>
 </head>
 <body  id="prin" class="hold-transition skin-blue sidebar-mini">
-	<!-- <pre>
+	<!-- <pre> -->
 		<?php 
 			//print_r($usuario);
 		?>
-	</pre> -->
+	<!-- </pre> -->
 	<!-- <div class="row" id="header">
 		<div class="col-md-1"></div>
 		<div class="col-md-9">
@@ -235,13 +235,13 @@
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src=<?php echo base_url("Content/dist/img/usr.jpg") ?>  class="user-image" alt="User Image">
-                  <span class="hidden-xs"><?php echo "Usuario activo: @usuario" ?></span>
+                  <span class="hidden-xs"><?php echo "Usuario activo: ".$usuario->usuario ?></span>
                 </a>
                 <ul class="dropdown-menu">                  
                   <li class="user-header">
                     <img src=<?php echo base_url("Content/dist/img/usr.jpg") ?>  class="img-circle" alt="User Image">
                     <p>
-                      <?php echo "Usuario activo: @usuario" ?> - fecha
+                      <?php echo "Usuario activo: ".$usuario->usuario ?> - fecha
                       <small>fecha de registro al sistema</small>
                     </p>
                   </li>
@@ -263,23 +263,41 @@
               <img src=<?php echo base_url("Content/dist/img/usr.jpg") ?>  class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p><?php echo "Usuario activo: @usuario"?></p>
-              <a href="#"><i class="fa fa-circle text-success"></i> Conectado</a>
+              <p><?php echo "Usuario activo: ".$usuario->usuario ?></p>
+              <a href=<?php echo site_url("welcome/cerrarSession") ?>>
+              	<i class="fa fa-circle text-success"></i> Logout
+              </a>
             </div>
           </div>
           <ul class="sidebar-menu">
             <li class="header">Menu Principal</li>
-            
-            <li class="active treeview">
-              <a href="#">
-                <i class="fa fa-automobile"></i> <span>Registrar Automovil</span>
-              </a>  
-            </li>
+            <?php
+			  	if($usuario->id_rol_fk == 1){ // if admin
+			?>
+	            <li class="active treeview">
+	              <a href=<?php echo site_url("Anuncio/registrar_anunciante") ?> >
+	                 <i class="fa fa-edit"></i><span>Registrar anunciante</span>
+	              </a>  
+	            </li>
+			<?php 
+			  	}
+			?>
+			<?php 
+				if($usuario->id_rol_fk == 3){ // if anunciante
+			?>
+				<li class="active treeview">
+	              <a href=<?php echo site_url("PublicarAnuncio/Publicar_Anuncio") ?> >
+	                 <i class="fa fa-cart-plus" aria-hidden="true"></i><span>Publicar anuncio</span>
+	              </a>  
+	            </li>
+			<?php 
+				}
+			?>	
 
-            
+
             <li class="treeview">
               <a href=<?php echo site_url("vehiculos/vehiculos") ?>>
-                <i class="fa fa-edit"></i>
+                <i class="fa fa-automobile"></i>
                 <span>Control del Vehiculo</span>                
               </a>
             </li>
