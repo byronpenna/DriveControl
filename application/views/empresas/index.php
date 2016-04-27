@@ -18,9 +18,9 @@
  <img src=<?php echo base_url("Content/img/empresas.jpg") ?>>
  </center> 
 
-
- <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 	    
     
-
+<center> 
+ <img src=<?php echo base_url("Content/img/nuestrosproductos.jpg") ?>>
+ </center> 
     
