@@ -11,7 +11,9 @@ class Anunciante extends PadreController {
 		function index(){
 			$this->load->view("Anunciante/index.php");
 		}
-
+		function registrar_anunciante(){
+			$this->load->view("Anunciante/registrar_anunciante.php");
+		}
 		function veranuncio($id,$idUsuario=""){
 			$data = array(
 				'idAnuncio' => $id,
