@@ -262,3 +262,240 @@ Disipar el calor generado en la cámara de combustión hacia el sistema de refri
     </div>
 </div>
 
+ <div class="container">
+    <div class="page-header">
+    <center>
+        <h1>Componentes de la motocicleta</h1>
+    </center>
+    </div>
+
+
+
+<center>
+ <img src=<?php echo base_url("Content/img/moto1ui7.jpg") ?> width = "600" weight="700">
+ </center> 
+
+
+ <br><br><br>
+    <div class="row">
+        <div class="col-md-6">
+   
+    
+        
+<div class="panel panel-default">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Regulador de compresión</h3>
+  </div>
+
+  <div class="panel-rightbody">
+
+      <p>Se halla entre el cuerpo y el depósito del gas, y tiene la misión de controlar la velocidad en la que el muelle se comprime, tanto en la rueda trasera como en la delantera.
+
+      <center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/Regulador.jpg" ) ?>>
+ </center> 
+</p>
+</div>
+
+
+    <div class="clearfix">
+    </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Chasis</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>El chasis es la columna vertebral de la moto, al cual todos los componentes son instalados y conectados. El chasis provee puntos de apoyo para el motor y el tanque de gasolina, así como un punto de pivote donde se instala la caña de dirección.
+</p>
+
+ <center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/chasis8.jpg" ) ?>>
+ </center> 
+      
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Controles</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>Acciona el freno del acelerador, embrague, delantero y trasero para asegurar que estos están funcionando correctamente.
+
+ <center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/controlesm.jpg" ) ?>>
+ </center>  
+</p>
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+    </div>
+    <div class="col-md-6">
+
+<div class="panel panel-info">  
+<div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Depósito de aceite</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>Es muy importante verificar que el aceite del motor está entre los niveles alto y bajo. Si es bajo, rellena con aceite de motor nuevo hasta el nivel requerido.
+ <center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/cambioaceite2.jpg" ) ?>>
+ </center> 
+</p>
+  </div>
+    <div class="clearfix">
+    </div>   
+    </div>
+    
+<div class="panel panel-warning">  
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Depósito de gasolina</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>Antes de conducir, realiza una comprobación visual y operacional en su motocicleta. Esto reducirá las posibilidades de un accidente mientras viajas por carretera, lo que creará molestias a los demás usuarios. También minimiza la situación de emergencia que puede resultar en accidentes.
+ <center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/Deposito7.jpg" ) ?>>
+ </center> 
+</p>
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+    
+<div class="panel panel-danger">  
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Escape</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>Mediante esta pieza, la motocicleta puede expulsar los gases quemados durante la combustión (el monóxido de carbono y otros agentes nocivos). Está constituido generalmente por un colector de escape que recoge los gases de escape en salida de los cilindros prolongado por un dispositivo de evacuación.
+ <center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/escape.jpg" ) ?>>
+ </center> 
+</p>
+
+  </div>
+    <div class="clearfix">
+    </div>     
+</div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        
+<div class="panel panel-default">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Espejos retrovisores</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>Ajuste los espejos hasta que el extremo del hombro se puede ver en el borde inferior del espejo. No ajustes el espejo mientras la motocicleta está en marcha.
+      <center>
+      <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/espejos.jpg" ) ?>>
+ </center> 
+      </p>
+
+
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Luces</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>Se clasifican en: <br>- Luz de cruce y carretera<br>
+- Luz delantera de posición<br>
+- Luz de advertencia de peligro (si dispones de ella) <br>
+- Intermitentes<br>
+- Luz de posición trasera<br>
+- Luz de freno<br>
+   <center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/luces.jpg" ) ?>>
+ </center> 
+
+        </p>
+      
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Maneta izquierda</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>El propósito de la palanca de embrague es para conectar y desconectar la potencia del motor a la rueda trasera. Se utiliza cuando se necesita hacer un cambio de marcha.
+<center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/manizq.jpg" ) ?>>
+ </center> 
+      </p>
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+    </div>
+    <div class="col-md-6">
+
+<div class="panel panel-info">  
+<div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Maneta derecha</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>La palanca de freno se encuentra en el lado derecho del manillar y se utiliza para reducir la velocidad o detener la motocicleta.
+<center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/mander.jpg" ) ?>>
+ </center> 
+
+</p>
+  </div>
+    <div class="clearfix">
+    </div>   
+    </div>
+    
+<div class="panel panel-warning">  
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Motor</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>El motor de una moto es su corazón, y los diferentes tipos aplicados, dictan el carácter de la máquina. Normalmente va propulsada por un motor de gasolina de dos o cuatro tiempos (2T y 4T), aunque últimamente los dos tiempos están siendo reservados a las cilindradas más pequeñas debido a razones medioambientales por ello la mayoría de las motos de hoy en día son de cuatro tiempos.
+
+<center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/motomoto.jpg" ) ?>>
+ </center>
+      </p>
+
+
+  </div>
+    <div class="clearfix">
+    </div>
+</div>
+    
+<div class="panel panel-danger">  
+  <div class="panel-leftheading">
+      <h3 class="panel-lefttitle">Transmisión</h3>
+  </div>
+  <div class="panel-rightbody">
+      <p>La transmisión del movimiento que impulsa a la moto se efectúa, en su forma más sencilla, con una cadena engranada en unos piñones y conectada con el eje de la rueda trasera. Esta cadena va engrasada para que se desgaste menos y su funcionamiento sea más silencioso.
+
+<center> 
+ <img  WIDTH=200, HEIGTH=100 src=<?php echo base_url("Content/img/comp/transmision.jpg" ) ?>>
+ </center>
+
+
+
+        </p>
+  </div>
+    <div class="clearfix">
+    </div>     
+</div>
+
+    </div>
+</div>
