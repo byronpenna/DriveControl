@@ -12,6 +12,13 @@ class AnuncioModel extends CI_Model
 	$resultado= $query ->result();
 	return $resultado;
 	}
+	public function Select_anunciante($idUsuario)
+	{
+		$sql="SELECT idAnunciante from anunciantes where id_usuario_fk=".$idUsuario."";
+		$query = $this ->db->query($sql);
+	$resultado= $query ->result();
+	return $resultado;	
+	}
 	public function IngresarAnuncio($TituloAnuncio,$DescripAnuncio,$TipoAnuncio,$FInicio,$Ffin,$URLAnuncio,$rut)
 	{
 		$sql="INSERT INTO anuncios VALUES (null,1,'".$TituloAnuncio."','".$DescripAnuncio."','".$TipoAnuncio."','".$rut."','".$URLAnuncio."','".$FInicio."','".$Ffin."')";

@@ -46,5 +46,6 @@ private $model;
 		echo "<script language=javascript>
 		 alert('Anuncio Publicado Exitosamente');
     	</script>";
+    	redirect("/PublicarAnuncio/Publicar_Anuncio","refresh");
 	}
 }
