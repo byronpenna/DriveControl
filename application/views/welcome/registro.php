@@ -18,21 +18,36 @@
       $this->load->view("parts/menu.php");
     ?>
   </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-   <br>
-  <br>
-  <br>
-	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>
-	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
-	<div class="container">
-		<h2>Registrarse</h2>
+
+ <body>
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ <div class="container">    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">  </div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px">
+
+
+                         <a href=<?php echo site_url("welcome/login") ?> target="_blank">Iniciar Sesion </a></div>
+
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
 		<form class="frm">
 			<label>Nombres</label>
 			<input class="form-control txtNombres" name="txtNombres" required></input>
