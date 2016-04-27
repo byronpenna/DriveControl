@@ -63,6 +63,11 @@
 	</style>
 </head>
 <body  id="prin">
+	<pre>
+		<?php 
+			print_r($usuario);
+		?>
+	</pre>
 	<div class="row" id="header">
 		<div class="col-md-1"></div>
 		<div class="col-md-9">
@@ -82,6 +87,16 @@
   				<div class="panel-heading"><center><strong>..:: MENU PRINCIPAL ::..</strong></center></div>
   				<div class="panel-body">
     			<ul class="nav nav-pills nav-stacked">
+					<?php
+					  	if($usuario->id_rol_fk == 1){
+					?>
+					<li role='presentation'>
+					  	<a href="#">Registrar anunciante</a>
+					</li>
+					<?php 
+					  	}
+					?>
+					  
 					  <li role="presentation">
 					  <a href=<?php echo site_url("vehiculos/vehiculos") ?> >
 					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar Vehiculo
