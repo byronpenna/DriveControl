@@ -101,35 +101,16 @@ Solo debes registrarte para obtener estos maravillosos beneficios, y muchas prom
 
   <div class="container">
 
-              <div class="section-heading text-center">
-              <h1> Preguntas frecuentes</h1>
-              <br>
-            </div>
-
-<center>
-<img src=<?php echo base_url("Content/img/bannerfaq.jpg")?> class="img-responsive img-rounded" alt="" />
-</center>
 <br><br>
 
-<ul>
+<center>
+  
+  <img src=<?php echo base_url("Content/img/preguntas.jpg")?> class="img-responsive img-rounded" alt="" />
 
-  <font color="blue"><li><b>¿Puedo tener más de un vehículo registrado?</b></font>
-  <br>
-  Sí, DriveControl te permite gestionar más de un vehículo en nuestra plataforma. Contamos con un servicio de apoyo completo para brindarte la mejor información de los repuestos que necesites para cada uno de tus vehículos.
+</center>
+
   <br><br>
-  <font color="blue"><li><b>¿Qué tipo de vehículos se pueden registrar en DriveControl?</b></font>
-  <br>
-  Automóviles, microbuses, paneles, pick-ups y motocicletas.
-  <br><br>
-  <font color="blue"><li><b>¿Cómo puedo recibir información y ofertas de las empresas asociadas a DriveControl?</b></font>
-  <br>
-  Tenemos la opción <b>Boletin DriveControl</b> si te suscribes al mismo, recibirás las distintas promociones de las empresas asociadas a DriveControl.
-  <br><br>
-  <font color="blue"><li><b>¿Cómo puedo comparar de una manera fácil los precios de cada repuesto que compre con las empresas asociadas?</b></font>
-  <br>
-  En el <b>Perfil de Usuario</b> se encuentra la opción <b>Control de gastos</b> en ella puedes comparar cada uno de los precios de los repuestos previamente comprados, obtener un gasto total por mes y visualizar cuál es la mejor opción para tu compra.
-  <br><br>
-</ul>
+
   </div>
 
     <div class="section-heading text-center">
