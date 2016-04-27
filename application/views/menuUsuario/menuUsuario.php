@@ -275,7 +275,7 @@
 			  	if($usuario->id_rol_fk == 1){ // if admin
 			?>
 	            <li class="active treeview">
-	              <a href=<?php echo site_url("Anuncio/registrar_anunciante") ?> >
+	              <a href=<?php echo site_url("Anunciante/registrar_anunciante") ?> >
 	                 <i class="fa fa-edit"></i><span>Registrar anunciante</span>
 	              </a>  
 	            </li>
