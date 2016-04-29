@@ -68,7 +68,8 @@
         <div class="col-lg-8 col-lg-offset-2">
           
             <div class="section-heading text-center">
-              <h1> ¿Quienes somos?</h1>
+              <h1> ¿Quiénes somos?</h1>
+              <br>
             </div>
       
             </div>
@@ -84,18 +85,41 @@
           <img src=<?php echo base_url("Content/img/Acerca.jpg")?> class="img-responsive img-rounded" alt="" />
         </div>    
         <div class="col-md-6">
-          <blockquote><b>Driver Control</b> es un servicio, que nace para ofrecerte un control de tus automoviles es una forma efectiva y facil la cual te ayuda a manejar los gastos que realizas, asi como tambien te brinda, un buscador de respuesto los cuale se comparan con los datos que tu llenas al registrarte con nosotros, puedes encontrar los repuestos de manera rapida, sin necesidad de hacer tantas llamadas, y encontrar con exactitud los lugares en los cuales tienen un mejor precio.
+          <blockquote><b>DriveControl</b> es un servicio, que nacíó para ofrecerte un control de tus automóviles es una forma efectiva y fácil la cual te ayuda a manejar los gastos que realizas, así como tambien te brinda, un buscador de repuestos los cuales se comparan con los datos que tu llenas al registrarte con nosotros, puedes encontrar los repuestos de manera rápida, sin necesidad de hacer tantas llamadas, y encontrar con exactitud los lugares en los cuales tienen un mejor precio.
 
 
-Contamos con una plaforma en la que puedas acceder desde cualquier parte, a cualquier hora y siempre con la conviccion de que te brindaremos un excelente servicio.
+Contamos con una plataforma en la que puedas acceder desde cualquier parte, a cualquier hora y siempre con la convicción de que te brindaremos un excelente servicio.
 
-Solo debes registrarte para obtener estos maravillosos beneficios, y muchas promociones que solo nuestras empresas asociadas te brinda a ti , que eres parte de <b>Driver Control</b></blockquote>
+Solo debes registrarte para obtener estos maravillosos beneficios, y muchas promociones que solo nuestras empresas asociadas te brindan a ti, que eres parte de <b>DriveControl</b></blockquote>
 
         </div>
       </div>    
     </div>
   </section>
 
+  <section id="frecuente" class="home-section">
+
+  <div class="container">
+
+<br><br>
+
+<center>
+  
+  <img src=<?php echo base_url("Content/img/preguntas.jpg")?> class="img-responsive img-rounded" alt="" />
+
+</center>
+
+  <br><br>
+
+  </div>
+
+    <div class="section-heading text-center">
+              <h1> Misión y Visión</h1>
+              <br>
+            </div>
+
+
+  </section>
 <center>
 <img src=<?php echo base_url("Content/img/visionmision1.jpg")?> class="img-responsive img-rounded" alt="" />
 </center>
