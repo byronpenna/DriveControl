@@ -10,6 +10,8 @@
   <!-- Start WOWSlider.com HEAD section -->
   <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/styleSlider.css")?> media="screen" />
   <script type="text/javascript" src=<?php echo base_url("Content/js/slider/jquery.js")?>></script>
+  
+
   <!-- End WOWSlider.com HEAD section -->
 
 </head>
@@ -109,6 +111,8 @@ Solo debes registrarte para obtener estos maravillosos beneficios, y muchas prom
 
 </center>
 
+
+
   <br><br>
 
   </div>
@@ -131,12 +135,13 @@ Solo debes registrarte para obtener estos maravillosos beneficios, y muchas prom
 <br>
 
 
+
   <div class="col-md-12">
                     <ul class="social-network social-circle">
                         
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://google.com" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
                         
                     </ul>       
         </div>
@@ -152,8 +157,17 @@ Solo debes registrarte para obtener estos maravillosos beneficios, y muchas prom
       })
     </script>
 
-
+<script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
     
+    <br><br><br><br><br><br>
+  <footer id="pie">
+    
+    <span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
+        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
+
+  </footer>
+
+  <script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
   </body>
   </html>
 

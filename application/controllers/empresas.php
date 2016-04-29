@@ -1,6 +1,6 @@
 <?php 
 
-class empresas extends CI_Controller {
+class Empresas extends CI_Controller {
 	// metodos 
 		function __construct()
 		{
@@ -9,7 +9,7 @@ class empresas extends CI_Controller {
 		// URL
 		// localhost://drivecontrol/index.php/empresas/index/ 
 		public function index(){
-			$this->load->view("empresas/index.php");
+			$this->load->view("Empresas/index.php");
 
 			}
 

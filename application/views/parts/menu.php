@@ -27,14 +27,14 @@
       <li class="active"><a href=<?php echo site_url("welcome/login") ?>><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>   Iniciar sesion   </a> </li>
       <li class="active"><a href=<?php echo site_url("welcome/registro") ?>> <span class="glyphicon glyphicon-user" aria-hidden="true">   Registrarse   </a></li>
       <li class="active">
-          <a href=<?php echo site_url("Conctactos/contacto") ?> > 
-              <span class="glyphicon glyphicon-envelope" aria-hidden="true">  Contactanos   
-          </a>
+      <a href=<?php echo site_url("Conctactos/contacto") ?> > 
+     <span class="glyphicon glyphicon-envelope" aria-hidden="true">  Contactanos   
+      </a>
       </li>
       <li class="active">
-          <a href=<?php echo site_url("Componentes/index") ?> >
-              <span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Productos   
-          </a>
+      <a href=<?php echo site_url("Componentes/index") ?> >
+      <span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Productos   
+      </a>
       </li>
       <li class="active"><a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true">   Empresas Asociadas  </a></li>
       <li class="active">
@@ -45,3 +45,6 @@
  </ul>
   </div>
 </nav>
+
+
+

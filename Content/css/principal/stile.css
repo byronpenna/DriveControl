@@ -2,7 +2,7 @@ body{
  background: white;
 }
 .navbar-backgrnd {
-	 background: #08088A;
+	 background: #599303;
 /* Kurt fondo 
     background: #E2E2E2;
     */
@@ -92,4 +92,12 @@ a.socialIcon:hover, .socialHoverClass {
 
 a {
  background-color: #D3D3D3;   
+}
+
+#toTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
 }

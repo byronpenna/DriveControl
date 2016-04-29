@@ -283,3 +283,11 @@ input[type=submit]:active {
     display: table-cell;
     max-width: 220px;
 }
+
+#toTop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}

@@ -17,9 +17,26 @@
 	 <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/media.css") ?>>
 
-<center> 
-                     <img  WIDTH=1500, HEIGTH=1000 src=<?php echo base_url("Content\img\compe.jpg" ) ?>>
- </center> 
+
+
+        <header>
+    <?php 
+      $this->load->view("parts/menu.php");
+    ?>
+  </header>
+
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
 
 <div class="container">
 
@@ -31,6 +48,8 @@
       <div class="carousel-inner">
       
         <div class="item active">
+
+
          <center> 
  			<img src=<?php echo base_url("Content/img/carro.jpg") ?>>
  			</center> 
@@ -44,6 +63,7 @@
  
   
 
+
     	<ul class="nav nav-pills nav-justified">
    
 
@@ -54,5 +74,14 @@
         </ul>
 
 
+
     </div><!-- End Carousel -->
 </div>
+
+<br><br><br><br><br><br>
+  <footer id="pie">
+    
+    <span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
+        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
+
+  </footer>
