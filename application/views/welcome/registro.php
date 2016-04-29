@@ -31,9 +31,7 @@
  <br>
  <br>
  <br>
- <center> 
-                     <img  WIDTH=1500, HEIGTH=1000 src=<?php echo base_url("Content\img\banner.jpg" ) ?>>
- </center>
+ 
 
  <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
@@ -79,6 +77,7 @@
 		$this->load->view("parts/scripts.php");
 	?>
 	<script type="text/javascript" src=<?php echo base_url("Content/js/welcome/registro/functions.js") ?>></script>
+	
 	<script type="text/javascript" src=<?php echo base_url("Content/js/welcome/registro/script.js") ?>></script>
 </body>
 </html>
