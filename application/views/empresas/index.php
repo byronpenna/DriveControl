@@ -1,5 +1,7 @@
  <!DOCTYPE html>
 <html>
+
+<title>Empresas Asociadas</title>
   <header>
     <?php 
       $this->load->view("parts/menu.php");
@@ -19,8 +21,6 @@
 <br> 
 <br> 
 
-
-  <title>Empresas Asociadas</title>
 
   <?php
     // estilos universales
@@ -44,9 +44,18 @@
     
     <span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
         <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
+  </footer>
+  <script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
+
+    <br><br><br><br><br><br>
+  <footer id="pie">
+    
+    <span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
+        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
 
   </footer>
 
   <script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
-
+</body>
+</html>
     

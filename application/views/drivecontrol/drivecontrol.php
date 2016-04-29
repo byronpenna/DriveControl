@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<title>Pagina Principal</title>
 <head>
   <?php
     // estilos universales

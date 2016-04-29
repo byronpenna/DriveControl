@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Esta es la vista</title>
+	<title>Iniciar Sesion</title>
 	<?php
 		// estilos universales
 			$this->load->view("parts/estilos.php");

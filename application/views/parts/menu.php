@@ -20,23 +20,33 @@
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <br> <br> <br><br><ul class="nav navbar-nav navbar-left">
       <li class="active">
-        <a href=<?php echo site_url("welcome/index") ?>>
-          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>   Inicio    
-        </a>
+
+      <a href=<?php echo site_url("welcome/index") ?>>
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>   Inicio    
+      </a>
       </li>
+
       <li class="active"><a href=<?php echo site_url("welcome/login") ?>><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>   Iniciar sesion   </a> </li>
+
+
       <li class="active"><a href=<?php echo site_url("welcome/registro") ?>> <span class="glyphicon glyphicon-user" aria-hidden="true">   Registrarse   </a></li>
+
       <li class="active">
+
       <a href=<?php echo site_url("Conctactos/contacto") ?> > 
      <span class="glyphicon glyphicon-envelope" aria-hidden="true">  Contactanos   
       </a>
+
       </li>
       <li class="active">
       <a href=<?php echo site_url("Componentes/index") ?> >
       <span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Productos   
       </a>
       </li>
-      <li class="active"><a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true">   Empresas Asociadas  </a></li>
+
+      <li class="active">
+      <a href=<?php echo site_url("Empresas/index") ?> >
+      <span class="glyphicon glyphicon-tasks" aria-hidden="true">   Empresas Asociadas  </a></li>
       <li class="active">
         <a href="#about">
           <span class="glyphicon glyphicon-pencil" aria-hidden="true">   Acerca de nosotros   

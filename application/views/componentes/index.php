@@ -18,7 +18,6 @@
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/media.css") ?>>
 
 
-
         <header>
     <?php 
       $this->load->view("parts/menu.php");
