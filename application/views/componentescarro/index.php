@@ -6,6 +6,15 @@
     // estilos universales
       $this->load->view("parts/estilos.php");
   ?>
+
+
+<a href=<?php echo site_url("Componentes/") ?> target="_blank">Componentes de Automovil </a></li>
+<span class="glyphicon glyphicon-arrow-left"></span>
+"Anterior"
+</a>
+
+
+  
   <!-- estilos personalizados -->
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/media.css") ?>>
@@ -17,18 +26,6 @@
     ?>
   </header>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
 
 <center> 
  <img src=<?php echo base_url("Content/img/carro.gif") ?>>

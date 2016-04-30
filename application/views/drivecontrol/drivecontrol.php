@@ -9,6 +9,7 @@
   ?>
   <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>>
 
+
   <!-- Start WOWSlider.com HEAD section -->
   <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/styleSlider.css")?> media="screen" />
   <script type="text/javascript" src=<?php echo base_url("Content/js/slider/jquery.js")?>></script>
@@ -34,16 +35,6 @@
 
 </header>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
  <!-- SLIDER -->
 <!-- Start WOWSlider.com BODY section -->
@@ -159,17 +150,11 @@ Solo debes registrarte para obtener estos maravillosos beneficios, y muchas prom
       })
     </script>
 
-<script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
-    
     <br><br><br><br><br><br>
-  <footer id="pie">
-    
-    <span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
-        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
+  <?php 
+    $this->load->view("parts/footer.php");
+  ?>
 
-  </footer>
-
-  <script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
   </body>
   </html>
 

@@ -94,10 +94,3 @@ a {
  background-color: #D3D3D3;   
 }
 
-#toTop{
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	cursor: pointer;
-	display: none;
-}
