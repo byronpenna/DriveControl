@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-default navbar-backgrnd navbar-fixed-top" role="navigation">
+<center><nav class="navbar navbar-default navbar-inverse navbar-backgrnd navbar-fixed-top" role="navigation">
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
 
@@ -20,10 +20,18 @@
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <br> <br> <br><br><ul class="nav navbar-nav navbar-left">
+    <tr>
+      <tr>
+        <tr>
+          <tr>
       <li class="active">
 
       <a href=<?php echo site_url("welcome/index") ?>>
-      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>   Inicio    
+
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>              <tr>
+        <tr>   Inicio    
+                   <tr>
+        <tr>
       </a>
       </li>
 
@@ -57,7 +65,7 @@
       </li> -->
  </ul>
   </div>
-</nav>
+</nav><center>
 
 
 
