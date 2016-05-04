@@ -121,15 +121,7 @@ Solo debes registrarte para obtener estos maravillosos beneficios, y muchas prom
 <img src=<?php echo base_url("Content/img/visionmision1.jpg")?> class="img-responsive img-rounded" alt="" />
 </center>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-  <div class="col-md-12">
+  <div class="col-md-22">
                     <ul class="social-network social-circle">
                         
                         <li><a href="https://www.facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -139,7 +131,7 @@ Solo debes registrarte para obtener estos maravillosos beneficios, y muchas prom
                     </ul>       
         </div>
 
-    
+    <br><br><br>
 
     <?php
     $this->load->view("parts/scripts.php");
@@ -150,7 +142,6 @@ Solo debes registrarte para obtener estos maravillosos beneficios, y muchas prom
       })
     </script>
 
-    <br><br><br><br><br><br>
   <?php 
     $this->load->view("parts/footer.php");
   ?>

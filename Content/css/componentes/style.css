@@ -2,7 +2,6 @@ body{
     background: while;
 }
 
-
 .panel
 {
     position: relative;
@@ -90,12 +89,4 @@ body{
     float: left;
     margin-left: 45px;
     padding: 15px;
-}
-
-#toTop{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-    display: none;
 }

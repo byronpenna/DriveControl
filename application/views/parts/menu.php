@@ -11,6 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+      
 <img src=<?php echo base_url("Content/img/drive.PNG") ?>></a>
 </div>
  
@@ -47,11 +48,13 @@
       <li class="active">
       <a href=<?php echo site_url("Empresas/index") ?> >
       <span class="glyphicon glyphicon-tasks" aria-hidden="true">   Empresas Asociadas  </a></li>
-      <li class="active">
-        <a href="#about">
-          <span class="glyphicon glyphicon-pencil" aria-hidden="true">   Acerca de nosotros   
+     
+
+ <!-- <li class="active">
+      <span class="glyphicon glyphicon-pencil" aria-hidden="true">   Acerca de nosotros   
+      <a href=<?php echo site_url("About/index") ?> >
         </a>
-      </li>
+      </li> -->
  </ul>
   </div>
 </nav>

@@ -14,21 +14,11 @@
 
     <?php 
       $this->load->view("parts/menu.php");
+
+
+    $this->load->view("parts/scripts.php");
     ?>
   </header>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
 
 <center> 
  <img src=<?php echo base_url("Content/img/moto.png") ?>>
@@ -355,20 +345,20 @@ La palanca de freno se encuentra en el lado derecho del manillar y se utiliza pa
     <div class="clearfix">
     </div>
 </div>
+
     </div>
     <div class="col-md-6">
 
-
-    <br><br><br><br><br><br>
-  <footer id="pie">
-    
-    <span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
-        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
-
-  </footer>
-
-  <script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
-
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<header>
+    <?php 
+      $this->load->view("parts/footer.php");
+    ?>
+  </header>
 
 <!-- 
 

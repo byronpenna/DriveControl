@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title></title>
+  <title>Componentes</title>
   
   <!-- meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,21 +21,12 @@
         <header>
     <?php 
       $this->load->view("parts/menu.php");
-    ?>
-  </header>
 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
+    $this->load->view("parts/scripts.php");
+  
+
+    ?>
+  </header> 
 
 <div class="container">
 
@@ -58,29 +49,29 @@
            Hemos presentado para ti una lista detallada de los componentes que poseen un Automovil o un Motocicleta , para que puedas conocer un poco mas acerca de los mismos.
 
           </div>
+          
         </div><!-- End Item -->
- 
-  
-
+ </div>
 
     	<ul class="nav nav-pills nav-justified">
    
 
-          <li data-target="#myCarousel" data-slide-to="0" class="active"> <a href=<?php echo site_url("Componentescarro/") ?> target="_blank">Componentes de Automovil </a></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="active"> <a href=<?php echo site_url("ComponentesCarro") ?> target="_blank">Componentes de Automovil </a></li>
 
-			<li data-target="#myCarousel" data-slide-to="0" class="active"> <a href=<?php echo site_url("Componentesmoto/") ?> target="_blank">Componentes de Motocicleta </a></li>
+			<li data-target="#myCarousel" data-slide-to="0" class="active"> <a href=<?php echo site_url("ComponentesMoto/") ?> target="_blank">Componentes de Motocicleta </a></li>
           
         </ul>
-
-
-
+</div>
     </div><!-- End Carousel -->
 </div>
 
-<br><br><br><br><br><br>
-  <footer id="pie">
-    
-    <span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
-        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
 
-  </footer>
+ 
+<header>
+    <?php 
+      $this->load->view("parts/footer.php");
+    ?>
+  </header>
+
+
+

@@ -16,24 +16,25 @@
 	<header>
     <?php 
       $this->load->view("parts/menu.php");
+
     ?>
   </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-   <br>
-  <br>
-  <br>
+ 
+
 	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>
 	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
 	<div class="container">
-		<h2>Registrarse</h2>
+
+
+		
+
+		<div class="panel panel-primary">
+		<div class="panel-heading">Registrate Gratis</div>
 		<form class="frm">
+		 <div class="panel-body">
+
+		 <img id="profile-img" class="profile-img-card" src=<?php echo base_url("Content/img/registrarse.png") ?> />
+
 			<label>Nombres</label>
 			<input class="form-control txtNombres" name="txtNombres" required></input>
 			<label>Apellidos:</label>
@@ -46,17 +47,46 @@
 			<label>Usuario:</label>
 			<input type="text" class="form-control txtUsuario" name="txtUsuario" required></input>
 			<label>Pass:</label>
+
 			<input type="password" class="form-control txtPass" name="txtPass" required></input>
+
+
+
+		 <br>
 			<button class="btn btn-default">Registrarse</button>
 			<div class="divMessage">
-				
+				 </div>
+
+    </div>
+
 			</div>
 		</form>
+
+
+
+		 <br><br>
+
+
 	</div>
 	<?php
 		$this->load->view("parts/scripts.php");
+		$this->load->view("parts/footer.php");
 	?>
 	<script type="text/javascript" src=<?php echo base_url("Content/js/welcome/registro/functions.js") ?>></script>
 	<script type="text/javascript" src=<?php echo base_url("Content/js/welcome/registro/script.js") ?>></script>
+
+<div class="col-md-22">
+                    <ul class="social-network social-circle">
+                        
+                        <li><a href="https://www.facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://google.com" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        
+                    </ul>       
+        </div>
+
+    <br><br><br>
+
+
 </body>
 </html>

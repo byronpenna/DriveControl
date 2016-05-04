@@ -73,25 +73,20 @@
 		</nav>			
 	</div> -->
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="row"><br><br><br><br><br><br>	
+	<div class="row">
 		<div class="col-md-1"></div>
 		<div class="col-md-9">
 			<div class="col-md-4">
-			<br>
-	<br>
-	<br>
-	<br>
-	
+
 				<div class="panel panel-primary">
 
   				<div class="panel-heading"><center><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  CONTACTO </strong></center></div>
   				<div class="panel-body">
     			<ul class="nav nav-pills nav-stacked">
-					  <li role="presentation"><a href="#">Envianos tus Quejas o Sugerencias, y nos contactaremos al instante al correo electronico que has proporcionado</a></li>	
+					  <li role="presentation">
+<p>
+					  Envianos tus Quejas o Sugerencias, y nos contactaremos al instante al correo electronico que has proporcionado</a></li>
+					  </p>	
 				</ul>
   				</div>
 				</div>
@@ -112,10 +107,7 @@
   					</div>
 				</div>				
 			</div>
-			<br>
-	<br>
-	<br>
-	<br>
+	
 	
 			<div class="col-md-8">
 				<div class="panel panel-primary">
