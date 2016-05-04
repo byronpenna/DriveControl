@@ -17,8 +17,6 @@
     ?>
   </header>
  
-
-
   
 <div class="row contentImg">
   
@@ -35,6 +33,11 @@
     $this->load->view("parts/footer.php");
 
   ?>
+<br>
+<br>
+<br>
+
+  
 </body>
 </html>
     
