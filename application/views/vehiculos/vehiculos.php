@@ -196,6 +196,13 @@
 </div>
 </div>
 </div>
+<br>
+
+<br>
+
+<br>
+
+
   <?php
   $this->load->view("parts/scripts.php");
    $this->load->view("parts/footer.php");

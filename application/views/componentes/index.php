@@ -3,9 +3,6 @@
 
 <head>
   <title>Componentes</title>
-
-  </header> 
-
   
   <!-- meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +16,6 @@
 
    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/media.css") ?>>
-
-
 
 
 <div class="container">
@@ -58,14 +53,3 @@
 
     </div><!-- End Carousel -->
 </div>
-
-
-
-
-
- 
-
-
-
-
-
