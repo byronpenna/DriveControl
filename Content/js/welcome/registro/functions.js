@@ -8,7 +8,7 @@ function registrar(frm){
 			alert("Regitrado exitosamente");
 			window.location = $(".txtHdRetorno").val();
 		}else{
-			alert("error");
+			alert("Ocurrio un error, vuelve a intentarlo");
 		}
 	});
 }	

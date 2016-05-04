@@ -22,12 +22,11 @@
  
 
 	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>
+
 	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
+
+
 	<div class="container">
-
-
-		
-
 		<div class="panel panel-primary">
 		<div class="panel-heading">Registrate Gratis</div>
 		<form class="frm">
@@ -53,9 +52,11 @@
 
 
 		 <br>
-			<button class="btn btn-default">Registrarse</button>
+			<button class="btn btn-default  btn-block btn-primary">Registrarse</button>
 			<div class="divMessage">
 				 </div>
+
+
 
     </div>
 

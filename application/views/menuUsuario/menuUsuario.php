@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Bienvenido Usuario</title>
+	<title>Menu</title>
 	<?php
     // estilos universales
       $this->load->view("parts/estilos.php");
@@ -341,6 +341,7 @@
     
 	<?php
     	$this->load->view("parts/scripts.php");
+      
   	?>
   	<script src=<?php echo base_url("Content/plugins/fastclick/fastclick.min.js") ?> ></script>
     <script src=<?php echo base_url("Content/dist/js/app.min.js") ?> ></script>
@@ -357,4 +358,7 @@
   <script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
   
 </body>
+
+
+
 </html>

@@ -8,7 +8,7 @@
         margin-top:5%;
     }
     #frmInvitado button{
-        margin-bottom:10%;
+        margin-bottom:5%;
     }
 /*
     Plantilla
@@ -20,16 +20,18 @@
 
     .card-container.card {
         width: 430px;
-        padding: 40px 40px;
+        padding: 50px 50px;
     }
 
     .btn {
+
         font-weight: 700;
         height: 36px;
         -moz-user-select: none;
         -webkit-user-select: none;
         user-select: none;
         cursor: default;
+        
     }
 
     /*

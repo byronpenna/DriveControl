@@ -41,7 +41,7 @@
       </li>
       <li class="active">
       <a href=<?php echo site_url("Componentes/index") ?> >
-      <span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Productos   
+      <span class="glyphicon glyphicon-list-alt" aria-hidden="true">   Informacion de Componentes 
       </a>
       </li>
 

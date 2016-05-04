@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>...:::MENU PRINCIPAL:::...</title>
+	<title>Menu</title>
 	<?php
     // estilos universales
       $this->load->view("parts/estilos.php");
@@ -76,12 +76,10 @@
 	</div>
 	<div class="row">
 	</div>		
-	<footer id="pie">		
-		<span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
-        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
-	</footer>
+	
 	<?php
     	$this->load->view("parts/scripts.php");
+    	$this->load->view("parts/footer.php");
   	?>
 </body>
 </html>
