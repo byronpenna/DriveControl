@@ -9,7 +9,11 @@
 <!-- frameworks -->
   <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/frameworks/css/bootstrap/css/bootstrap.css") ?>>
   <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/frameworks/css/bootstrap/css/full-slider.css") ?>>
-  <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/frameworks/css/font-awesome/css/font-awesome.css") ?> >  
+  <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/frameworks/css/font-awesome/css/font-awesome.css") ?> > 
+
+   <!-- estilo del menu -->
+  <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>
+
 <!-- estilos -->
   <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/universales/style.css")  ?> >  
   <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/universales/media.css")  ?> >  
@@ -17,6 +21,14 @@
    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentes/media.css") ?>>
 
+
+    <!-- estilos personalizados -->
+    <?php
+      // estilos universales
+        $this->load->view("parts/estilos.php");
+        $this->load->view("parts/menu.php");
+   
+  ?>
 
 <div class="container">
 

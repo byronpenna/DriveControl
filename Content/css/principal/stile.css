@@ -1,18 +1,23 @@
 body{
  background: white;
 }
-/*.navbar-backgrnd {
-	 background: #885900;
+.navbar-backgrnd {
+	 background: #4682B4;
 /* Kurt fondo 
     background: #E2E2E2;
     */
+
 }
 
+ .divSeleccion{
+        align:center;
+        
 /*=========================
   Icons
  ================= */
 
 /* footer social icons */
+}
 ul.social-network {
 	list-style: none;
 	display: inline;

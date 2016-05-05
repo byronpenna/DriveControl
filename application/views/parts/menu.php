@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-default navbar-backgrnd navbar-fixed-top" role="navigation">
+<center><nav class="navbar navbar-default navbar-inverse navbar-backgrnd navbar-fixed-top" role="navigation">
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
 
@@ -17,6 +17,7 @@
  
   <!-- Agrupar los enlaces de navegación, los formularios y cualquier
        otro elemento que se pueda ocultar al minimizar la barra -->
+
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <br> <br> <br><br><ul class="nav navbar-nav navbar-left">
@@ -58,6 +59,8 @@
  </ul>
   </div>
 </nav>
+
+
 
 
 
