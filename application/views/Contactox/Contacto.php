@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>...:::CONTACTO:::...</title>
+	<title>Contactenos</title>
 	<?php
     // estilos universales
       $this->load->view("parts/estilos.php");
@@ -28,27 +28,7 @@
   			background-repeat: no-repeat center top;
   			background-size: cover;
 				}
-		#pie {
-				width: 100%;
-				height: 50px;
-				background: #000033; 
-				position: fixed;
-				text-align: center;
-			  	vertical-align: middle;
-				padding:2px;
-				color: #E4EAED;
-				text-shadow:0 3px 8px #323232;
-				font-family:Oswald,sans-serif;	
-				border-top: 2px solid #0101DF;
-				border-style: solid;
-				bottom:0px;
-				display:block;
-    			margin:0 auto auto auto;
-		}
-		footer{
-			background: #FFFFFF; 
-			height: 100px;
-		}
+		
 		@font-face {
 		 font-family: "mater";
 		 font-style: normal;
@@ -93,21 +73,20 @@
 		</nav>			
 	</div> -->
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="row"><br><br><br><br><br><br><br><br>
+	<div class="row">
 		<div class="col-md-1"></div>
 		<div class="col-md-9">
 			<div class="col-md-4">
-			<h1>Contáctenos</h1>
+
 				<div class="panel panel-primary">
 
   				<div class="panel-heading"><center><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  CONTACTO </strong></center></div>
   				<div class="panel-body">
     			<ul class="nav nav-pills nav-stacked">
-					  <li role="presentation"><a href="#">Quejas o sugerencias</a></li>	
+					  <li role="presentation">
+<p>
+					  Envianos tus Quejas o Sugerencias, y nos contactaremos al instante al correo electronico que has proporcionado</a></li>
+					  </p>	
 				</ul>
   				</div>
 				</div>
@@ -117,17 +96,19 @@
 						<div class="col-md-2"></div>
   						<div class="col-xs-8 col-md-4">  							
     						<a href="https://www.facebook.com/profile.php?id=100011595570342" class="thumbnail" target="_blank">
-      						<img src=<?php echo base_url("Content/img/fb.png") ?> alt="...">
+      						<img src=<?php echo base_url("Content/img/fb.png") ?> width="100" weight="100" alt="...">
     						</a>
   						</div>
   						<div class="col-xs-8 col-md-4">
     						<a href="https://twitter.com/DriveControlads" class="thumbnail"  target="_blank">
-      						<img src=<?php echo base_url("Content/img/tw.png") ?> alt="Twitter DriveControl">
+      						<img src=<?php echo base_url("Content/img/tw.png") ?> width="100" weight="100" alt="Twitter DriveControl">
     						</a>
   						</div>
   					</div>
 				</div>				
 			</div>
+	
+	
 			<div class="col-md-8">
 				<div class="panel panel-primary">
 					<div class="panel-heading"><center><strong><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contacto</strong></center></div>
@@ -135,15 +116,15 @@
 					  <form action=<?php echo site_url("Conctactos/enviarCorreo") ?> role="form" method="post">
 							<div class="input-group">
 							  	<span class="input-group-addon" id="nombre">Nombre: *</span>
-							  	<input type="text" name="nombre" class="form-control" placeholder="Juan Carlos Perez" aria-describedby="basic-addon1" required>
+							  	<input type="text" name="nombre" class="form-control" placeholder="Ingrese su nombre." aria-describedby="basic-addon1" required>
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="correo">Correo: *</span>
-							  	<input type="email" name="correo" class="form-control" placeholder="Juan_Carlos_perez@example.com" aria-describedby="basic-addon1" required>
+							  	<input type="email" name="correo" class="form-control" placeholder="correo@example.com" aria-describedby="basic-addon1" required>
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="telefono">Telefono: </span>
-							  	<input type="tel" name="telefono" class="form-control" placeholder="12345678" aria-describedby="basic-addon1">
+							  	<input type="tel" name="telefono" class="form-control" placeholder="+503 #### - ####" aria-describedby="basic-addon1">
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="asunto">Asunto: *</span>
@@ -151,7 +132,7 @@
 							</div><br>
 							<div class="input-group">
 							  	<span class="input-group-addon" id="mensaje">Mensaje: *</span>
-							  	<textarea class="form-control" name="mensaje" rows="5" required></textarea>
+							  	<textarea class="form-control" name="mensaje" required></textarea>
 							</div><br>
 							<center><button type="submit" class="btn btn-primary">ENVIAR</button></center>
 						</form>				    
@@ -160,14 +141,12 @@
 			</div>
 		</div>		
 		<div class="col-md-1"></div>
-	</div><br><br><br><br><br><br>
-	<footer id="pie">
-		
-		<span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
-        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
+	</div>
+	<br><br><br><br><br><br>
+	
 
-	</footer>
 	<?php
+		$this->load->view("parts/footer.php");
     	$this->load->view("parts/scripts.php");
   	?>
 </body>

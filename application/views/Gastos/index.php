@@ -86,5 +86,6 @@
 	?>
 	<script type="text/javascript" src=<?php echo base_url("Content/js/gastos/functions.js") ?>></script>
 	<script type="text/javascript" src=<?php echo base_url("Content/js/gastos/script.js") ?>></script>
+
 </body>
 </html>

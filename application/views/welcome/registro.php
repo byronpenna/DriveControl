@@ -16,42 +16,28 @@
 	<header>
     <?php 
       $this->load->view("parts/menu.php");
+
     ?>
   </header>
+ 
 
- <body>
-
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <center> 
-                     <img  WIDTH=1500, HEIGTH=1000 src=<?php echo base_url("Content\img\banner.jpg" ) ?>>
- </center>
-
- <div class="container">    
-        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
-            <div class="panel panel-info" >
-                    <div class="panel-heading">
-                        <div class="panel-title">  </div>
-                        <div style="float:right; font-size: 80%; position: relative; top:-10px">
+	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>
+	<input type="hidden" class="txtHdBaseUrl" value=<?php echo base_url(); ?>></input>
+	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
 
 
-                         <a href=<?php echo site_url("welcome/login") ?> target="_blank">Iniciar Sesion </a></div>
 
-                    </div>     
+ <div class="row">
+        <div class='col-md-3'></div>
+        <div class="col-md-6">
+           
 
-                    <div style="padding-top:30px" class="panel-body" >
-
-                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-
+		<div class="panel-heading">Registrate Gratis</div>
 		<form class="frm">
+		 <div class="panel-body">
+
+		 <img id="profile-img" class="profile-img-card" src=<?php echo base_url("Content/img/registrarse.png") ?> />
+
 			<label>Nombres</label>
 			<input class="form-control txtNombres" name="txtNombres" required></input>
 			<label>Apellidos:</label>
@@ -64,21 +50,51 @@
 			<label>Usuario:</label>
 			<input type="text" class="form-control txtUsuario" name="txtUsuario" required></input>
 			<label>Pass:</label>
-			<input type="password" class="form-control txtPass" name="txtPass" required></input>
-			<button class="btn btn-default">Registrarse</button>
-			<div class="divMessage">
-				
 
-				<a href=<?php echo site_url("recuperarcontra/index") ?> class="forgot-password">
-	                ¿Recuperar contraseña?
-	            </a>
+			<input type="password" class="form-control txtPass" name="txtPass" required></input>
+
+
+
+		 <br>
+		 	<div class="divLoading">
+
+		 	</div>
+			<button class="btn btn-default  btn-block btn-primary btnRegistro">Registrarse</button>
+			<div class="divMessage">
+				 </div>
+
+
+
+    </div>
+
 			</div>
 		</form>
+
+
+
+		 <br><br>
+
+
 	</div>
 	<?php
 		$this->load->view("parts/scripts.php");
+		$this->load->view("parts/footer.php");
 	?>
 	<script type="text/javascript" src=<?php echo base_url("Content/js/welcome/registro/functions.js") ?>></script>
 	<script type="text/javascript" src=<?php echo base_url("Content/js/welcome/registro/script.js") ?>></script>
+
+<div class="col-md-22">
+                    <ul class="social-network social-circle">
+                        
+                        <li><a href="https://www.facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://google.com" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        
+                    </ul>       
+        </div>
+
+    <br><br><br>
+
+
 </body>
 </html>

@@ -39,5 +39,7 @@ function __construct(){
 				$this->model->EnviarCorreo($nombre,$correo,$telefono,$asunto,$mensaje);
 			}*/
 			print_r($correo);
+
+			
 		}
 }

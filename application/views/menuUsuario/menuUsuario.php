@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>...:::MENU PRINCIPAL:::...</title>
+	<title>Menu</title>
 	<?php
     // estilos universales
       $this->load->view("parts/estilos.php");
@@ -130,7 +130,7 @@
 					  </a>
 					  </li>
 					  <li role="presentation"><a href=<?php echo site_url("vehiculos/Modificar_vehiculos") ?>><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Control del Vehiculo</a></li>
-					  <li role="presentation"><a href=<?php echo site_url("vehiculos/Mostrar_Vehiculo") ?>><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Control de no se que</a></li>					  
+					  <li role="presentation"><a href=<?php echo site_url("PublicarAnuncio/Publicar_Anuncio") ?>><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Control de no se que</a></li>					  
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Nueva busqueda</a></li>
 					  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Deja tu comentario</a></li>
 					  <li role="presentation" class="dropdown">
@@ -334,16 +334,14 @@
       <div>      
       <img src="dist/img/bg.jpg" alt="">        
       </div>     
-      <footer id="pie">    
-        <span><strong>UDB - Analisis y Diseño de sistemas</strong></span>
-        <span><font size=2 style="color:#9A9A9A";><i>&copy; [DERECHOS RESERVADOS LJBFE ] &reg;</i></font></span>
-      </footer> 
+     
     </div>
     <!-- <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script> -->
     <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
     
 	<?php
     	$this->load->view("parts/scripts.php");
+      
   	?>
   	<script src=<?php echo base_url("Content/plugins/fastclick/fastclick.min.js") ?> ></script>
     <script src=<?php echo base_url("Content/dist/js/app.min.js") ?> ></script>
@@ -354,5 +352,13 @@
     <script src=<?php echo base_url("Content/plugins/chartjs/Chart.min.js") ?>></script>
     <script src=<?php echo base_url("Content/dist/js/pages/dashboard2.js") ?> ></script>
     <script src=<?php echo base_url("Content/dist/js/demo.js") ?> ></script>
+
+
+
+  <script type="text/javascript" src=<?php echo base_url("Content/js/Principal/script.js")?>></script>
+  
 </body>
+
+
+
 </html>

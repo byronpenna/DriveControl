@@ -196,10 +196,20 @@
 </div>
 </div>
 </div>
+<br>
+
+<br>
+
+<br>
+
+
   <?php
   $this->load->view("parts/scripts.php");
+   $this->load->view("parts/footer.php");
   ?>
   <script type="text/javascript" src=<?php echo base_url("Content/js/vehiculos/functions.js") ?>></script>
   <script type="text/javascript" src=<?php echo base_url("Content/js/vehiculos/script.js") ?>></script>
+
+
 </body>
 </html>

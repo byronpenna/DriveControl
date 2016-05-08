@@ -82,10 +82,30 @@ class Welcome extends PadreController {
 
 			// use wordwrap() if lines are longer than 70 characters
 			$msg = wordwrap($msg,70);
+			$config = array(
+				'protocol' 	=> "smtp",
+				"smtp_host" => "mail.ritsasv.com",
+				"smtp_port" => "26",
+				"smtp_user" => "info@ritsasv.com",
+				"smtp_pass" => "352538",
+				"mailtype" 	=> "html",
+				"charset" 	=> "iso-8859-1",
+				"wordwrap" 	=> TRUE,
+				 );
+			$this->load->library('email', $config);
+			$this->email->initialize($config); // Add 
 
+			$this->email->from('info@ritsasv.com');
+			$this->email->to($obj->email);
+			$this->email->subject('Registro exitoso');
+			$this->email->message($msg);
 			// send email
-			mail($obj->email,"Confirme registro",$msg,$headers);
-			
+			//mail($obj->email,"Confirme registro",$msg,$headers);
+			if($this->email->send()) {
+			  //echo 'Email sent.';    
+			} else {
+			  print_r($this->email->print_debugger());  
+			}
 		}
 		public function verificar($idUsuario,$num){
 			$estado = $this->model->verificar($idUsuario,$num);
@@ -100,6 +120,7 @@ class Welcome extends PadreController {
 			$frm = $this->getFormularioAjax();
 			$retorno = $this->model->registrarUsuario($frm);
 			$this->email($retorno);
+			//$retorno = new stdClass();
 			echo json_encode($retorno);
 		}
 }

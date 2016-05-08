@@ -12,13 +12,13 @@ class Marca extends PadreController
 	private function getResultados($idMjs){
 		switch ($idMjs) {
 			case 1:
-				$mjs = "Ocurrio un error ingresando la marca";
+				$mjs = "Ocurrio un error ingresando la marca,vuelva a intentarlo";
 				break;
 			case 2:
-				$mjs = "Ocurrio un error al eliminar una marca";
+				$mjs = "Ocurrio un error al eliminar una marca,vuelva a intentarlo";
 				break;	
 			case 3:
-				$mjs = "Ocurrio un error al actualizar marca";
+				$mjs = "Ocurrio un error al actualizar marca,vuelva a intentarlo";
 				break;	
 			default:
 				$mjs = "";

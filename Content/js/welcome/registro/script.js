@@ -16,7 +16,7 @@ $(document).ready(function(){
 					registrar(frm);	
 				}
 				else{
-					printMessage($(".divMessage"),"la contraseña debe tener letras, digitos, y al menos 8 caracteres",false)
+					printMessage($(".divMessage"),"La contraseña debe tener letras, digitos, y al menos 8 caracteres",false)
 				}
 				//console.log("frm",frm);
 			})

@@ -2,17 +2,22 @@ body{
  background: white;
 }
 .navbar-backgrnd {
-	 background: #08088A;
+	 background: #4682B4;
 /* Kurt fondo 
     background: #E2E2E2;
     */
+
 }
 
+ .divSeleccion{
+        align:center;
+        
 /*=========================
   Icons
  ================= */
 
 /* footer social icons */
+}
 ul.social-network {
 	list-style: none;
 	display: inline;
@@ -93,3 +98,4 @@ a.socialIcon:hover, .socialHoverClass {
 a {
  background-color: #D3D3D3;   
 }
+

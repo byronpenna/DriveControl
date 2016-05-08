@@ -8,7 +8,12 @@ function registrar(frm){
 			alert("Regitrado exitosamente");
 			window.location = $(".txtHdRetorno").val();
 		}else{
-			alert("error");
+			alert("Ocurrio un error, vuelve a intentarlo");
 		}
+	},function(){
+		console.log()
+		$(".btnRegistro").prop("disabled",true);
+		$(".divLoading").empty().append("<img class='imgLoading' src='"+$(".txtHdBaseUrl").val()+"Content/img/gifload.gif"+"'>");
+
 	});
 }	

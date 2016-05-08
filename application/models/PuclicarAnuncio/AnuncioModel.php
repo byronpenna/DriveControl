@@ -10,7 +10,7 @@ class AnuncioModel extends CI_Model
 	$sql= "SELECT idTipoAnuncio,CONCAT(tipo,' / $',precio) As Anuncio FROM tipos_anuncios";
 	$query = $this ->db->query($sql);
 	$resultado= $query ->result();
-	return $resultado;
+	return $resultado;	
 	}
 	public function Select_anunciante($idUsuario)
 	{
@@ -19,9 +19,10 @@ class AnuncioModel extends CI_Model
 	$resultado= $query ->result();
 	return $resultado;	
 	}
-	public function IngresarAnuncio($TituloAnuncio,$DescripAnuncio,$TipoAnuncio,$FInicio,$Ffin,$URLAnuncio,$rut)
+	public function IngresarAnuncio($TituloAnuncio,$DescripAnuncio,$TipoAnuncio,$FInicio,$Ffin,$URLAnuncio,$rut,$idAnunciante)
 	{
-		$sql="INSERT INTO anuncios VALUES (null,1,'".$TituloAnuncio."','".$DescripAnuncio."','".$TipoAnuncio."','".$rut."','".$URLAnuncio."','".$FInicio."','".$Ffin."')";
+		
+		$sql="INSERT INTO anuncios VALUES (null,'".$idAnunciante."','".$TituloAnuncio."','".$DescripAnuncio."','".$TipoAnuncio."','".$rut."','".$URLAnuncio."','".$FInicio."','".$Ffin."')";
 		$query=$this->db->query($sql);
 		$retorno = new stdClass();
 		if($query){
