@@ -96,7 +96,7 @@ class Welcome extends PadreController {
 			$this->email->initialize($config); // Add 
 
 			$this->email->from('info@ritsasv.com');
-			$this->email->to('byronpenna@gmail.com');
+			$this->email->to($obj->email);
 			$this->email->subject('Registro exitoso');
 			$this->email->message($msg);
 			// send email
@@ -120,6 +120,7 @@ class Welcome extends PadreController {
 			$frm = $this->getFormularioAjax();
 			$retorno = $this->model->registrarUsuario($frm);
 			$this->email($retorno);
+			//$retorno = new stdClass();
 			echo json_encode($retorno);
 		}
 }

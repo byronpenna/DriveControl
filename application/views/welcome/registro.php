@@ -22,7 +22,7 @@
  
 
 	<input type="hidden" class="txtHdUrl" value=<?php echo site_url(); ?>></input>
-
+	<input type="hidden" class="txtHdBaseUrl" value=<?php echo base_url(); ?>></input>
 	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
 
 
@@ -56,7 +56,10 @@
 
 
 		 <br>
-			<button class="btn btn-default  btn-block btn-primary">Registrarse</button>
+		 	<div class="divLoading">
+
+		 	</div>
+			<button class="btn btn-default  btn-block btn-primary btnRegistro">Registrarse</button>
 			<div class="divMessage">
 				 </div>
 

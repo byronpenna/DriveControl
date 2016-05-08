@@ -11,5 +11,8 @@ function frmInvitado(frm){
 			//alert("error");
 			printMessage($(".mensajesLogin"),data.error.mensaje);
 		}
+		/*$(".btnRegistro").prop("disabled",true);
+		$(".divLoading").empty().append("<img src='"+$(".txtHdBaseUrl").val()+"/img/gifload.gif"+"'>");
+		*/
 	})
 }
