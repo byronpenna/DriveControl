@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<?php
+
+ $this->load->view("parts/estilos.php");
+
+ ?>
   <title>componentes carro</title>
   <?php
     // estilos universales
-      $this->load->view("parts/estilos.php");
+  $this->load->view("parts/menu.php");
 
-    $this->load->view("parts/scripts.php");
+ $this->load->view("parts/scripts.php");
+
+
   ?>
 
 
@@ -258,6 +266,8 @@
 <header>
     <?php 
       $this->load->view("parts/footer.php");
+      
+      
     ?>
   </header>
 

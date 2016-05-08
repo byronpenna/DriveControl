@@ -1,6 +1,9 @@
 .container {
-        width: 430px;
-        padding: 40px 40px;
+
+
+        width: 200px;
+        padding: 10px 10px;
+ 
 
     }
  .profile-img-card {
@@ -10,3 +13,5 @@
         margin: 0 auto 10px;
         display: block;
     }
+
+

@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <title>Componentes</title>
+
+  <?php
+    // estilos universales
+      $this->load->view("parts/estilos.php");
+  ?>
   
   <!-- meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,14 +31,29 @@
     <!-- estilos personalizados -->
     <?php
       // estilos universales
-        $this->load->view("parts/estilos.php");
+     
         $this->load->view("parts/menu.php");
+        $this->load->view("parts/footer.php");
    
   ?>
 
+  <br>
+  
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
 <div class="container">
 
-<br>
+
  <center> 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     

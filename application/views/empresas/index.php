@@ -7,7 +7,7 @@
         $this->load->view("parts/estilos.php");
    
   ?>
-    
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/principal/stile.css")?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/empresas/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/empresas/media.css") ?>>
 
@@ -20,6 +20,8 @@
 
     ?>
   </header>
+ 
+  
  
   
 <div class="row contentImg">

@@ -26,8 +26,12 @@
 	<input type="hidden" class="txtHdRetorno" value=<?php echo site_url("welcome/login") ?>></input>
 
 
-	<div class="container">
-		<div class="panel panel-primary">
+
+ <div class="row">
+        <div class='col-md-3'></div>
+        <div class="col-md-6">
+           
+
 		<div class="panel-heading">Registrate Gratis</div>
 		<form class="frm">
 		 <div class="panel-body">
