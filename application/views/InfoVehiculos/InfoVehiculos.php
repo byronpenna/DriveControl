@@ -13,6 +13,9 @@
 </head>
 <body>
 <center><img src=<?php echo base_url("Content/img/bann.jpg") ?> alt=""/></center>
+<br>
+<br>
+<br>
 <center><a href=<?php echo site_url("MenuUsuario/menuUsuario") ?>> <img src=<?php echo base_url("Content/img/rperfil.jpg") ?> alt=""/> </a>
 </center>
 <br>
@@ -67,10 +70,10 @@
       <td><?php echo $valor ->Aceite_Motor ?></td>
       <td>
         <a href="<?php echo site_url('vehiculos/Modificar_vehiculos/'.$valor->id) ?>" class="btn btn-primary btn-xs" > 
-          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>   Modificar
         </a>
         <a href="<?php echo site_url('vehiculos/Eliminar_Vehiculo/'.$valor->id) ?>" class="btn btn-primary btn-xs" > 
-          <i class="fa fa-trash" aria-hidden="true"></i>
+          <i class="fa fa-trash" aria-hidden="true"></i>Eliminar
         </a>
       </td>
       <!-- <td><a href="<?php echo site_url('vehiculos/Eliminar_Vehiculo/'.$valor->id) ?>" class="btn btn-primary" > Eliminar </a></td> -->

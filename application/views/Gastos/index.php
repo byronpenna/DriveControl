@@ -8,9 +8,25 @@
 	?>
 </head>
 <body>
-	<div class="row marginNull">
-		<div class="col-lg-3 divCbVehiculo">
-			<h1>Control de gastos</h1>
+	  <div class="container">
+    <div class="panel-primary">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-lg-1 divRegresar">
+           <a href=<?php echo site_url("MenuUsuario/menuUsuario") ?>> <img src=<?php echo base_url("Content/img/rperfil.jpg") ?> alt=""/> </a>
+          </div>
+          <div class="col-lg-10">
+          	<br>
+            <h1 class="text-center">Control de gastos</h1>
+          </div>  
+        </div> 
+      </div>
+		<div class="row ">
+		<center><div class="col-lg-3 divCbVehiculo"></div>
+			<div class="col-md-6">
+				<br>
+				<br>
+				<br>
 			<input type="hidden" class="txtHdCbVehiculoChange" value=<?php echo site_url("Gastos/ajax_obtenerGastos") ?> ></input>
 			<select class="form-control cbVehiculo">
 				<option value="-1"> Seleccione su vehiculo</option>
@@ -22,11 +38,13 @@
 					}
 				?>
 			</select>
-		</div>
+		</div></center>
 	</div>
+	<div class="panel-body">
 	<div class="row marginNull">
-		<div class="col-lg-3">
-			<h2>Agregar gasto</h2>
+		<div class="col-lg-3"></div>
+		<div class="col-md-6">
+			<center><h2>Agregar gasto</h2></center>
 			<form class="frmRepuesto" action=<?php echo site_url("Gastos/ajax_ingresarGasto") ?> >
 				<div class="form-group">
 					<label>Repuesto</label>
@@ -57,16 +75,22 @@
 					<label>Local</label>
 					<input class="txtLocal form-control" name="txtLocal"></input>
 				</div>
-				<div class="form-group">
-					<button class="btn btn-default">Agregar</button>
-				</div>
+				<center><div class="form-group">
+					<button class="btn btn-primary">Agregar</button>
+				</div></center>
 			</form>	
 		</div>
 	</div>
+	</div>
+	<div class="panel-footer">
 	<div class="marginNull row">
 		<h4>Total gastado: </h4>
 		$ <span class="lbTotalGasto"></span>
 	</div>
+	</div>
+	<br>
+	<br>
+</div>
 	<table class="table">
 		<thead>
 			<tr>
