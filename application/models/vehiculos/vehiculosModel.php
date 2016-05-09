@@ -107,7 +107,10 @@ class VehiculosModel extends CI_Model
 	return $resultado;
 	}
 	public function getDataVehiculoById($id){
-		$sql 	= "SELECT * from vehiculo where id = ".$id."";
+		$sql 	= "SELECT *,m.id_marca_fk 
+					FROM vehiculo v
+					inner join modelos m
+					on v.id_modelo_fk = m.idModelo where id = ".$id."";
 		$query 	= $this ->db->query($sql);
 		return $query->result();
 	}

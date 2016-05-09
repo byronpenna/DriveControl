@@ -13,10 +13,11 @@
 
 </head>
 <body>
-<!-- <pre> -->
-  <!-- <?php print_r($vehiculo); ?> -->
-<!-- </pre> -->
-
+<pre>
+  <?php print_r($vehiculo); ?> 
+</pre>
+  <input class="txtHdIdMarca" value=<?php echo $vehiculo->id_marca_fk; ?> ></input>
+  <input class="txtHdIdModelo" value=<?php echo $vehiculo->id_modelo_fk ?> ></input>
   <body>
   <div class="container">
     <div class="col-lg-8">
