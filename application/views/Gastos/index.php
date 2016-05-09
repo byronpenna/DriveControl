@@ -27,6 +27,14 @@
 				<br>
 				<br>
 				<br>
+
+
+<body background=C:\xampp\htdocs\DriveControl\application\views\vehiculos\1e.jpg >
+
+	<div class="row marginNull">
+		<div class="col-lg-6 divCbVehiculo">
+			
+
 			<input type="hidden" class="txtHdCbVehiculoChange" value=<?php echo site_url("Gastos/ajax_obtenerGastos") ?> ></input>
 			<select class="form-control cbVehiculo">
 				<option value="-1"> Seleccione su vehiculo</option>

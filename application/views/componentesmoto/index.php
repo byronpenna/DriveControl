@@ -5,20 +5,29 @@
   <?php
     // estilos universales
       $this->load->view("parts/estilos.php");
+       $this->load->view("parts/menu.php");
   ?>
   <!-- estilos personalizados -->
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/media.css") ?>>
+<br>
+<br>  
+<br> 
+<br> 
+<br> 
+<br> 
+<br>  
+<br> 
+<br> 
+<br>
+<br>  
+<br> 
+<br> 
 
-    <header>
+<Left> 
+<a title="Componentes" href="/drivecontrol/index.php/Componentes/index"><img src="Content/img/home.gif" alt="Componentes" /></a>
+</Left> 
 
-    <?php 
-      $this->load->view("parts/menu.php");
-
-
-    $this->load->view("parts/scripts.php");
-    ?>
-  </header>
 
 <center> 
  <img src=<?php echo base_url("Content/img/moto.png") ?>>
@@ -345,21 +354,20 @@ La palanca de freno se encuentra en el lado derecho del manillar y se utiliza pa
     <div class="clearfix">
     </div>
 </div>
-
     </div>
     <div class="col-md-6">
 
- </div>
- </div>
- </div>
- </div>
- </div>
-<header>
-    <?php 
+
+
+
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div></div>
+<?php
+    // estilos universales
       $this->load->view("parts/footer.php");
-    ?>
-  </header>
 
-<!-- 
-
-
+    $this->load->view("parts/scripts.php");
+  
+     
+  ?>
