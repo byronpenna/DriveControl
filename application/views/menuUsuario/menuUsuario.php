@@ -56,10 +56,10 @@
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
               <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <!-- <a href="#" class="dropdown-toggle" >
                   <i class="fa fa-bell-o"></i>
                   <span class="label label-danger">#</span>
-                </a>
+                </a> -->
                 <ul class="dropdown-menu">
                   <li class="header">Tienes # alertas...</li>
                   <li>
@@ -94,9 +94,9 @@
                 </ul>
               </li>
               <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="#" class="dropdown-toggle">
                   <img src=<?php echo base_url("Content/dist/img/usr.jpg") ?>  class="user-image" alt="User Image">
-                  <span class="hidden-xs"><?php echo "Usuario activo: ".$usuario->usuario ?></span>
+                  <span class="hidden-xs">Usuario activo: </span><?php echo $usuario->usuario ?> 
                 </a>
                 <ul class="dropdown-menu">                  
                   <li class="user-header">
@@ -124,7 +124,8 @@
               <img src=<?php echo base_url("Content/dist/img/usr.jpg") ?>  class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p><?php echo "Usuario activo: ".$usuario->usuario ?></p>
+              <p>Usuario activo: </p>
+              <?php echo $usuario->usuario ?>
               <a href=<?php echo site_url("welcome/cerrarSession") ?>>
               	<i class="fa fa-circle text-success"></i> Logout
               </a>
@@ -157,7 +158,7 @@
 
 
             <li class="treeview">
-              <a href=<?php echo site_url("vehiculos/vehiculos") ?>>
+              <a href=<?php echo site_url("vehiculos/Mostrar_Vehiculo") ?>>
                 <i class="fa fa-automobile"></i>
                 <span>Control del Vehiculo</span>                
               </a>
@@ -196,7 +197,9 @@
       <img src="dist/img/bg.jpg" alt="">        
       </div>     
      
+    
     </div>
+    
     <!-- <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script> -->
     <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
     

@@ -5,6 +5,11 @@
     // estilos universales
   $this->load->view("parts/estilos.php");
   ?>
+  <style type="text/css">
+    .btnAddVehiculo{
+      margin-bottom: 3%; 
+    }
+  </style>
 </head>
 <body>
 <center><img src=<?php echo base_url("Content/img/bann.jpg") ?> alt=""/></center>
@@ -15,6 +20,7 @@
 <div class="container">
 <div align='center'>  
   <div class="table-responsive">
+  <a class="btn btn-primary btnAddVehiculo" href=<?php echo site_url("vehiculos/vehiculos") ?> > Agregar vehiculo </a>
 <table class = "table">  
   <form action=<?php echo site_url("vehiculos/Modificar_vehiculos/");?> method="POST">
     <thead>
@@ -32,8 +38,9 @@
       <td width='150' style='font-weight: bold'>Nº Chasis</td>  
       <td width='150' style='font-weight: bold'>Combustible</td>  
       <td width='150' style='font-weight: bold'>Aceite caja</td>  
-      <td width='150' style='font-weight: bold'>Aceite motor</td>   
-</tr>
+      <td width='150' style='font-weight: bold'>Aceite motor</td> 
+      <td width='150' style='font-weight: bold'>Acciones</td>    
+    </tr>
   </thead>
   <tbody>
            <?php 
@@ -58,8 +65,15 @@
       <td><?php echo $valor ->Combustible ?></td>
       <td><?php echo $valor ->Aceite_Caja ?></td>
       <td><?php echo $valor ->Aceite_Motor ?></td>
-      <td><a href="<?php echo site_url('vehiculos/Modificar_vehiculos/'.$valor->id) ?>" class="btn btn-primary" > Modificar </a></td>
-      <td><a href="<?php echo site_url('vehiculos/Eliminar_Vehiculo/'.$valor->id) ?>" class="btn btn-primary" > Eliminar </a></td>
+      <td>
+        <a href="<?php echo site_url('vehiculos/Modificar_vehiculos/'.$valor->id) ?>" class="btn btn-primary btn-xs" > 
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+        </a>
+        <a href="<?php echo site_url('vehiculos/Eliminar_Vehiculo/'.$valor->id) ?>" class="btn btn-primary btn-xs" > 
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </a>
+      </td>
+      <!-- <td><a href="<?php echo site_url('vehiculos/Eliminar_Vehiculo/'.$valor->id) ?>" class="btn btn-primary" > Eliminar </a></td> -->
   </tr>
   <?php } ?>
   </tbody>

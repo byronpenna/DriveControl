@@ -10,6 +10,8 @@ function cargarModelos(url,frm){
 					op += "<option value='"+modelo.idModelo+"'>"+modelo.modelo+"</option>";
 				})
 				$(".cbModelo").empty().append(op);
+			}else{
+				$(".cbModelo").empty().append("<option value='-1'>No hay modelos disponibles</option>");
 			}
 		}
 	},function(){

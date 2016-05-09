@@ -5,7 +5,11 @@
     // estilos universales
   $this->load->view("parts/estilos.php");
   ?>
-
+  <style type="text/css">
+    .divRegresar a{
+      color: white; 
+    }
+  </style>
 
 </head>
 <body>
@@ -15,7 +19,14 @@
     </div>
     <div class="panel-primary">
       <div class="panel-heading"> 
-       <h1>Ingreso de Vehiculo </h1>
+        <div class="row marginNull">
+           <div class="col-lg-1 divRegresar">
+              <a href=<?php echo site_url("menuUsuario/menuUsuario") ?> >Regresar</a>
+           </div>
+           <div class="col-lg-10">
+             <h1 class="text-center">Ingreso de Vehiculo </h1>
+           </div> 
+        </div>
       </div>
      <div class ="panel-body">
       <form action=<?php echo site_url('vehiculos/registrar_Vehiculo')?> method="POST">
