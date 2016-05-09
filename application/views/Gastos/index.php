@@ -53,7 +53,7 @@
 		<div class="col-lg-3"></div>
 		<div class="col-md-6">
 			<center><h2>Agregar gasto</h2></center>
-			<form class="frmRepuesto" action=<?php echo site_url("Gastos/ajax_ingresarGasto") ?> >
+			<form class="frmRepuesto" method="post" action=<?php echo site_url("Gastos/ajax_ingresarGasto") ?> >
 				<div class="form-group">
 					<label>Repuesto</label>
 					<select class="form-control cbRepuesto" name="cbRepuesto">
