@@ -7,10 +7,11 @@
 			$this->load->view("parts/estilos.php");
 	?>
 </head>
-<body>
+
+<body background=C:\xampp\htdocs\DriveControl\application\views\vehiculos\1e.jpg >
 	<div class="row marginNull">
 		<div class="col-lg-3 divCbVehiculo">
-			<h1>Control de gastos</h1>
+			
 			<input type="hidden" class="txtHdCbVehiculoChange" value=<?php echo site_url("Gastos/ajax_obtenerGastos") ?> ></input>
 			<select class="form-control cbVehiculo">
 				<option value="-1"> Seleccione su vehiculo</option>
