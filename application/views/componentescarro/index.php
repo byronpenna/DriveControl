@@ -5,10 +5,31 @@
   <?php
     // estilos universales
       $this->load->view("parts/estilos.php");
+      $this->load->view("parts/menu.php");
+
   ?>
   <!-- estilos personalizados -->
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/media.css") ?>>
+
+
+<br>
+<br>  
+<br> 
+<br> 
+<br> 
+<br> 
+<br>  
+<br> 
+<br> 
+<br>
+<br>  
+<br> 
+<br> 
+
+
+<a title="Componentes" href="/drivecontrol/index.php/Componentes/index"><img src="DriveControl/Content/img/home.gif" alt="Componentes" /></a>
+
 
 
 <center> 
@@ -234,3 +255,14 @@
     </div>
 </div>
 
+
+</div></div></div></div></div></div></div></div></div></div></div></div></div>
+
+<?php
+    // estilos universales
+      $this->load->view("parts/footer.php");
+
+    $this->load->view("parts/scripts.php");
+  
+     
+  ?>

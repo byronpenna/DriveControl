@@ -9,6 +9,7 @@
 </head>
 
 <body background=C:\xampp\htdocs\DriveControl\application\views\vehiculos\1e.jpg >
+
 	<div class="row marginNull">
 		<div class="col-lg-3 divCbVehiculo">
 			
