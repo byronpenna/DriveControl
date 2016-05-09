@@ -10,16 +10,6 @@
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/media.css") ?>>
 
-    <header>
-
-    <?php 
-      $this->load->view("parts/menu.php");
-
-
-    $this->load->view("parts/scripts.php");
-    ?>
-  </header>
-
 <center> 
  <img src=<?php echo base_url("Content/img/moto.png") ?>>
  </center> 
@@ -345,20 +335,9 @@ La palanca de freno se encuentra en el lado derecho del manillar y se utiliza pa
     <div class="clearfix">
     </div>
 </div>
-
     </div>
     <div class="col-md-6">
 
- </div>
- </div>
- </div>
- </div>
- </div>
-<header>
-    <?php 
-      $this->load->view("parts/footer.php");
-    ?>
-  </header>
 
 <!-- 
 

@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<?php
-
- $this->load->view("parts/estilos.php");
-
- ?>
   <title>componentes carro</title>
   <?php
     // estilos universales
-  $this->load->view("parts/menu.php");
-
- $this->load->view("parts/scripts.php");
-
-
+      $this->load->view("parts/estilos.php");
   ?>
-
-
-<a href=<?php echo site_url("Componentes/") ?> target="_blank">Componentes de Automovil </a></li>
-<span class="glyphicon glyphicon-arrow-left"></span>
-"Anterior"
-</a>
-
-
-  
   <!-- estilos personalizados -->
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/style.css") ?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url("Content/css/componentescarro/media.css") ?>>
-
-<header>
-
-    <?php 
-      $this->load->view("parts/menu.php");
-    ?>
-  </header>
 
 
 <center> 
@@ -254,21 +228,9 @@
         </p>
   </div>
     <div class="clearfix">
-    </div>  
-
-    </div></div>   
+    </div>     
 </div>
 
     </div>
 </div>
-
- 
-<header>
-    <?php 
-      $this->load->view("parts/footer.php");
-      
-      
-    ?>
-  </header>
-
 
