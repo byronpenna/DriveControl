@@ -60,38 +60,7 @@
                   <i class="fa fa-bell-o"></i>
                   <span class="label label-danger">#</span>
                 </a> -->
-                <ul class="dropdown-menu">
-                  <li class="header">Tienes # alertas...</li>
-                  <li>
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> Primer Alerta
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Segunda Alerta
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-red"></i> Tercer Alerta
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-shopping-cart text-green"></i> Cuarta Alerta
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> Quinta Alerta
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+
               </li>
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle">
@@ -127,7 +96,7 @@
               <p>Usuario activo: </p>
               <?php echo $usuario->usuario ?>
               <a href=<?php echo site_url("welcome/cerrarSession") ?>>
-              	<i class="fa fa-circle text-success"></i> Logout
+              	<i class="fa fa-circle text-success"></i> Cerrar Sesion
               </a>
             </div>
           </div>
@@ -169,27 +138,7 @@
                 <span>Control de Gastos</span>               
               </a>
             </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-search"></i>
-                <span>Nueva Busqueda</span>
-              </a>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-paper-plane-o"></i> <span>Comentarios</span>
-              </a>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-gears"></i> <span>Ajustes</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href=""><i class="fa fa-circle-o"></i> Editar Perfil</a></li>
-                <li><a href=""><i class="fa fa-circle-o"></i> Notificaciones</a></li>
-              </ul>
-            </li>
+
           </ul>
         </section>
       </aside> 
