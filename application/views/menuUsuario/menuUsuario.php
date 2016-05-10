@@ -145,7 +145,9 @@
       <div>      
       <img src="dist/img/bg.jpg" alt="">        
       </div>     
-     
+     <div style="background: red;width: 100%;text-align: right;">
+       hola mundo 
+     </div>
     
     </div>
     

@@ -14,6 +14,6 @@ $(document).ready(function(){
 				var frm = serializeSection($(this));
 				frm.cbVehiculo = $(".cbVehiculo").val();
 				console.log("frm a enviar es: ",frm);
-				//ingresarRepuesto($(this).attr("action"),frm);
+				ingresarRepuesto($(this).attr("action"),frm);
 			})
 })
